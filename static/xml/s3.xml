@@ -1,0 +1,432 @@
+<krpano version="1.19" title="桐城府壹号开关站-全景展示">
+
+  <include url="sfpano.xml"/>
+
+  <!-- 加载动态效果、百分比、进度条 -->
+  <include url="loadinganimation.xml"/>
+  <include url="loadingpercenttext.xml"/>
+  <include url="loadingbar.xml"/>
+
+  <!-- 调试时使用editor插件 -->
+  <!--<plugin name="editor" url="/plugins/editor.swf" keep="true"/>-->
+
+  <!-- 关闭右键菜单 -->
+  <contextmenu fullscreen="false" versioninfo="false"/>
+
+  <scene name="scene_entrance" title="入口" onstart="" havevrimage="true" thumburl="../panos/s3/entrance.tiles/thumb.jpg"
+         lat="" lng="" heading="">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140"
+          limitview="auto"/>
+    <preview url="../panos/s3/entrance.tiles/preview.jpg"/>
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="3200" tiledimageheight="3200">
+        <cube url="../panos/s3/entrance.tiles/%s/l3/%v/l3_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="1536" tiledimageheight="1536">
+        <cube url="../panos/s3/entrance.tiles/%s/l2/%v/l2_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="768" tiledimageheight="768">
+        <cube url="../panos/s3/entrance.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
+      </level>
+    </image>
+    <image if="webvr.isenabled">
+      <cube url="../panos/s3/entrance.tiles/vr/pano_%s.jpg"/>
+    </image>
+    <hotspot name="spot1" style="spot_arrow" ath="33.15333" atv="29.795741" linkedscene="scene_center1" text="进入"
+             linkedscene_lookat="-121.595,9.570,120"/>
+  </scene>
+
+  <scene name="scene_center1" title="中间一" onstart="" havevrimage="true" thumburl="../panos/s3/center1.tiles/thumb.jpg"
+         lat="" lng="" heading="">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140"
+          limitview="auto"/>
+    <preview url="../panos/s3/center1.tiles/preview.jpg"/>
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="3200" tiledimageheight="3200">
+        <cube url="../panos/s3/center1.tiles/%s/l3/%v/l3_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="1536" tiledimageheight="1536">
+        <cube url="../panos/s3/center1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="768" tiledimageheight="768">
+        <cube url="../panos/s3/center1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
+      </level>
+    </image>
+    <image if="webvr.isenabled">
+      <cube url="../panos/s3/center1.tiles/vr/pano_%s.jpg"/>
+    </image>
+    <hotspot name="spot1" style="spot_right" ath="136.855" atv="19.253" linkedscene="scene_left1"
+             linkedscene_lookat="302.255,11.179,120" text="右转"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-121.484" atv="45.033" linkedscene="scene_center2"
+             linkedscene_lookat="-91.184,11.550,120" text="前进"/>
+    <hotspot name="spot3" style="spot_left" ath="-3.274" atv="35.057" linkedscene="scene_right1"
+             linkedscene_lookat="-263.064,27.109,120" text="左转"/>
+    <hotspot name="spot4" style="spot_arrow" ath="44.086" atv="33.743" linkedscene="scene_entrance"
+             linkedscene_lookat="246.773,0.381,120" text="出门"/>
+
+    <!-- #1 -->
+    <hotspot name="box_1" url="../panos/s3/box/1.png" ath="144.92346" atv="-3.766532" distorted="true" rx="-2.0"
+             ry="8.25" rz="0.329284" width="300" height="230" scale="0.291014" alpha="0.0"
+             onclick="if(hotspot[box_1].alpha == 1.0,
+                            tween(hotspot[box_1].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_1].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point1" style="spot_point" ath="144.92346" atv="-3.766532"
+             showid="54b32021cc894d83b02df0c19f1aa48b"/>
+    <!-- #2 -->
+    <hotspot name="box_2" url="../panos/s3/box/2.png" ath="154.896817" atv="-3.759351" distorted="true" rx="-3.0"
+             ry="-3.25" rz="0.621606" width="300" height="230" scale="0.291014" alpha="0.0"
+             onclick="if(hotspot[box_2].alpha == 1.0,
+                            tween(hotspot[box_2].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_2].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point2" style="spot_point" ath="154.896817" atv="-3.759351"
+             showid="36fbb561d9f042c3b6f21710b64d7dc3"/>
+    <!-- #3 -->
+    <hotspot name="box_3" url="../panos/s3/box/3.png" ath="166.848422" atv="-3.408326" distorted="true" rx="-3.5"
+             ry="-12.25" rz="0.244646" width="420" height="210" scale="0.296297" alpha="0.0"
+             onclick="if(hotspot[box_3].alpha == 1.0,
+                            tween(hotspot[box_3].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_3].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point3" style="spot_point" ath="166.848422" atv="-3.408326"
+             showid="68dfb8089f304a2ba2a800017dc4ed30"/>
+    <!-- #14 -->
+    <hotspot name="box_14" url="../panos/s3/box/14.png" ath="-64.146937" atv="-6.244221" distorted="true" rx="-6.25"
+             ry="35.0" rz="-0.234135" width="420" height="210" scale="0.604865" alpha="0.0"
+             onclick="if(hotspot[box_14].alpha == 1.0,
+                            tween(hotspot[box_14].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_14].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point14" style="spot_point" ath="-64.146937" atv="-6.244221"
+             showid="0f729790d6a244eb8ae293c3ea4e8238"/>
+    <!-- #15 -->
+    <hotspot name="box_15" url="../panos/s3/box/15.png" ath="-40.221719" atv="-7.323921" distorted="true" rx="-10.25"
+             ry="9.75" rz="0.257775" width="300" height="230" scale="0.681261" alpha="0.0"
+             onclick="if(hotspot[box_15].alpha == 1.0,
+                            tween(hotspot[box_15].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_15].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point15" style="spot_point" ath="-40.221719" atv="-7.323921"
+             showid="798e9cde58894e3b904373b1e04104bf"/>
+    <!-- #16 -->
+    <hotspot name="box_16" url="../panos/s3/box/16.png" ath="-17.001761" atv="-7.53411" distorted="true" rx="-8.25"
+             ry="-13.0" rz="-0.307221" width="300" height="230" scale="0.640966" alpha="0.0"
+             onclick="if(hotspot[box_16].alpha == 1.0,
+                            tween(hotspot[box_16].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_16].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point16" style="spot_point" ath="-17.001761" atv="-7.53411"
+             showid="145017604bba4feda4901c84edabbbb7"/>
+  </scene>
+
+  <scene name="scene_center2" title="中间二" onstart="" havevrimage="true" thumburl="../panos/s3/center2.tiles/thumb.jpg"
+         lat="" lng="" heading="">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140"
+          limitview="auto"/>
+    <preview url="../panos/s3/center2.tiles/preview.jpg"/>
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="3200" tiledimageheight="3200">
+        <cube url="../panos/s3/center2.tiles/%s/l3/%v/l3_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="1536" tiledimageheight="1536">
+        <cube url="../panos/s3/center2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="768" tiledimageheight="768">
+        <cube url="../panos/s3/center2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
+      </level>
+    </image>
+    <image if="webvr.isenabled">
+      <cube url="../panos/s3/center2.tiles/vr/pano_%s.jpg"/>
+    </image>
+    <hotspot name="spot1" style="spot_arrow" ath="-90.298" atv="40.919" linkedscene_lookat="60.582,21.554,127.033"
+             linkedscene="scene_center3" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="88.520" atv="34.055" linkedscene_lookat="59.938,13.136,132.227"
+             linkedscene="scene_center1" text="前进"/>
+    <!-- #4 -->
+    <hotspot name="box_4" url="../panos/s3/box/4.png" ath="164.902146" atv="-3.416876" distorted="true" rx="-2.5"
+             ry="18.5" rz="-0.244796" width="420" height="210" scale="0.302884" alpha="0.0"
+             onclick="if(hotspot[box_4].alpha == 1.0,
+                            tween(hotspot[box_4].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_4].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point4" style="spot_point" ath="164.902146" atv="-3.416876"
+             showid="defa115399044d82b48d2d1dbf584089"/>
+    <!-- #5 -->
+    <hotspot name="box_5" url="../panos/s3/box/5.png" ath="179.398914" atv="-3.568969" distorted="true" rx="-3.5"
+             ry="0" rz="0.064972" width="420" height="210" scale="0.305927" alpha="0.0"
+             onclick="if(hotspot[box_5].alpha == 1.0,
+                            tween(hotspot[box_5].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_5].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point5" style="spot_point" ath="179.398914" atv="-3.568969"
+             showid="bed5f397caca458e9f869935a3c59a35"/>
+    <!-- #6 -->
+    <hotspot name="box_6" url="../panos/s3/box/6.png" ath="193.891247" atv="-3.532757" distorted="true" rx="-1.75"
+             ry="-16.25" rz="0.373284" width="420" height="210" scale="0.298974" alpha="0.0"
+             onclick="if(hotspot[box_6].alpha == 1.0,
+                            tween(hotspot[box_6].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_6].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point6" style="spot_point" ath="193.891247" atv="-3.532757"
+             showid="65c20ec514914902aac4b7e63ccbbc94"/>
+    <!-- #11 -->
+    <hotspot name="box_11" url="../panos/s3/box/11.png" ath="-32.295504" atv="-6.852342" distorted="true" rx="-6.0"
+             ry="30.5" rz="-0.298965" width="420" height="210" scale="0.644177" alpha="0.0"
+             onclick="if(hotspot[box_11].alpha == 1.0,
+                            tween(hotspot[box_11].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_11].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point11" style="spot_point" ath="-32.295504" atv="-6.852342"
+             showid="7e2c6b00ec674984be5116f5d6a1e3f5"/>
+    <!-- #12 -->
+    <hotspot name="box_12" url="../panos/s3/box/12.png" ath="0.779653" atv="-8.130547" distorted="true" rx="-9.25"
+             ry="-2.75" rz="-0.016547" width="420" height="210" scale="0.751369" alpha="0.0"
+             onclick="if(hotspot[box_12].alpha == 1.0,
+                            tween(hotspot[box_12].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_12].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point12" style="spot_point" ath="0.779653" atv="-8.130547"
+             showid="7e02f38e42cf4f058a4f1281b715b456"/>
+    <!-- #13 -->
+    <hotspot name="box_13" url="../panos/s3/box/13.png" ath="32.95685" atv="-6.741721" distorted="true" rx="-8.0"
+             ry="-34.25" rz="-0.159122" width="420" height="210" scale="0.635861" alpha="0.0"
+             onclick="if(hotspot[box_13].alpha == 1.0,
+                            tween(hotspot[box_13].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_13].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point13" style="spot_point" ath="32.95685" atv="-6.741721"
+             showid="02c71d2659834a58ab9a0e4c771e26f6"/>
+  </scene>
+
+  <scene name="scene_center3" title="中间三" onstart="" havevrimage="true" thumburl="../panos/s3/center3.tiles/thumb.jpg"
+         lat="" lng="" heading="">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140"
+          limitview="auto"/>
+    <preview url="../panos/s3/center3.tiles/preview.jpg"/>
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="3200" tiledimageheight="3200">
+        <cube url="../panos/s3/center3.tiles/%s/l3/%v/l3_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="1536" tiledimageheight="1536">
+        <cube url="../panos/s3/center3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="768" tiledimageheight="768">
+        <cube url="../panos/s3/center3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
+      </level>
+    </image>
+    <image if="webvr.isenabled">
+      <cube url="../panos/s3/center3.tiles/vr/pano_%s.jpg"/>
+    </image>
+    <hotspot name="spot1" style="spot_left" ath="-4.078" atv="20.186" linkedscene="scene_left3"
+             linkedscene_lookat="12.284,29.752,120" text="左转"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-118.710" atv="44.172" linkedscene="scene_center2"
+             linkedscene_lookat="89.672,12.689,120" text="前进"/>
+    <hotspot name="spot3" style="spot_right" ath="104.705" atv="33.944" linkedscene="scene_right3"
+             linkedscene_lookat="-100.948,25.718,120" text="右转"/>
+
+    <!-- #7 -->
+    <hotspot name="box_7" url="../panos/s3/box/7.png" ath="-28.582614" atv="-3.554205" distorted="true" rx="-2.75"
+             ry="2.5" rz="0.234625" width="420" height="210" scale="0.307459" alpha="0.0"
+             onclick="if(hotspot[box_7].alpha == 1.0,
+                            tween(hotspot[box_7].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_7].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point7" style="spot_point" ath="-28.582614" atv="-3.554205"
+             showid="9ae1aa879b28449ab85915fc50937feb"/>
+    <!-- #8 -->
+    <hotspot name="box_8" url="../panos/s3/box/8.png" ath="-14.036145" atv="-3.423182" distorted="true" rx="-3.75"
+             ry="-12.75" rz="-0.093617" width="420" height="210" scale="0.297483" alpha="0.0"
+             onclick="if(hotspot[box_8].alpha == 1.0,
+                            tween(hotspot[box_8].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_8].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point8" style="spot_point" ath="-14.036145" atv="-3.423182"
+             showid="f1eb4756e7f14308835d5bcfe8fcaf0d"/>
+    <!-- #9 -->
+    <hotspot name="box_9" url="../panos/s3/box/9.png" ath="119.887396" atv="-7.010219" distorted="true" rx="-6.0"
+             ry="32.25" rz="-0.317267" width="420" height="210" scale="0.650646" alpha="0.0"
+             onclick="if(hotspot[box_9].alpha == 1.0,
+                            tween(hotspot[box_9].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_9].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point9" style="spot_point" ath="119.887396" atv="-7.010219"
+             showid="8cd6f4c2bde1438e89a18ea07fb1c045"/>
+    <!-- #10 -->
+    <hotspot name="box_10" url="../panos/s3/box/10.png" ath="152.599263" atv="-7.96559" distorted="true" rx="-7.0"
+             ry="-1.25" rz="0.172041" width="420" height="210" scale="0.751367" alpha="0.0"
+             onclick="if(hotspot[box_10].alpha == 1.0,
+                            tween(hotspot[box_10].alpha, 0.0, 0.75);
+                          ,
+                            tween(hotspot[box_10].alpha, 1.0, 0.75);
+                          );"/>
+    <hotspot name="point10" style="spot_point" ath="152.599263" atv="-7.96559"
+             showid="1a91d3db185d489ea1ebc50630f923e6"/>
+  </scene>
+
+  <scene name="scene_left1" title="左侧一" onstart="" havevrimage="true" thumburl="../panos/s3/left1.tiles/thumb.jpg"
+         lat="" lng="" heading="">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70"
+          fovmax="140" limitview="auto"/>
+    <preview url="../panos/s3/left1.tiles/preview.jpg"/>
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="4608" tiledimageheight="4608">
+        <cube url="../panos/s3/left1.tiles/%s/l3/0%v/l3_%s_0%v_0%h.jpg"/>
+      </level>
+      <level tiledimagewidth="2304" tiledimageheight="2304">
+        <cube url="../panos/s3/left1.tiles/%s/l2/0%v/l2_%s_0%v_0%h.jpg"/>
+      </level>
+      <level tiledimagewidth="1152" tiledimageheight="1152">
+        <cube url="../panos/s3/left1.tiles/%s/l1/0%v/l1_%s_0%v_0%h.jpg"/>
+      </level>
+    </image>
+    <image if="webvr.isenabled">
+      <cube url="../panos/s3/left1.tiles/vr/pano_%s.jpg"/>
+    </image>
+    <hotspot name="spot1" style="spot_arrow" ath="-59.880" atv="46.197" linkedscene_lookat="270.434,-0.566,120"
+             linkedscene="scene_left2" text="前进"/>
+    <hotspot name="spot2" style="spot_left" ath="89.458" atv="45.018" linkedscene_lookat="-121.595,9.570,120"
+             linkedscene="scene_center1" text="左转"/>
+  </scene>
+
+  <scene name="scene_left2" title="左侧二" onstart="" havevrimage="true" thumburl="../panos/s3/left2.tiles/thumb.jpg"
+         lat="" lng="" heading="">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140"
+          limitview="auto"/>
+    <preview url="../panos/s3/left2.tiles/preview.jpg"/>
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="3200" tiledimageheight="3200">
+        <cube url="../panos/s3/left2.tiles/%s/l3/%v/l3_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="1536" tiledimageheight="1536">
+        <cube url="../panos/s3/left2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="768" tiledimageheight="768">
+        <cube url="../panos/s3/left2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
+      </level>
+    </image>
+    <image if="webvr.isenabled">
+      <cube url="../panos/s3/left2.tiles/vr/pano_%s.jpg"/>
+    </image>
+    <hotspot name="spot1" style="spot_arrow" ath="89.699" atv="45.212" linkedscene_lookat="118.799,30.763,120"
+             linkedscene="scene_left1" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-90.026" atv="33.526" linkedscene_lookat="-140.666,9.038,120"
+             linkedscene="scene_left3" text="前进"/>
+  </scene>
+
+  <scene name="scene_left3" title="左侧三" onstart="" havevrimage="true" thumburl="../panos/s3/left3.tiles/thumb.jpg"
+         lat="" lng="" heading="">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140"
+          limitview="auto"/>
+    <preview url="../panos/s3/left3.tiles/preview.jpg"/>
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="3200" tiledimageheight="3200">
+        <cube url="../panos/s3/left3.tiles/%s/l3/%v/l3_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="1536" tiledimageheight="1536">
+        <cube url="../panos/s3/left3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="768" tiledimageheight="768">
+        <cube url="../panos/s3/left3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
+      </level>
+    </image>
+    <image if="webvr.isenabled">
+      <cube url="../panos/s3/left3.tiles/vr/pano_%s.jpg"/>
+    </image>
+    <hotspot name="spot1" style="spot_arrow" ath="14.665" atv="45.800" linkedscene_lookat="87.906,25.335,120"
+             linkedscene="scene_left2" text="前进"/>
+    <hotspot name="spot2" style="spot_right" ath="-142.529" atv="32.829" linkedscene_lookat="241.297,12.254,120"
+             linkedscene="scene_center3" text="右转"/>
+  </scene>
+
+  <scene name="scene_right1" title="右侧一" onstart="" havevrimage="true" thumburl="../panos/s3/right1.tiles/thumb.jpg"
+         lat="" lng="" heading="">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140"
+          limitview="auto"/>
+    <preview url="../panos/s3/right1.tiles/preview.jpg"/>
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="3200" tiledimageheight="3200">
+        <cube url="../panos/s3/right1.tiles/%s/l3/%v/l3_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="1536" tiledimageheight="1536">
+        <cube url="../panos/s3/right1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="768" tiledimageheight="768">
+        <cube url="../panos/s3/right1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
+      </level>
+    </image>
+    <image if="webvr.isenabled">
+      <cube url="panos/right1.tiles/vr/pano_%s.jpg"/>
+    </image>
+    <hotspot name="spot1" style="spot_arrow" ath="91.380" atv="45.982" linkedscene_lookat="-313.485,3.547,120"
+             linkedscene="scene_right2" text="前进"/>
+    <hotspot name="spot2" style="spot_right" ath="-59.344" atv="50.330" linkedscene_lookat="-121.595,9.570,120"
+             linkedscene="scene_center1" text="右转"/>
+  </scene>
+
+  <scene name="scene_right2" title="右侧二" onstart="" havevrimage="true" thumburl="../panos/s3/right2.tiles/thumb.jpg"
+         lat="" lng="" heading="">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140"
+          limitview="auto"/>
+    <preview url="../panos/s3/right2.tiles/preview.jpg"/>
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="3200" tiledimageheight="3200">
+        <cube url="../panos/s3/right2.tiles/%s/l3/%v/l3_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="1536" tiledimageheight="1536">
+        <cube url="../panos/s3/right2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="768" tiledimageheight="768">
+        <cube url="../panos/s3/right2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
+      </level>
+    </image>
+    <image if="webvr.isenabled">
+      <cube url="../panos/s3/right2.tiles/vr/pano_%s.jpg"/>
+    </image>
+    <hotspot name="spot1" style="spot_arrow" ath="-134.658" atv="38.865" linkedscene_lookat="-91.649,26.538,120"
+             linkedscene="scene_right1" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="46.392" atv="40.453" linkedscene_lookat="61.901,14.242,120"
+             linkedscene="scene_right3" text="前进"/>
+  </scene>
+
+  <scene name="scene_right3" title="右侧三" onstart="" havevrimage="true" thumburl="../panos/s3/right3.tiles/thumb.jpg"
+         lat="" lng="" heading="">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140"
+          limitview="auto"/>
+    <preview url="../panos/s3/right3.tiles/preview.jpg"/>
+    <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+      <level tiledimagewidth="3200" tiledimageheight="3200">
+        <cube url="../panos/s3/right3.tiles/%s/l3/%v/l3_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="1536" tiledimageheight="1536">
+        <cube url="../panos/s3/right3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg"/>
+      </level>
+      <level tiledimagewidth="768" tiledimageheight="768">
+        <cube url="../panos/s3/right3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
+      </level>
+    </image>
+    <image if="webvr.isenabled">
+      <cube url="../panos/s3/right3.tiles/vr/pano_%s.jpg"/>
+    </image>
+    <hotspot name="spot1" style="spot_left" ath="60.570" atv="31.510" linkedscene_lookat="241.297,12.254,120"
+             linkedscene="scene_center3" text="左转"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-102.282" atv="48.433" linkedscene_lookat="-135.771,13.428,120"
+             linkedscene="scene_right2" text="前进"/>
+  </scene>
+
+</krpano>
