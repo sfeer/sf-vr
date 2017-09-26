@@ -237,9 +237,9 @@
 
 <script>
   import _ from 'lodash';
-  import VR from './vr';
-  import R from './remote';
-  import O from './offline';
+  import VR from '../assets/vr';
+  import R from '../assets/remote';
+  import O from '../assets/offline';
 
   export default {
     name: 'app',
