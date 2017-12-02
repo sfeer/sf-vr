@@ -186,7 +186,7 @@
         </div>
       </div>
     </transition>
-    <el-dialog size="large" :visible.sync="showBugBox" @open="openBugInfo">
+    <el-dialog :visible.sync="showBugBox" @open="openBugInfo">
       <template slot="title">
         <span
           v-if="multipleBug"
