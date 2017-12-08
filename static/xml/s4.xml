@@ -47,8 +47,8 @@
     </image>
     <hotspot name="spot1" style="spot_right" ath="-87.697" atv="3.290" linkedscene="scene_east3" linkedscene_lookat="-60.318,4.604,120" text="右转"/>
     <hotspot name="spot2" style="spot_left" ath="84.720" atv="3.909" linkedscene="scene_east1" linkedscene_lookat="52.284,-6.089,120" text="左转"/>
-    <hotspot name="spot3" style="spot_arrow" ath="-41.306" atv="13.856" linkedscene="scene_b1_front" linkedscene_lookat="2.026,-0.750,98.579" text="1#主变"/>
-    <hotspot name="spot4" style="spot_arrow" ath="43.753" atv="12.893" linkedscene="scene_b2_front" linkedscene_lookat="1.933,-0.589,98.626" text="2#主变"/>
+    <hotspot name="spot3" style="spot_arrow" ath="-41.306" atv="13.856" linkedscene="scene_b2_front" linkedscene_lookat="2.026,-0.750,98.579" text="2#主变"/>
+    <hotspot name="spot4" style="spot_arrow" ath="43.753" atv="12.893" linkedscene="scene_b1_front" linkedscene_lookat="1.933,-0.589,98.626" text="1#主变"/>
   </scene>
 
   <scene name="scene_east3" title="东南角" onstart="" thumburl="../panos/s4/east3.tiles/thumb.jpg" lat="" lng="" heading="">
