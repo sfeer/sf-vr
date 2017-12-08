@@ -1,4 +1,4 @@
-<krpano version="1.19" title="桐城府壹号开关站-全景展示">
+<krpano version="1.19" title="临时名称变电站-全景展示">
 
   <include url="sfpano.xml"/>
 
@@ -8,7 +8,7 @@
   <include url="loadingbar.xml"/>
 
   <!-- 调试时使用editor插件 -->
-  <plugin name="editor" url="/plugins/editor.swf" keep="true"/>
+  <!--<plugin name="editor" url="/plugins/editor.swf" keep="true"/>-->
 
   <!-- 关闭右键菜单 -->
   <contextmenu fullscreen="false" versioninfo="false"/>

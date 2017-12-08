@@ -7,7 +7,8 @@ export default {
     s1: {id: 's1', name: '10kV花园总部开关站', fd_id: '7acbe2c8fb9640319e1a924a45aaf0fa'},
     s2: {id: 's2', name: '10kV中通开关站', fd_id: 'b1bf18d79476445987e04ccf903986a2'},
     s3: {id: 's3', name: '10kV桐城府壹号开关站', fd_id: '045253c418fe41f78fd0dc9bb37ec6a0'},
-    s4: {id: 's4', name: '临时名称变电站', fd_id: '324326et45e3r35466u7fetg6r356d33'}
+    s4: {id: 's4', name: '临时名称变电站', fd_id: '324326et45e3r35466u7fetg6r356d33'},
+    s5: {id: 's5', name: '110kvGIS室', fd_id: '7y3rgh4763gf674g367gtd67236tg642'}
   },
 
   // 场景初始化视角, uuid=uuid.uuid4()
