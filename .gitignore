@@ -7,6 +7,4 @@ yarn-error.log*
 
 .idea/
 package-lock.json
-static/panos/s1/
-static/panos/s2/
-static/panos/s3/
+static/panos/
