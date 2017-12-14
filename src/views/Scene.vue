@@ -274,7 +274,8 @@
       }
     },
     created() {
-      let pst = this.$route.params.station,
+      console.log('create');
+      let pst = this.$route.name,
         psc = this.$route.params.scene;
       if (pst && VR.STATIONS[pst]) {
         this.station = VR.STATIONS[pst];
@@ -285,6 +286,7 @@
       }
     },
     mounted() {
+      console.log('mounted');
       // 设置标题
       document.title = this.station.name;
       this.initVR();
@@ -312,7 +314,13 @@
               // 是否显示热点
               showHotspot: id => _.has(this.cabinet_bug, id) ? 'true' : 'false',
               // 热点状态
-              showSpotStatus: id => this.cabinet_status[id]
+              showSpotStatus: id => this.cabinet_status[id],
+              href: url => {
+                console.log(url);
+                console.log(this.$router);
+                // window.location.href = url;
+                this.$router.push(url);
+              }
             };
             this.krpano = krpano;
           }

@@ -10,10 +10,8 @@
   <!-- 关闭右键菜单 -->
   <contextmenu fullscreen="false" versioninfo="false"/>
 
-  <scene name="scene_entrance" title="入口" onstart="" havevrimage="true" thumburl="../panos/s1/entrance.tiles/thumb.jpg"
-         lat="" lng="" heading="">
-    <view hlookat="-1.443" vlookat="-6.496" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140"
-          limitview="auto"/>
+  <scene name="scene_entrance" title="入口" onstart="" havevrimage="true" thumburl="../panos/s1/entrance.tiles/thumb.jpg" lat="" lng="" heading="">
+    <view hlookat="-1.443" vlookat="-6.496" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s1/entrance.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -29,8 +27,8 @@
     <image if="webvr.isenabled">
       <cube url="../panos/s1/entrance.tiles/vr/pano_%s.jpg"/>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="2.191" atv="9.534" linkedscene="scene_overview" text="进入"
-             linkedscene_lookat="27.781,8.897,120"/>
+    <hotspot name="spot1" style="spot_arrow" ath="2.191" atv="9.534" linkedscene="scene_overview" text="进入" linkedscene_lookat="27.781,8.897,120"/>
+    <hotspot name="spot2" style="spot_href" ath="15.191" atv="15.534" text="跳转" href="/s2"/>
   </scene>
 
   <scene name="scene_overview" title="内部" onstart="" havevrimage="true" thumburl="../panos/s1/overview.tiles/thumb.jpg"

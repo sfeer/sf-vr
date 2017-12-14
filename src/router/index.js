@@ -10,9 +10,11 @@ export default new Router({
   mode: 'history',
   routes: [
     {path: '/', redirect: '/s1'},
-    {path: '/s4', component: NewScene},
-    {path: '/s5', component: NewScene2},
-    {path: '/:station(s\\d+)', component: Scene},
+    {path: '/s1', name: 's1', component: Scene},
+    {path: '/s2', name: 's2', component: Scene},
+    {path: '/s3', name: 's3', component: Scene},
+    {path: '/s4', name: 's4', component: NewScene},
+    {path: '/s5', name: 's5', component: NewScene2},
     {path: '/scene/:scene', component: Scene}
   ]
 })

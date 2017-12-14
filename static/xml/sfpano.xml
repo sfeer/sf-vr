@@ -2,6 +2,7 @@
   <!-- =====STYLE===== -->
 
   <!-- 热点样式 -->
+  <style name="spot_href" url="../img/arrow_64.png" onloaded="do_crop_animation(64,64,25);add_text()" scale="0.8" onclick="link_href()"/>
   <style name="spot_arrow" url="../img/arrow_64.png" onloaded="do_crop_animation(64,64,25);add_text()" scale="0.8" onclick="link_scene()"/>
   <style name="spot_left" url="../img/left_64.png" onloaded="do_crop_animation(64,64,25);add_text()" scale="0.8" onclick="link_scene()"/>
   <style name="spot_right" url="../img/right_64.png" onloaded="do_crop_animation(64,64,25);add_text()" scale="0.8" onclick="link_scene()"/>
@@ -19,6 +20,11 @@
     loadscene(get(linkedscene), null, MERGE);
     lookat(get(hs_lookat_h), get(hs_lookat_v), get(hs_lookat_fov));
     );
+  </action>
+
+  <!-- 执行页面跳转 -->
+  <action name="link_href">
+    jscall(calc('krpano.hooks.href("' + href + '");'));
   </action>
 
   <!-- 点击弹框 -->
