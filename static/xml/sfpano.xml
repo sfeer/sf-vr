@@ -7,7 +7,7 @@
   <style name="spot_left" url="../img/left_64.png" onloaded="do_crop_animation(64,64,25);add_text()" scale="0.8" onclick="link_scene()"/>
   <style name="spot_right" url="../img/right_64.png" onloaded="do_crop_animation(64,64,25);add_text()" scale="0.8" onclick="link_scene()"/>
   <style name="spot_look" url="../img/look_64.png" onloaded="add_text()" scale="1" onclick="link_scene()"/>
-  <style name="spot_point" url="../img/point_danger_40.png" onloaded="do_crop_animation(40,40,25);do_init_hotspot()" scale="1" onclick="show_msg()"/>
+  <style name="spot_point" onloaded="do_crop_animation(40,40,25);do_init_hotspot()" scale="1" onclick="show_msg()"/>
 
   <!-- =====ACTION===== -->
 

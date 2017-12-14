@@ -346,6 +346,7 @@
     <hotspot name="spot3" style="spot_arrow" ath="-58.620" atv="14.099" linkedscene="scene_b2_front" linkedscene_lookat="1.933,-0.589,98.626" text="正面"/>
   </scene>
 
+  <!--一楼过道-->
   <scene name="scene_aisle1" title="aisle1" onstart="" thumburl="../panos/s4/aisle1.tiles/thumb.jpg" lat="" lng="" heading="">
     <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s4/aisle1.tiles/preview.jpg"/>
@@ -361,8 +362,11 @@
       </level>
     </image>
     <hotspot name="spot1" style="spot_left" ath="15.071" atv="24.487" linkedscene="scene_aisle2" text="上楼"/>
+    <hotspot name="spot2" style="spot_href" ath="58.254" atv="40.219" text="进入" href="/s5"/>
+    <hotspot name="spot3" style="spot_href" ath="-179.803" atv="30.298" text="进入" href="/s6"/>
   </scene>
 
+  <!--一楼过道-->
   <scene name="scene_aisle2" title="aisle2" onstart="" thumburl="../panos/s4/aisle2.tiles/thumb.jpg" lat="" lng="" heading="">
     <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s4/aisle2.tiles/preview.jpg"/>
@@ -380,6 +384,7 @@
     <hotspot name="spot1" style="spot_arrow" ath="128.817" atv="-12.376" linkedscene="scene_aisle3" text="上楼"/>
   </scene>
 
+  <!--二楼过道-->
   <scene name="scene_aisle3" title="aisle3" onstart="" thumburl="../panos/s4/aisle3.tiles/thumb.jpg" lat="" lng="" heading="">
     <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s4/aisle3.tiles/preview.jpg"/>
@@ -398,6 +403,7 @@
 	<hotspot name="spot2" style="spot_arrow" ath="36.467" atv="20.342" linkedscene="scene_aisle4" text="下楼" />
   </scene>
 
+  <!--二楼过道-->
   <scene name="scene_aisle4" title="aisle4" onstart="" thumburl="../panos/s4/aisle4.tiles/thumb.jpg" lat="" lng="" heading="">
     <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s4/aisle4.tiles/preview.jpg"/>
