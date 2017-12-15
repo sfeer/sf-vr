@@ -18,6 +18,8 @@
     watch: {
       $route: function (d) {
         if (VR.STATIONS[d.name]) {
+          // 注销krpano
+          removepano(this.station.id);
           this.station = VR.STATIONS[d.name];
           this.scene = {name: 'scene_west1'};
           this.initVR();
@@ -39,10 +41,11 @@
       initVR() {
         // 初始化krpano
         embedpano({
+          id: this.station.id,
           xml: '/static/xml/' + this.station.id + '.xml',
           swf: '/static/krpano.swf',
           target: 'pano',
-          html5: 'auto',
+          html5: 'auto', // never 使用flash viewer
           mobilescale: 1.0,
           passQueryParameters: true,
           onready: krpano => {
