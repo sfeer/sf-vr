@@ -27,6 +27,8 @@
         <cube url="../panos/s6/gp1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
+    <hotspot name="spot1" style="spot_href" ath="-103.951" atv="49.170" href="/s4|scene_aisle1|163.889,1.576,120" text="返回"/>
+    <hotspot name="spot2" style="spot_arrow" ath="95.065" atv="47.424" linkedscene="scene_gp2" text="前进"/>
   </scene>
 
   <scene name="scene_gp2" title="gp2" onstart="" thumburl="../panos/s6/gp2.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -43,6 +45,8 @@
         <cube url="../panos/s6/gp2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
+    <hotspot name="spot1" style="spot_arrow" ath="89.462" atv="45.966" linkedscene="scene_gp3" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-89.937" atv="49.984" linkedscene="scene_gp1" text="前进"/>
   </scene>
 
   <scene name="scene_gp3" title="gp3" onstart="" thumburl="../panos/s6/gp3.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -59,6 +63,8 @@
         <cube url="../panos/s6/gp3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
+    <hotspot name="spot1" style="spot_arrow" ath="86.083" atv="47.430" linkedscene="scene_gp4" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-88.010" atv="49.611" linkedscene="scene_gp2" text="前进"/>
   </scene>
 
   <scene name="scene_gp4" title="gp4" onstart="" thumburl="../panos/s6/gp4.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -75,6 +81,8 @@
         <cube url="../panos/s6/gp4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
+    <hotspot name="spot1" style="spot_arrow" ath="95.465" atv="40.961" linkedscene="scene_gp5" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-90.405" atv="49.881" linkedscene="scene_gp3" text="前进"/>
   </scene>
 
   <scene name="scene_gp5" title="gp5" onstart="" thumburl="../panos/s6/gp5.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -91,6 +99,8 @@
         <cube url="../panos/s6/gp5.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
+    <hotspot name="spot1" style="spot_arrow" ath="98.723" atv="47.235" linkedscene="scene_gp6" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-83.375" atv="40.840" linkedscene="scene_gp4" text="前进"/>
   </scene>
 
   <scene name="scene_gp6" title="gp6" onstart="" thumburl="../panos/s6/gp6.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -107,6 +117,8 @@
         <cube url="../panos/s6/gp6.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
+    <hotspot name="spot1" style="spot_arrow" ath="88.368" atv="53.607" linkedscene="scene_gp7" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-86.566" atv="52.780" linkedscene="scene_gp5" text="前进"/>
   </scene>
 
   <scene name="scene_gp7" title="gp7" onstart="" thumburl="../panos/s6/gp7.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -123,6 +135,8 @@
         <cube url="../panos/s6/gp7.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
+    <hotspot name="spot1" style="spot_arrow" ath="91.283" atv="50.210" linkedscene="scene_gp8" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-91.547" atv="53.119" linkedscene="scene_gp6" text="前进"/>
   </scene>
 
   <scene name="scene_gp8" title="gp8" onstart="" thumburl="../panos/s6/gp8.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -139,6 +153,7 @@
         <cube url="../panos/s6/gp8.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
+    <hotspot name="spot1" style="spot_arrow" ath="-96.929" atv="62.220" linkedscene="scene_gp7" text="前进"/>
   </scene>
 
 </krpano>

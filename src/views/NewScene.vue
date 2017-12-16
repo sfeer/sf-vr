@@ -12,16 +12,16 @@
     name: 'app',
     data() {
       return {
-        station: {}, // 当前站点信息
+        // 当前站点信息
+        station: {}
       }
     },
     watch: {
       $route: function (d) {
-        if (VR.STATIONS[d.name]) {
+        if (_.has(VR.STATIONS, d.name)) {
           // 注销krpano
           removepano(this.station.id);
           this.station = VR.STATIONS[d.name];
-          this.scene = {name: 'scene_west1'};
           this.initVR();
         }
       }
@@ -30,9 +30,7 @@
       const name = this.$route.name;
       if (_.has(VR.STATIONS, name)) {
         this.station = VR.STATIONS[name];
-
-        // 设置标题
-        document.title = this.station.name;
+        document.title = this.station.name; // 设置标题
         this.initVR();
       }
     },
@@ -49,10 +47,21 @@
           mobilescale: 1.0,
           passQueryParameters: true,
           onready: krpano => {
-            krpano.call("loadscene('" + this.station.index + "', null, MERGE)");
+            const sc = this.initScene ? this.initScene : this.station.index;
+            // console.log(this.station, this.initScene, this.initLookat);
+            krpano.call("loadscene('" + sc + "', null, MERGE)");
+            if (this.initLookat) {
+              const arr = _.split(this.initLookat, ',');
+              krpano.call("lookat('" + arr[0] + "','" + arr[1] + "','" + arr[2] + "')");
+            }
             krpano.hooks = {
               // 跨站点场景切换
-              href: url => this.$router.push(url)
+              href: (url) => {
+                const a = url.split('|');
+                this.initScene = a.length > 1 ? a[1] : undefined;
+                this.initLookat = a.length > 2 ? a[2] : undefined;
+                this.$router.push(a[0]);
+              }
             };
             this.krpano = krpano;
           }
