@@ -29,6 +29,7 @@
     </image>
     <hotspot name="spot1" style="spot_href" ath="-116.363" atv="47.802" href="/s4|scene_aisle1|80.684,4.741,120" text="返回"/>
     <hotspot name="spot2" style="spot_arrow" ath="84.060" atv="50.664" linkedscene="scene_gp2" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="-3.162" atv="-0.903" showid="gp1"/>
   </scene>
 
   <scene name="scene_gp2" title="gp2" onstart="" thumburl="../panos/s5/gp2.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -47,6 +48,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="90.166" atv="50.069" linkedscene="scene_gp3" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-88.033" atv="51.013" linkedscene="scene_gp1" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="-1.559" atv="-5.156" showid="gp2"/>
   </scene>
 
   <scene name="scene_gp3" title="gp3" onstart="" thumburl="../panos/s5/gp3.tiles/thumb.jpg" lat="" lng="" heading="">

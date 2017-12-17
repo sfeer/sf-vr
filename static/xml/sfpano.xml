@@ -8,6 +8,7 @@
   <style name="spot_right" url="../img/right_64.png" onloaded="do_crop_animation(64,64,25);add_text()" scale="0.8" onclick="link_scene()"/>
   <style name="spot_look" url="../img/look_64.png" onloaded="add_text()" scale="1" onclick="link_scene()"/>
   <style name="spot_point" onloaded="do_crop_animation(40,40,25);do_init_hotspot()" scale="1" onclick="show_msg()"/>
+  <style name="spot_img" url="../img/point_128.png" onloaded="do_crop_animation(128,128,50)" scale="0.8" onclick="show_img()"/>
 
   <!-- =====ACTION===== -->
 
@@ -30,6 +31,11 @@
   <!-- 点击弹框 -->
   <action name="show_msg">
     jscall(calc('krpano.hooks.showData("' + showid + '");'));
+  </action>
+
+  <!-- 显示图片浏览器 -->
+  <action name="show_img">
+    jscall(calc('krpano.hooks.showImg("' + showid + '");'));
   </action>
 
   <!-- 热点添加动态效果 -->

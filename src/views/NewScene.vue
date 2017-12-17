@@ -1,19 +1,32 @@
 <template>
   <div id="app" style="height:100%">
     <div id="pano"></div>
+    <div id="images">
+      <img v-for="src in images" :src="src">
+    </div>
   </div>
 </template>
 
 <script>
   import _ from 'lodash';
   import VR from '../assets/vr';
+  import Viewer from 'viewerjs';
 
   export default {
     name: 'app',
     data() {
       return {
         // 当前站点信息
-        station: {}
+        station: {},
+        images: ['static/panos/s5/box/1-1.jpg', 'static/panos/s5/box/1-2.jpg', 'static/panos/s5/box/1-3.jpg'],
+        viewerOpt: {
+          title: false,
+          toolbar: false,
+          tooltip: false,
+          rotatable: false,
+          scalable: false,
+          keyboard: false
+        }
       }
     },
     watch: {
@@ -33,6 +46,8 @@
         document.title = this.station.name; // 设置标题
         this.initVR();
       }
+      // 图片浏览器
+      this.viewer = new Viewer(document.getElementById('images'), this.viewerOpt);
     },
     methods: {
       // 初始化全景
@@ -56,11 +71,17 @@
             }
             krpano.hooks = {
               // 跨站点场景切换
-              href: (url) => {
+              href: url => {
                 const a = url.split('|');
                 this.initScene = a.length > 1 ? a[1] : undefined;
                 this.initLookat = a.length > 2 ? a[2] : undefined;
                 this.$router.push(a[0]);
+              },
+              // 显示站点
+              showImg: id => {
+                console.log('显示图片:', id);
+                // todo 根据id 加载对应图片this.images
+                this.viewer.show();
               }
             };
             this.krpano = krpano;
@@ -72,6 +93,8 @@
 </script>
 
 <style lang="scss">
+  @import '~viewerjs/dist/viewer.css';
+
   html {
     height: 100%;
   }
@@ -91,5 +114,9 @@
     width: 100%;
     height: 100%;
     z-index: 0 !important;
+  }
+
+  #images {
+    display: none;
   }
 </style>
