@@ -48,7 +48,7 @@
     <hotspot name="spot1" style="spot_right" ath="-87.697" atv="3.290" linkedscene="scene_east3" linkedscene_lookat="-60.318,4.604,120" text="右转"/>
     <hotspot name="spot2" style="spot_left" ath="84.720" atv="3.909" linkedscene="scene_east1" linkedscene_lookat="52.284,-6.089,120" text="左转"/>
     <hotspot name="spot3" style="spot_arrow" ath="-41.306" atv="13.856" linkedscene="scene_b2_front" linkedscene_lookat="2.026,-0.750,98.579" text="2#主变"/>
-    <hotspot name="spot4" style="spot_arrow" ath="43.753" atv="12.893" linkedscene="scene_b1_front" linkedscene_lookat="1.933,-0.589,98.626" text="1#主变"/>
+    <hotspot name="spot4" style="spot_arrow" ath="43.753" atv="12.893" linkedscene="scene_b1_front" linkedscene_lookat="1.933,-0.589,120" text="1#主变"/>
   </scene>
 
   <scene name="scene_east3" title="东南角" onstart="" thumburl="../panos/s4/east3.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -216,7 +216,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="7.640" atv="-31.221" linkedscene="scene_b1_top" linkedscene_lookat="45.725,25.039,120" text="顶部"/>
     <hotspot name="spot2" style="spot_arrow" ath="-52.503" atv="15.911" linkedscene="scene_b1_back" linkedscene_lookat="-3.264,-0.127,129.359" text="背面"/>
-    <hotspot name="spot3" style="spot_arrow" ath="63.530" atv="14.503" linkedscene="scene_b1_front" linkedscene_lookat="2.026,-0.750,98.579" text="正面"/>
+    <hotspot name="spot3" style="spot_arrow" ath="63.530" atv="14.503" linkedscene="scene_b1_front" linkedscene_lookat="2.026,-0.750,120" text="正面"/>
   </scene>
 
   <scene name="scene_b1_right" title="#1主变-右侧" onstart="" thumburl="../panos/s4/b1_right.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -235,7 +235,7 @@
     </image>
     <hotspot name="spot1" style="spot_left" ath="59.335" atv="15.788" linkedscene="scene_b1_back" linkedscene_lookat="-3.264,-0.127,129.359" text="背部"/>
     <hotspot name="spot2" style="spot_arrow" ath="20.856" atv="-36.780" linkedscene="scene_b1_top" linkedscene_lookat="-131.553,33.226,120" text="顶部"/>
-    <hotspot name="spot3" style="spot_arrow" ath="-64.190" atv="14.872" linkedscene="scene_b1_front" linkedscene_lookat="2.026,-0.750,98.579" text="正面"/>
+    <hotspot name="spot3" style="spot_arrow" ath="-64.190" atv="14.872" linkedscene="scene_b1_front" linkedscene_lookat="2.026,-0.750,120" text="正面"/>
     <hotspot name="spot4" style="spot_img" ath="-24.263" atv="0.338" showid="s4|b1_right1"/>
   </scene>
 
