@@ -294,7 +294,7 @@
     <hotspot name="spot1" style="spot_arrow" ath="-32.315" atv="12.614" linkedscene="scene_b2_left" linkedscene_lookat="6.101,0.678,120" text="左侧"/>
     <hotspot name="spot2" style="spot_arrow" ath="40.666" atv="12.244" linkedscene="scene_b2_right" linkedscene_lookat="4.268,0.610,133.647" text="右侧"/>
     <hotspot name="spot3" style="spot_arrow" ath="127.572" atv="14.552" linkedscene="scene_east2" linkedscene_lookat="-91.389,6.215,120" text="返回"/>
-    <hotspot name="spot1" style="spot_img" ath="-55.444" atv="2.476" showid="s4|b1_front1"/>
+    <hotspot name="spot4" style="spot_img" ath="-55.444" atv="2.476" showid="s4|b1_front1"/>
   </scene>
 
   <scene name="scene_b2_left" title="b2_left" onstart="" thumburl="../panos/s4/b2_left.tiles/thumb.jpg" lat="" lng="" heading="">
