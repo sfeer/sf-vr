@@ -18,7 +18,7 @@
       return {
         // 当前站点信息
         station: {},
-        images: ['static/panos/s5/box/1-1.jpg', 'static/panos/s5/box/1-2.jpg', 'static/panos/s5/box/1-3.jpg'],
+        images: [''],
         viewerOpt: {
           title: false,
           toolbar: false,
@@ -46,6 +46,7 @@
         document.title = this.station.name; // 设置标题
         this.initVR();
       }
+
       // 图片浏览器
       this.viewer = new Viewer(document.getElementById('images'), this.viewerOpt);
     },
@@ -58,12 +59,11 @@
           xml: '/static/xml/' + this.station.id + '.xml',
           swf: '/static/krpano.swf',
           target: 'pano',
-          html5: 'auto', // never 使用flash viewer
+          html5: 'auto', // 默认 auto，never 使用flash viewer
           mobilescale: 1.0,
           passQueryParameters: true,
           onready: krpano => {
             const sc = this.initScene ? this.initScene : this.station.index;
-            // console.log(this.station, this.initScene, this.initLookat);
             krpano.call("loadscene('" + sc + "', null, MERGE)");
             if (this.initLookat) {
               const arr = _.split(this.initLookat, ',');
@@ -78,10 +78,13 @@
                 this.$router.push(a[0]);
               },
               // 显示站点
-              showImg: id => {
-                console.log('显示图片:', id);
-                // todo 根据id 加载对应图片this.images
-                this.viewer.show();
+              showImg: d => {
+                const a = d.split('|');
+                this.images = VR.IMAGES[a[0]][a[1]];
+                this.$nextTick(function () {
+                  this.viewer.update();
+                  this.viewer.show();
+                });
               }
             };
             this.krpano = krpano;
