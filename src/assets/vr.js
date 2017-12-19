@@ -7,7 +7,7 @@ export default {
     s1: {id: 's1', name: '10kV花园总部开关站', fd_id: '7acbe2c8fb9640319e1a924a45aaf0fa', index: 'scene_entrance'},
     s2: {id: 's2', name: '10kV中通开关站', fd_id: 'b1bf18d79476445987e04ccf903986a2', index: 'scene_entrance'},
     s3: {id: 's3', name: '10kV桐城府壹号开关站', fd_id: '045253c418fe41f78fd0dc9bb37ec6a0', index: 'scene_entrance'},
-    s4: {id: 's4', name: '临时名称变电站', index: 'scene_b1_top'},
+    s4: {id: 's4', name: '临时名称变电站', index: 'scene_b2_top'},
     s5: {id: 's5', name: '10kV#1、2电容室', index: 'scene_gp1'},
     s6: {id: 's6', name: '10kV#3、4电容室', index: 'scene_gp1'},
     s8: {id: 's8', name: '110kvGIS室', index: 'scene_topview'}
@@ -19,8 +19,20 @@ export default {
       b1_top1: ['static/panos/s4/box/b1_top11.jpg', 'static/panos/s4/box/b1_top12.jpg'],
       b1_top2: ['static/panos/s4/box/b1_top21.jpg', 'static/panos/s4/box/b1_top22.jpg', 'static/panos/s4/box/b1_top23.jpg'],
       b1_top3: ['static/panos/s4/box/b1_top31.jpg', 'static/panos/s4/box/b1_top32.jpg'],
+      b1_top4: ['static/panos/s4/box/b1_top41.jpg', 'static/panos/s4/box/b1_top42.jpg', 'static/panos/s4/box/b1_top43.jpg'],
+      b1_top5: ['static/panos/s4/box/b1_top51.jpg', 'static/panos/s4/box/b1_top52.jpg', 'static/panos/s4/box/b1_top53.jpg'],
       b1_right1: ['static/panos/s4/box/b1_right1.jpg'],
       b1_front1: ['static/panos/s4/box/b1_front11.jpg', 'static/panos/s4/box/b1_front12.jpg', 'static/panos/s4/box/b1_front13.jpg', 'static/panos/s4/box/b1_front14.jpg'],
+      b1_back1: ['static/panos/s4/box/b1_back11.jpg', 'static/panos/s4/box/b1_back12.jpg', 'static/panos/s4/box/b1_back13.jpg'],
+      b2_top1: ['static/panos/s4/box/b2_top11.jpg', 'static/panos/s4/box/b2_top12.jpg'],
+      b2_top2: ['static/panos/s4/box/b2_top21.jpg', 'static/panos/s4/box/b2_top22.jpg', 'static/panos/s4/box/b2_top23.jpg'],
+      b2_top3: ['static/panos/s4/box/b2_top3.jpg'],
+      b2_top4: ['static/panos/s4/box/b2_top41.jpg', 'static/panos/s4/box/b2_top42.jpg'],
+      b2_top5: ['static/panos/s4/box/b2_top51.jpg', 'static/panos/s4/box/b2_top52.jpg'],
+      b2_left1: ['static/panos/s4/box/b2_left1.jpg'],
+      b2_right1: ['static/panos/s4/box/b2_right1.jpg'],
+      b2_front1: ['static/panos/s4/box/b2_front11.jpg', 'static/panos/s4/box/b2_front12.jpg', 'static/panos/s4/box/b2_front13.jpg', 'static/panos/s4/box/b2_front14.jpg'],
+      b2_back1: ['static/panos/s4/box/b2_back11.jpg', 'static/panos/s4/box/b2_back12.jpg', 'static/panos/s4/box/b2_back13.jpg']
     }
   },
 
