@@ -33,6 +33,26 @@ export default {
       b2_right1: ['static/panos/s4/box/b2_right1.jpg'],
       b2_front1: ['static/panos/s4/box/b2_front11.jpg', 'static/panos/s4/box/b2_front12.jpg', 'static/panos/s4/box/b2_front13.jpg', 'static/panos/s4/box/b2_front14.jpg'],
       b2_back1: ['static/panos/s4/box/b2_back11.jpg', 'static/panos/s4/box/b2_back12.jpg', 'static/panos/s4/box/b2_back13.jpg']
+    },
+    s5: {
+      gp1: ['static/panos/s5/box/gp11.jpg', 'static/panos/s5/box/gp12.jpg', 'static/panos/s5/box/gp13.jpg'],
+      gp2: ['static/panos/s5/box/gp2.jpg'],
+      gp3: ['static/panos/s5/box/gp3.jpg'],
+      gp4: ['static/panos/s5/box/gp4.jpg'],
+      gp5: ['static/panos/s5/box/gp5.jpg'],
+      gp6: ['static/panos/s5/box/gp6.jpg'],
+      gp7: ['static/panos/s5/box/gp7.jpg'],
+      gp8: ['static/panos/s5/box/gp8.jpg']
+    },
+    s6: {
+      gp1: ['static/panos/s6/box/gp11.jpg', 'static/panos/s6/box/gp12.jpg'],
+      gp2: ['static/panos/s6/box/gp2.jpg'],
+      gp3: ['static/panos/s6/box/gp3.jpg'],
+      gp4: ['static/panos/s6/box/gp4.jpg'],
+      gp5: ['static/panos/s6/box/gp5.jpg'],
+      gp6: ['static/panos/s6/box/gp6.jpg'],
+      gp7: ['static/panos/s6/box/gp7.jpg'],
+      gp8: ['static/panos/s6/box/gp8.jpg']
     }
   },
 
