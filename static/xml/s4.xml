@@ -383,6 +383,7 @@
     <hotspot name="spot1" style="spot_left" ath="15.071" atv="24.487" linkedscene="scene_aisle2" text="上楼"/>
     <hotspot name="spot2" style="spot_href" ath="58.254" atv="40.219" text="进入" href="/s5"/>
     <hotspot name="spot3" style="spot_href" ath="-179.803" atv="30.298" text="进入" href="/s6"/>
+    <hotspot name="spot4" style="spot_href" ath="-157.446" atv="21.595" text="进入" href="/s7"/>
   </scene>
 
   <!--一楼过道-->

@@ -15,6 +15,7 @@ export default new Router({
     {path: '/s4', name: 's4', component: NewScene},
     {path: '/s5', name: 's5', component: NewScene},
     {path: '/s6', name: 's6', component: NewScene},
+    {path: '/s7', name: 's7', component: NewScene},
     {path: '/s8', name: 's8', component: NewScene},
     {path: '/scene/:scene', component: Scene}
   ]

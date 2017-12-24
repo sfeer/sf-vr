@@ -10,6 +10,7 @@ export default {
     s4: {id: 's4', name: '临时名称变电站', index: 'scene_b2_top'},
     s5: {id: 's5', name: '10kV#1、2电容室', index: 'scene_gp1'},
     s6: {id: 's6', name: '10kV#3、4电容室', index: 'scene_gp1'},
+    s7: {id: 's7', name: '10kV开关室', index: 'scene_c2'},
     s8: {id: 's8', name: '110kvGIS室', index: 'scene_topview'}
   },
 
@@ -53,6 +54,19 @@ export default {
       gp6: ['static/panos/s6/box/gp6.jpg'],
       gp7: ['static/panos/s6/box/gp7.jpg'],
       gp8: ['static/panos/s6/box/gp8.jpg']
+    },
+    s7: {
+      ru1: ['static/panos/s7/box/ru11.jpg', 'static/panos/s7/box/ru12.jpg', 'static/panos/s7/box/ru13.jpg'],
+      rm1: ['static/panos/s7/box/rm11.jpg', 'static/panos/s7/box/rm12.jpg', 'static/panos/s7/box/rm13.jpg'],
+      ru2: ['static/panos/s7/box/ru21.jpg', 'static/panos/s7/box/ru22.jpg', 'static/panos/s7/box/ru23.jpg'],
+      rm2: ['static/panos/s7/box/rm21.jpg', 'static/panos/s7/box/rm22.jpg', 'static/panos/s7/box/rm23.jpg'],
+      lu2: ['static/panos/s7/box/lu21.jpg', 'static/panos/s7/box/lu22.jpg'],
+      lm2: ['static/panos/s7/box/lm21.jpg', 'static/panos/s7/box/lm22.jpg', 'static/panos/s7/box/lm23.jpg'],
+      ld2: ['static/panos/s7/box/ld2.jpg'],
+      ru3: ['static/panos/s7/box/ru31.jpg', 'static/panos/s7/box/ru32.jpg', 'static/panos/s7/box/ru33.jpg'],
+      rm3: ['static/panos/s7/box/rm31.jpg', 'static/panos/s7/box/rm32.jpg', 'static/panos/s7/box/rm33.jpg'],
+      lu3: ['static/panos/s7/box/lu31.jpg', 'static/panos/s7/box/lu32.jpg', 'static/panos/s7/box/lu33.jpg'],
+      lm3: ['static/panos/s7/box/lm31.jpg', 'static/panos/s7/box/lm32.jpg', 'static/panos/s7/box/lm33.jpg'],
     }
   },
 
