@@ -118,6 +118,47 @@ export default {
       lm14: ['static/panos/s7/box/lm141.jpg', 'static/panos/s7/box/lm142.jpg', 'static/panos/s7/box/lm143.jpg'],
       lu15: ['static/panos/s7/box/lu151.jpg', 'static/panos/s7/box/lu152.jpg', 'static/panos/s7/box/lu153.jpg'],
       lm15: ['static/panos/s7/box/lm151.jpg', 'static/panos/s7/box/lm152.jpg', 'static/panos/s7/box/lm153.jpg'],
+
+      lu16: ['static/panos/s7/box/lu161.jpg', 'static/panos/s7/box/lu162.jpg', 'static/panos/s7/box/lu163.jpg'],
+      lm16: ['static/panos/s7/box/lm161.jpg', 'static/panos/s7/box/lm162.jpg', 'static/panos/s7/box/lm163.jpg'],
+      lu17: ['static/panos/s7/box/lu171.jpg', 'static/panos/s7/box/lu172.jpg'],
+      lm17: ['static/panos/s7/box/lm171.jpg', 'static/panos/s7/box/lm172.jpg', 'static/panos/s7/box/lm173.jpg'],
+      lu18: ['static/panos/s7/box/lu181.jpg', 'static/panos/s7/box/lu182.jpg', 'static/panos/s7/box/lu183.jpg'],
+      lm18: ['static/panos/s7/box/lm181.jpg', 'static/panos/s7/box/lm182.jpg', 'static/panos/s7/box/lm183.jpg'],
+
+      lu19: ['static/panos/s7/box/lu191.jpg', 'static/panos/s7/box/lu192.jpg', 'static/panos/s7/box/lu193.jpg'],
+      lm19: ['static/panos/s7/box/lm191.jpg', 'static/panos/s7/box/lm192.jpg', 'static/panos/s7/box/lm193.jpg'],
+      lu20: ['static/panos/s7/box/lu201.jpg', 'static/panos/s7/box/lu202.jpg'],
+      lm20: ['static/panos/s7/box/lm201.jpg', 'static/panos/s7/box/lm202.jpg', 'static/panos/s7/box/lm203.jpg'],
+      lu21: ['static/panos/s7/box/lu211.jpg', 'static/panos/s7/box/lu212.jpg'],
+      lm21: ['static/panos/s7/box/lm211.jpg', 'static/panos/s7/box/lm212.jpg', 'static/panos/s7/box/lm213.jpg'],
+
+      lu22: ['static/panos/s7/box/lu221.jpg', 'static/panos/s7/box/lu222.jpg'],
+      lm22: ['static/panos/s7/box/lm221.jpg', 'static/panos/s7/box/lm222.jpg', 'static/panos/s7/box/lm223.jpg'],
+      lu23: ['static/panos/s7/box/lu231.jpg', 'static/panos/s7/box/lu232.jpg'],
+      lm23: ['static/panos/s7/box/lm231.jpg', 'static/panos/s7/box/lm232.jpg', 'static/panos/s7/box/lm233.jpg'],
+      lu24: ['static/panos/s7/box/lu241.jpg', 'static/panos/s7/box/lu242.jpg'],
+      lm24: ['static/panos/s7/box/lm241.jpg', 'static/panos/s7/box/lm242.jpg', 'static/panos/s7/box/lm243.jpg'],
+
+      lu25: ['static/panos/s7/box/lu251.jpg', 'static/panos/s7/box/lu252.jpg'],
+      lm25: ['static/panos/s7/box/lm251.jpg', 'static/panos/s7/box/lm252.jpg', 'static/panos/s7/box/lm253.jpg'],
+      lu26: ['static/panos/s7/box/lu251.jpg', 'static/panos/s7/box/lu262.jpg'],
+      lm26: ['static/panos/s7/box/lm261.jpg', 'static/panos/s7/box/lm262.jpg', 'static/panos/s7/box/lm263.jpg'],
+      lu27: ['static/panos/s7/box/lu261.jpg', 'static/panos/s7/box/lu272.jpg'],
+      lm27: ['static/panos/s7/box/lm271.jpg', 'static/panos/s7/box/lm272.jpg', 'static/panos/s7/box/lm273.jpg'],
+
+      r28: [
+        'static/panos/s7/box/r281.jpg', 'static/panos/s7/box/r282.jpg', 'static/panos/s7/box/r283.jpg',
+        'static/panos/s7/box/r284.jpg', 'static/panos/s7/box/r285.jpg', 'static/panos/s7/box/r286.jpg',
+        'static/panos/s7/box/r287.jpg', 'static/panos/s7/box/r288.jpg', 'static/panos/s7/box/r289.jpg',
+        'static/panos/s7/box/r28a.jpg', 'static/panos/s7/box/r28b.jpg'
+      ],
+      l28: [
+        'static/panos/s7/box/l281.jpg', 'static/panos/s7/box/l282.jpg', 'static/panos/s7/box/l283.jpg',
+        'static/panos/s7/box/l284.jpg', 'static/panos/s7/box/l285.jpg', 'static/panos/s7/box/l286.jpg',
+        'static/panos/s7/box/l287.jpg', 'static/panos/s7/box/l288.jpg', 'static/panos/s7/box/l289.jpg',
+        'static/panos/s7/box/l28a.jpg', 'static/panos/s7/box/l28b.jpg'
+      ]
     }
   },
 
