@@ -35,6 +35,7 @@
           // 注销krpano
           removepano(this.station.id);
           this.station = VR.STATIONS[d.name];
+          document.title = this.station.name; // 设置标题
           this.initVR();
         }
       }

@@ -83,7 +83,7 @@
     </image>
     <hotspot name="spot1" style="spot_right" ath="-79.403" atv="5.459" linkedscene="scene_east1" linkedscene_lookat="-58.479,8.749,120" text="右转"/>
     <hotspot name="spot2" style="spot_left" ath="80.737" atv="6.628" linkedscene="scene_west1" linkedscene_lookat="52.284,-6.089,120" text="左转"/>
-    <hotspot name="spot3" style="spot_arrow" ath="1.356" atv="-8.524" linkedscene="scene_aisle1" text="进入"/>
+    <hotspot name="spot3" style="spot_arrow" ath="1.356" atv="-8.524" linkedscene="scene_aisle1" text="进入" linkedscene_lookat="44.206,13.628,120"/>
   </scene>
 
   <scene name="scene_south" title="南面" onstart="" thumburl="../panos/s4/south.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -364,7 +364,7 @@
 
   <!--一楼过道-->
   <scene name="scene_aisle1" title="aisle1" onstart="" thumburl="../panos/s4/aisle1.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="44.206" vlookat="13.628" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s4/aisle1.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -377,7 +377,7 @@
         <cube url="../panos/s4/aisle1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_left" ath="15.071" atv="24.487" linkedscene="scene_aisle2" text="上楼"/>
+    <hotspot name="spot1" style="spot_left" ath="15.071" atv="24.487" linkedscene="scene_aisle2" text="上楼" linkedscene_lookat="128.738,13.711,120"/>
     <hotspot name="spot2" style="spot_href" ath="58.254" atv="40.219" text="进入" href="/s5"/>
     <hotspot name="spot3" style="spot_href" ath="-179.803" atv="30.298" text="进入" href="/s6"/>
     <hotspot name="spot4" style="spot_href" ath="-157.446" atv="21.595" text="进入" href="/s7"/>
@@ -385,7 +385,7 @@
 
   <!--一楼过道-->
   <scene name="scene_aisle2" title="aisle2" onstart="" thumburl="../panos/s4/aisle2.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="128.738" vlookat="13.711" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s4/aisle2.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -398,12 +398,13 @@
         <cube url="../panos/s4/aisle2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="128.817" atv="-12.376" linkedscene="scene_aisle3" text="上楼"/>
+    <hotspot name="spot1" style="spot_arrow" ath="128.817" atv="-12.376" linkedscene="scene_aisle3" text="上楼" linkedscene_lookat="-5.715,8.534,120"/>
+    <hotspot name="spot2" style="spot_arrow" ath="129.325" atv="25.746" linkedscene="scene_aisle1" text="下楼" linkedscene_lookat="44.206,13.628,120"/>
   </scene>
 
   <!--二楼过道-->
   <scene name="scene_aisle3" title="aisle3" onstart="" thumburl="../panos/s4/aisle3.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="-5.715" vlookat="8.534" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s4/aisle3.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -416,14 +417,14 @@
         <cube url="../panos/s4/aisle3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="-37.087" atv="19.412" linkedscene="scene_aisle4" text="前进"/>
-    <hotspot name="spot2" style="spot_arrow" ath="36.467" atv="20.342" linkedscene="scene_aisle4" text="下楼"/>
+    <hotspot name="spot1" style="spot_arrow" ath="-37.087" atv="19.412" linkedscene="scene_aisle4" text="前进" linkedscene_lookat="28.574,-0.216,120"/>
+    <hotspot name="spot2" style="spot_arrow" ath="36.467" atv="20.342" linkedscene="scene_aisle2" text="下楼" linkedscene_lookat="128.738,13.711,120"/>
     <hotspot name="spot3" style="spot_href" ath="-14.205" atv="14.412" text="进入" href="/s9" />
   </scene>
 
   <!--二楼过道-->
   <scene name="scene_aisle4" title="aisle4" onstart="" thumburl="../panos/s4/aisle4.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="28.574" vlookat="-0.216" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s4/aisle4.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -436,7 +437,7 @@
         <cube url="../panos/s4/aisle4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="119.690" atv="11.857" linkedscene="scene_aisle3" text="前进"/>
+    <hotspot name="spot1" style="spot_arrow" ath="119.690" atv="11.857" linkedscene="scene_aisle3" text="前进" linkedscene_lookat="-5.715,8.534,120"/>
     <hotspot name="spot2" style="spot_href" ath="30.156" atv="33.373" text="进入" href="/s9|scene_c19" />
     <hotspot name="spot3" style="spot_href" ath="-69.584" atv="21.524" text="进入"  href="/s8|scene_gp1|-91.523,8.861,120" />
   </scene>
