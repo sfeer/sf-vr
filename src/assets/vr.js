@@ -7,11 +7,12 @@ export default {
     s1: {id: 's1', name: '10kV花园总部开关站', fd_id: '7acbe2c8fb9640319e1a924a45aaf0fa', index: 'scene_entrance'},
     s2: {id: 's2', name: '10kV中通开关站', fd_id: 'b1bf18d79476445987e04ccf903986a2', index: 'scene_entrance'},
     s3: {id: 's3', name: '10kV桐城府壹号开关站', fd_id: '045253c418fe41f78fd0dc9bb37ec6a0', index: 'scene_entrance'},
-    s4: {id: 's4', name: '临时名称变电站', index: 'scene_b2_top'},
+    s4: {id: 's4', name: '110kV枫塘变电站', index: 'scene_east2'},
     s5: {id: 's5', name: '10kV#1、2电容室', index: 'scene_gp1'},
     s6: {id: 's6', name: '10kV#3、4电容室', index: 'scene_gp1'},
     s7: {id: 's7', name: '10kV开关室', index: 'scene_c2'},
-    s8: {id: 's8', name: '110kvGIS室', index: 'scene_topview'}
+    s8: {id: 's8', name: '110kvGIS室', index: 'scene_view1'},
+    s9: {id: 's9', name: '主控室', index: 'scene_c1'}
   },
 
   // 根据showid查询加载图片
@@ -159,7 +160,8 @@ export default {
         'static/panos/s7/box/l287.jpg', 'static/panos/s7/box/l288.jpg', 'static/panos/s7/box/l289.jpg',
         'static/panos/s7/box/l28a.jpg', 'static/panos/s7/box/l28b.jpg'
       ]
-    }
+    },
+    s8: {}
   },
 
   // 场景初始化视角, uuid=uuid.uuid4()

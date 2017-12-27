@@ -7,9 +7,6 @@
   <include url="loadingpercenttext.xml"/>
   <include url="loadingbar.xml"/>
 
-  <!-- 调试时使用editor插件 -->
-  <!--<plugin name="editor" url="../plugins/editor.swf" keep="true"/>-->
-
   <!-- 关闭右键菜单 -->
   <contextmenu fullscreen="false" versioninfo="false"/>
 
@@ -421,6 +418,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-37.087" atv="19.412" linkedscene="scene_aisle4" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="36.467" atv="20.342" linkedscene="scene_aisle4" text="下楼"/>
+    <hotspot name="spot3" style="spot_href" ath="-14.205" atv="14.412" text="进入" href="/s9" />
   </scene>
 
   <!--二楼过道-->
@@ -439,6 +437,8 @@
       </level>
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="119.690" atv="11.857" linkedscene="scene_aisle3" text="前进"/>
+    <hotspot name="spot2" style="spot_href" ath="30.156" atv="33.373" text="进入" href="/s9|scene_c19" />
+    <hotspot name="spot3" style="spot_href" ath="-69.584" atv="21.524" text="进入"  href="/s8|scene_gp1|-91.523,8.861,120" />
   </scene>
 
 
