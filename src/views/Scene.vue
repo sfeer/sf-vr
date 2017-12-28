@@ -483,7 +483,7 @@
       font-weight: 700;
       top: 100%;
     }
-    &.avtive {
+    &.active {
       background: rgba(255, 102, 0, .6) url(../assets/img/tools_btn.png) no-repeat 3px -47px;
     }
   }

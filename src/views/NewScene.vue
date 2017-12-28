@@ -1,6 +1,25 @@
 <template>
   <div id="app" style="height:100%">
     <div id="pano"></div>
+    <div id="guide-btn" data-tip="快速导航" :class="showGuide?'active':''" @click="showGuide=!showGuide"></div>
+    <div v-show="showGuide" id="guide-map">
+      <div class="row">
+        <div class="title">室外</div>
+        <router-link to="/s4">1#主变</router-link>
+        <router-link to="/s4">2#主变</router-link>
+      </div>
+      <div class="row">
+        <div class="title">一楼</div>
+        <router-link to="/s5">10kV#1、2电容室</router-link>
+        <router-link to="/s6">10kV#3、4电容室</router-link>
+        <router-link to="/s7">10kV开关室</router-link>
+      </div>
+      <div class="row">
+        <div class="title">二楼</div>
+        <router-link to="/s9">主控室</router-link>
+        <router-link to="/s8">110kvGIS室</router-link>
+      </div>
+    </div>
     <div id="images">
       <img v-for="src in images" :src="src">
     </div>
@@ -19,6 +38,7 @@
         // 当前站点信息
         station: {},
         images: [''],
+        showGuide: false,
         viewerOpt: {
           title: false,
           toolbar: false,
@@ -36,6 +56,7 @@
           removepano(this.station.id);
           this.station = VR.STATIONS[d.name];
           document.title = this.station.name; // 设置标题
+          this.showGuide = false;
           this.initVR();
         }
       }
@@ -45,6 +66,7 @@
       if (_.has(VR.STATIONS, name)) {
         this.station = VR.STATIONS[name];
         document.title = this.station.name; // 设置标题
+        this.showGuide = false;
         this.initVR();
       }
 
@@ -122,5 +144,57 @@
 
   #images {
     display: none;
+  }
+
+  #guide-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, .6) url(../assets/img/tools_btn.png) no-repeat -47px -47px;
+    &:after {
+      content: attr(data-tip);
+      position: absolute;
+      text-align: center;
+      text-shadow: 0 0 2px #000;
+      color: #fff;
+      font-weight: 700;
+      top: 100%;
+    }
+    &.active {
+      background: rgba(255, 102, 0, .6) url(../assets/img/tools_btn.png) no-repeat 3px -47px;
+    }
+  }
+
+  #guide-map {
+    position: fixed;
+    bottom: 0;
+    left: 8%;
+    border-radius: 5px 5px 0 0;
+    background-color: rgba(255, 255, 255, .6);
+
+    .row {
+      display: flex;
+      border: 1px dashed #666;
+      padding: 5px 10px;
+      margin: 10px;
+
+      .title {
+        font-weight: 600;
+        color: #444;
+        padding: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        background: #242833;
+        color: #fff;
+        margin: 0 2px;
+        padding: 5px;
+      }
+    }
   }
 </style>
