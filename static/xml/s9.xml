@@ -26,7 +26,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="89.348" atv="44.837" linkedscene="scene_c2" text="前进" linkedscene_lookat="89.953,10.385,120"/>
     <hotspot name="spot2" style="spot_right" ath="-51.713" atv="37.687" linkedscene="scene_c11" text="右转" linkedscene_lookat="-359.426,11.988,120"/>
-    <hotspot name="spot3" style="spot_href" ath="-123.656" atv="17.477" href="/s4|scene_aisle3|-5.715,8.534,120" text="返回"/>
+    <hotspot name="spot3" style="spot_href" ath="-123.656" atv="17.477" href="s4|scene_aisle3|-5.715,8.534,120" text="返回"/>
   </scene>
 
   <scene name="scene_c2" title="c2" onstart="" thumburl="../panos/s9/c2.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -268,7 +268,7 @@
         <cube url="../panos/s9/c19.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_href" ath="-54.439" atv="26.480" href="/s4|scene_aisle4|30.923,10.044,120" text="返回"/>
+    <hotspot name="spot1" style="spot_href" ath="-54.439" atv="26.480" href="s4|scene_aisle4|30.923,10.044,120" text="返回"/>
     <hotspot name="spot2" style="spot_right" ath="-38.283" atv="45.320" linkedscene="scene_c20" text="右转" linkedscene_lookat="-90.476,12.864,120"/>
     <hotspot name="spot3" style="spot_left" ath="152.373" atv="36.307" linkedscene="scene_c12" text="左转" linkedscene_lookat="89.934,13.957.120"/>
     <hotspot name="spot4" style="spot_left" ath="-174.711" atv="24.166" linkedscene="scene_c11" text="左转" linkedscene_lookat="-359.426,11.988,120"/>
@@ -291,7 +291,7 @@
       </level>
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-89.897" atv="44.882" linkedscene="scene_c21" text="前进" linkedscene_lookat="-89.501,10.425,120"/>
-    <hotspot name="spot2" style="spot_href" ath="68.289" atv="26.097" href="/s4|scene_aisle4|30.923,10.044,120" text="返回"/>
+    <hotspot name="spot2" style="spot_href" ath="68.289" atv="26.097" href="s4|scene_aisle4|30.923,10.044,120" text="返回"/>
     <hotspot name="spot3" style="spot_left" ath="47.897" atv="36.491" linkedscene="scene_c19" text="左转" linkedscene_lookat="-222.080,1.994,120"/>
   </scene>
 

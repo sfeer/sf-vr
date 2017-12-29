@@ -5,19 +5,19 @@
     <div v-show="showGuide" id="guide-map">
       <div class="row">
         <div class="title">室外</div>
-        <router-link to="/s4">1#主变</router-link>
-        <router-link to="/s4">2#主变</router-link>
+        <div class="btn" @click="sid='s4'">1#主变</div>
+        <div class="btn" @click="sid='s4'">2#主变</div>
       </div>
       <div class="row">
         <div class="title">一楼</div>
-        <router-link to="/s5">10kV#1、2电容室</router-link>
-        <router-link to="/s6">10kV#3、4电容室</router-link>
-        <router-link to="/s7">10kV开关室</router-link>
+        <div class="btn" @click="sid='s5'">#1、2电容室</div>
+        <div class="btn" @click="sid='s6'">#3、4电容室</div>
+        <div class="btn" @click="sid='s7'">开关室</div>
       </div>
       <div class="row">
         <div class="title">二楼</div>
-        <router-link to="/s9">主控室</router-link>
-        <router-link to="/s8">110kvGIS室</router-link>
+        <div class="btn" @click="sid='s9'">主控室</div>
+        <div class="btn" @click="sid='s8'">GIS室</div>
       </div>
     </div>
     <div id="images">
@@ -35,6 +35,7 @@
     name: 'app',
     data() {
       return {
+        sid: '',
         // 当前站点信息
         station: {},
         images: [''],
@@ -50,11 +51,12 @@
       }
     },
     watch: {
-      $route: function (d) {
-        if (_.has(VR.STATIONS, d.name)) {
+      sid: function (sid) {
+        console.log(sid);
+        if (_.has(VR.STATIONS, sid)) {
           // 注销krpano
           removepano(this.station.id);
-          this.station = VR.STATIONS[d.name];
+          this.station = VR.STATIONS[sid];
           document.title = this.station.name; // 设置标题
           this.showGuide = false;
           this.initVR();
@@ -62,14 +64,7 @@
       }
     },
     mounted() {
-      const name = this.$route.name;
-      if (_.has(VR.STATIONS, name)) {
-        this.station = VR.STATIONS[name];
-        document.title = this.station.name; // 设置标题
-        this.showGuide = false;
-        this.initVR();
-      }
-
+      this.sid = this.$route.name;
       // 图片浏览器
       this.viewer = new Viewer(document.getElementById('images'), this.viewerOpt);
     },
@@ -96,9 +91,9 @@
               // 跨站点场景切换
               href: url => {
                 const a = url.split('|');
+                this.sid = a[0];
                 this.initScene = a.length > 1 ? a[1] : undefined;
                 this.initLookat = a.length > 2 ? a[2] : undefined;
-                this.$router.push(a[0]);
               },
               // 显示站点
               showImg: d => {
@@ -170,10 +165,12 @@
   }
 
   #guide-map {
+    z-index: 100;
     position: fixed;
-    bottom: 0;
-    left: 8%;
-    border-radius: 5px 5px 0 0;
+    top: 50%;
+    left: 0;
+    margin-top: -80px;
+    border-radius: 0 5px 5px 0;
     background-color: rgba(255, 255, 255, .6);
 
     .row {
@@ -185,11 +182,11 @@
       .title {
         font-weight: 600;
         color: #444;
-        padding: 5px;
+        padding: 5px 0;
       }
 
-      a {
-        text-decoration: none;
+      .btn {
+        cursor: pointer;
         background: #242833;
         color: #fff;
         margin: 0 2px;

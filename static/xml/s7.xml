@@ -24,7 +24,7 @@
         <cube url="../panos/s7/c2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_href" ath="171.045" atv="13.881" href="/s4|scene_aisle1|200.057,0.672,120" text="返回"/>
+    <hotspot name="spot1" style="spot_href" ath="171.045" atv="13.881" href="s4|scene_aisle1|200.057,0.672,120" text="返回"/>
     <hotspot name="spot2" style="spot_arrow" ath="-63.097" atv="33.489" linkedscene="scene_c5" text="前进"/>
     <hotspot name="spot3" style="spot_img" ath="65.846" atv="-12.660" showid="s7|ru1"/>
     <hotspot name="spot4" style="spot_img" ath="64.646" atv="14.233" showid="s7|rm1"/>
