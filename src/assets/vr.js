@@ -208,6 +208,141 @@ export default {
       v103: ['static/panos/s8/box/v103.jpg'],
       v104: ['static/panos/s8/box/v104.jpg'],
       v105: ['static/panos/s8/box/v105.jpg']
+    },
+    s9: {
+      a: ['static/panos/s9/box/a1.jpg', 'static/panos/s9/box/a2.jpg', 'static/panos/s9/box/a3.jpg'],
+      ab: ['static/panos/s9/box/ab1.jpg', 'static/panos/s9/box/ab2.jpg', 'static/panos/s9/box/ab3.jpg'],
+      b: [
+        'static/panos/s9/box/b1.jpg', 'static/panos/s9/box/b2.jpg', 'static/panos/s9/box/b3.jpg', 'static/panos/s9/box/b4.jpg',
+        'static/panos/s9/box/b5.jpg', 'static/panos/s9/box/b6.jpg', 'static/panos/s9/box/b7.jpg', 'static/panos/s9/box/b8.jpg'
+      ],
+      bb: [
+        'static/panos/s9/box/bb1.jpg', 'static/panos/s9/box/bb2.jpg', 'static/panos/s9/box/bb3.jpg', 'static/panos/s9/box/bb4.jpg',
+        'static/panos/s9/box/bb5.jpg', 'static/panos/s9/box/bb6.jpg'
+      ],
+      c: [
+        'static/panos/s9/box/c1.jpg', 'static/panos/s9/box/c2.jpg', 'static/panos/s9/box/c3.jpg', 'static/panos/s9/box/c4.jpg',
+        'static/panos/s9/box/c5.jpg'
+      ],
+      cb: ['static/panos/s9/box/cb1.jpg', 'static/panos/s9/box/cb2.jpg', 'static/panos/s9/box/cb3.jpg'],
+      d: [
+        'static/panos/s9/box/d1.jpg', 'static/panos/s9/box/d2.jpg', 'static/panos/s9/box/d3.jpg', 'static/panos/s9/box/d4.jpg',
+        'static/panos/s9/box/d5.jpg'
+      ],
+      db: ['static/panos/s9/box/db1.jpg', 'static/panos/s9/box/db2.jpg', 'static/panos/s9/box/db3.jpg', 'static/panos/s9/box/db4.jpg'],
+      e: ['static/panos/s9/box/e1.jpg', 'static/panos/s9/box/e2.jpg', 'static/panos/s9/box/e3.jpg'],
+      eb: ['static/panos/s9/box/eb1.jpg', 'static/panos/s9/box/eb2.jpg', 'static/panos/s9/box/eb3.jpg'],
+      f: [
+        'static/panos/s9/box/f1.jpg', 'static/panos/s9/box/f2.jpg', 'static/panos/s9/box/f3.jpg', 'static/panos/s9/box/f4.jpg',
+        'static/panos/s9/box/f5.jpg', 'static/panos/s9/box/f6.jpg', 'static/panos/s9/box/f7.jpg', 'static/panos/s9/box/f8.jpg'
+      ],
+      fb: [
+        'static/panos/s9/box/fb1.jpg', 'static/panos/s9/box/fb2.jpg', 'static/panos/s9/box/fb3.jpg', 'static/panos/s9/box/fb4.jpg',
+        'static/panos/s9/box/fb5.jpg', 'static/panos/s9/box/fb6.jpg'
+      ],
+      g: ['static/panos/s9/box/g1.jpg', 'static/panos/s9/box/g2.jpg', 'static/panos/s9/box/g3.jpg', 'static/panos/s9/box/g4.jpg'],
+      gb: ['static/panos/s9/box/gb1.jpg', 'static/panos/s9/box/gb2.jpg'],
+      h: [
+        'static/panos/s9/box/h1.jpg', 'static/panos/s9/box/h2.jpg', 'static/panos/s9/box/h3.jpg', 'static/panos/s9/box/h4.jpg',
+        'static/panos/s9/box/h5.jpg', 'static/panos/s9/box/h6.jpg', 'static/panos/s9/box/h7.jpg', 'static/panos/s9/box/h8.jpg',
+        'static/panos/s9/box/h9.jpg', 'static/panos/s9/box/h10.jpg', 'static/panos/s9/box/h11.jpg'
+      ],
+      hb: [
+        'static/panos/s9/box/hb1.jpg', 'static/panos/s9/box/hb2.jpg', 'static/panos/s9/box/hb3.jpg', 'static/panos/s9/box/hb4.jpg',
+        'static/panos/s9/box/hb5.jpg'
+      ],
+      i: [
+        'static/panos/s9/box/i1.jpg', 'static/panos/s9/box/i2.jpg', 'static/panos/s9/box/i3.jpg', 'static/panos/s9/box/i4.jpg',
+        'static/panos/s9/box/i5.jpg', 'static/panos/s9/box/i6.jpg', 'static/panos/s9/box/i7.jpg', 'static/panos/s9/box/i8.jpg',
+        'static/panos/s9/box/i9.jpg'
+      ],
+      ib: ['static/panos/s9/box/ib1.jpg', 'static/panos/s9/box/ib2.jpg', 'static/panos/s9/box/ib3.jpg', 'static/panos/s9/box/ib4.jpg'],
+      j: [
+        'static/panos/s9/box/j1.jpg', 'static/panos/s9/box/j2.jpg', 'static/panos/s9/box/j3.jpg', 'static/panos/s9/box/j4.jpg',
+        'static/panos/s9/box/j5.jpg', 'static/panos/s9/box/j6.jpg', 'static/panos/s9/box/j7.jpg', 'static/panos/s9/box/j8.jpg',
+        'static/panos/s9/box/j9.jpg', 'static/panos/s9/box/j10.jpg'
+      ],
+      jb: ['static/panos/s9/box/jb1.jpg', 'static/panos/s9/box/jb2.jpg', 'static/panos/s9/box/jb3.jpg', 'static/panos/s9/box/jb4.jpg'],
+      k: [
+        'static/panos/s9/box/k1.jpg', 'static/panos/s9/box/k2.jpg', 'static/panos/s9/box/k3.jpg', 'static/panos/s9/box/k4.jpg',
+        'static/panos/s9/box/k5.jpg', 'static/panos/s9/box/k6.jpg', 'static/panos/s9/box/k7.jpg', 'static/panos/s9/box/k8.jpg'
+      ],
+      kb: [
+        'static/panos/s9/box/kb1.jpg', 'static/panos/s9/box/kb2.jpg', 'static/panos/s9/box/kb3.jpg', 'static/panos/s9/box/kb4.jpg',
+        'static/panos/s9/box/kb5.jpg'
+      ],
+      l: ['static/panos/s9/box/l1.jpg', 'static/panos/s9/box/l2.jpg', 'static/panos/s9/box/l3.jpg', 'static/panos/s9/box/l4.jpg'],
+      lb: [
+        'static/panos/s9/box/lb1.jpg', 'static/panos/s9/box/lb2.jpg', 'static/panos/s9/box/lb3.jpg', 'static/panos/s9/box/lb4.jpg',
+        'static/panos/s9/box/lb5.jpg'
+      ],
+      m: [
+        'static/panos/s9/box/m1.jpg', 'static/panos/s9/box/m2.jpg', 'static/panos/s9/box/m3.jpg', 'static/panos/s9/box/m4.jpg',
+        'static/panos/s9/box/m5.jpg', 'static/panos/s9/box/m6.jpg', 'static/panos/s9/box/m7.jpg', 'static/panos/s9/box/m8.jpg'
+      ],
+      n: ['static/panos/s9/box/n1.jpg', 'static/panos/s9/box/n2.jpg', 'static/panos/s9/box/n3.jpg'],
+      o: ['static/panos/s9/box/o1.jpg'],
+      ob: ['static/panos/s9/box/ob1.jpg', 'static/panos/s9/box/ob2.jpg'],
+      p: [
+        'static/panos/s9/box/p1.jpg', 'static/panos/s9/box/p2.jpg', 'static/panos/s9/box/p3.jpg', 'static/panos/s9/box/p4.jpg',
+        'static/panos/s9/box/p5.jpg'
+      ],
+      q: [
+        'static/panos/s9/box/q1.jpg', 'static/panos/s9/box/q2.jpg', 'static/panos/s9/box/q3.jpg', 'static/panos/s9/box/q4.jpg',
+        'static/panos/s9/box/q5.jpg'
+      ],
+      r: [
+        'static/panos/s9/box/r1.jpg', 'static/panos/s9/box/r2.jpg', 'static/panos/s9/box/r3.jpg', 'static/panos/s9/box/r4.jpg',
+        'static/panos/s9/box/r5.jpg', 'static/panos/s9/box/r6.jpg', 'static/panos/s9/box/r7.jpg', 'static/panos/s9/box/r8.jpg',
+        'static/panos/s9/box/r9.jpg'
+      ],
+      rb: [
+        'static/panos/s9/box/rb1.jpg', 'static/panos/s9/box/rb2.jpg', 'static/panos/s9/box/rb3.jpg', 'static/panos/s9/box/rb4.jpg',
+        'static/panos/s9/box/rb5.jpg'
+      ],
+      s: [
+        'static/panos/s9/box/s1.jpg', 'static/panos/s9/box/s2.jpg', 'static/panos/s9/box/s3.jpg', 'static/panos/s9/box/s4.jpg',
+        'static/panos/s9/box/s5.jpg', 'static/panos/s9/box/s6.jpg', 'static/panos/s9/box/s7.jpg', 'static/panos/s9/box/s8.jpg',
+        'static/panos/s9/box/s9.jpg', 'static/panos/s9/box/s10.jpg', 'static/panos/s9/box/s11.jpg'
+      ],
+      sb: [
+        'static/panos/s9/box/sb1.jpg', 'static/panos/s9/box/sb2.jpg', 'static/panos/s9/box/sb3.jpg', 'static/panos/s9/box/sb4.jpg',
+        'static/panos/s9/box/sb5.jpg', 'static/panos/s9/box/sb6.jpg'
+      ],
+      t: [
+        'static/panos/s9/box/t1.jpg', 'static/panos/s9/box/t2.jpg', 'static/panos/s9/box/t3.jpg', 'static/panos/s9/box/t4.jpg',
+        'static/panos/s9/box/t5.jpg', 'static/panos/s9/box/t6.jpg', 'static/panos/s9/box/t7.jpg', 'static/panos/s9/box/t8.jpg'
+      ],
+      tb: [
+        'static/panos/s9/box/tb1.jpg', 'static/panos/s9/box/tb2.jpg', 'static/panos/s9/box/tb3.jpg', 'static/panos/s9/box/tb4.jpg',
+        'static/panos/s9/box/tb5.jpg'
+      ],
+      u: [
+        'static/panos/s9/box/u1.jpg', 'static/panos/s9/box/u2.jpg', 'static/panos/s9/box/u3.jpg', 'static/panos/s9/box/u4.jpg',
+        'static/panos/s9/box/u5.jpg', 'static/panos/s9/box/u6.jpg', 'static/panos/s9/box/u7.jpg'
+      ],
+      ub: [
+        'static/panos/s9/box/ub1.jpg', 'static/panos/s9/box/ub2.jpg', 'static/panos/s9/box/ub3.jpg', 'static/panos/s9/box/ub4.jpg',
+        'static/panos/s9/box/ub5.jpg', 'static/panos/s9/box/ub6.jpg', 'static/panos/s9/box/ub7.jpg', 'static/panos/s9/box/ub8.jpg'
+      ],
+      v: [
+        'static/panos/s9/box/v1.jpg', 'static/panos/s9/box/v2.jpg', 'static/panos/s9/box/v3.jpg', 'static/panos/s9/box/v4.jpg',
+        'static/panos/s9/box/v5.jpg', 'static/panos/s9/box/v6.jpg', 'static/panos/s9/box/v7.jpg'
+      ],
+      vb: [
+        'static/panos/s9/box/vb1.jpg', 'static/panos/s9/box/vb2.jpg', 'static/panos/s9/box/vb3.jpg', 'static/panos/s9/box/vb4.jpg',
+        'static/panos/s9/box/vb5.jpg', 'static/panos/s9/box/vb6.jpg'
+      ],
+      w: [
+        'static/panos/s9/box/w1.jpg', 'static/panos/s9/box/w2.jpg', 'static/panos/s9/box/w3.jpg', 'static/panos/s9/box/w4.jpg',
+        'static/panos/s9/box/w5.jpg', 'static/panos/s9/box/w6.jpg', 'static/panos/s9/box/w7.jpg'
+      ],
+      x: [],
+      xb: [
+        'static/panos/s9/box/xb1.jpg', 'static/panos/s9/box/xb2.jpg', 'static/panos/s9/box/xb3.jpg', 'static/panos/s9/box/xb4.jpg',
+        'static/panos/s9/box/xb5.jpg', 'static/panos/s9/box/xb6.jpg', 'static/panos/s9/box/xb7.jpg', 'static/panos/s9/box/xb8.jpg',
+        'static/panos/s9/box/xb9.jpg', 'static/panos/s9/box/xb10.jpg'
+      ]
     }
   },
 
