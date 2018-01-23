@@ -52,7 +52,6 @@
     },
     watch: {
       sid: function (sid) {
-        console.log(sid);
         if (_.has(VR.STATIONS, sid)) {
           // 注销krpano
           removepano(this.station.id);
@@ -77,7 +76,7 @@
           xml: '/static/xml/' + this.station.id + '.xml',
           swf: '/static/krpano.swf',
           target: 'pano',
-          html5: 'auto', // 默认 auto，never 使用flash viewer
+          html5: 'never', // 默认 auto，never 使用flash viewer
           mobilescale: 1.0,
           passQueryParameters: true,
           onready: krpano => {

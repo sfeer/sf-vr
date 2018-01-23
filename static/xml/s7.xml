@@ -7,6 +7,9 @@
   <include url="loadingpercenttext.xml"/>
   <include url="loadingbar.xml"/>
 
+  <!-- 调试时使用editor插件 -->
+  <plugin name="editor" url="../plugins/editor.swf" keep="true"/>
+
   <!-- 关闭右键菜单 -->
   <contextmenu fullscreen="false" versioninfo="false"/>
 
@@ -30,13 +33,34 @@
     <hotspot name="spot4" style="spot_img" ath="64.646" atv="14.233" showid="s7|rm1"/>
     <hotspot name="spot5" style="spot_img" ath="32.051" atv="-15.314" showid="s7|ru2"/>
     <hotspot name="spot6" style="spot_img" ath="30.899" atv="17.264" showid="s7|rm2"/>
-    <hotspot name="spot7" style="spot_img" ath="-152.671" atv="-10.973" showid="s7|lu2"/>
+    <hotspot name="spot7" style="spot_img" ath="-152.671" atv="-10.973" zorder="70" showid="s7|lu2"/>
     <hotspot name="spot8" style="spot_img" ath="-153.535" atv="16.583" showid="s7|lm2"/>
     <hotspot name="spot9" style="spot_img" ath="-153.863" atv="37.298" showid="s7|ld2"/>
     <hotspot name="spot10" style="spot_img" ath="-2.687" atv="-10.273" showid="s7|ru3"/>
     <hotspot name="spot11" style="spot_img" ath="-3.408" atv="14.632" showid="s7|rm3"/>
     <hotspot name="spot12" style="spot_img" ath="-120.997" atv="-9.073" showid="s7|lu3"/>
     <hotspot name="spot13" style="spot_img" ath="-121.782" atv="12.219" showid="s7|lm3"/>
+
+    <hotspot name="lu1_box" url="../panos/s7/box/ru11.jpg"
+             ath="206.968596" atv="-10.543863" distorted="true" rx="-9.75" ry="4.9" rz="1.05256" width="800" height="600" scale="0.343535"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+
+    <hotspot name="lu1_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[lu1_box].alpha == 1.0,
+                            tween(hotspot[lu1_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[lu1_box].alpha,1.0);
+                          );">
+      <point ath="-169.689678" atv="-20.397997"/>
+      <point ath="-135.243157" atv="-20.772519"/>
+      <point ath="-135.416405" atv="0.502044"/>
+      <point ath="-170.089084" atv="0.168472"/>
+    </hotspot>
   </scene>
 
   <scene name="scene_c5" title="c5" onstart="" thumburl="../panos/s7/c5.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -269,8 +293,8 @@
       </level>
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="76.030" atv="12.076" linkedscene="scene_c26" text="前进" linkedscene_lookat="259.360,14.875,120"/>
-    <hotspot name="spot2" style="spot_img" ath="25.041" atv="3.402" showid="s7|r28" />
-    <hotspot name="spot3" style="spot_img" ath="137.016" atv="2.505" showid="s7|l28" />
+    <hotspot name="spot2" style="spot_img" ath="25.041" atv="3.402" showid="s7|r28"/>
+    <hotspot name="spot3" style="spot_img" ath="137.016" atv="2.505" showid="s7|l28"/>
   </scene>
 
 </krpano>
