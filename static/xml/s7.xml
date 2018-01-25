@@ -325,7 +325,7 @@
       <point ath="34.980" atv="0.530"/>
     </hotspot>
     <hotspot name="rm5_box" url="../panos/s7/box/rm52.jpg"
-             ath="53.488397" atv="19.569204" distorted="true" rx="19.25" ry="4.0" rz="1.211709" width="800" height="635" scale="0.427169"
+             ath="53.398094" atv="19.476272" distorted="true" rx="16.6375" ry="6.0875" rz="1.07201" width="800" height="635" scale="0.424615"
              enabled="false"
              zorder="50"
              alpha="0.0"/>
@@ -338,10 +338,10 @@
                           ,
                             tween(hotspot[rm5_box].alpha,1.0);
                           );">
-      <point ath="34.426" atv="1.826"/>
-      <point ath="74.309" atv="2.722"/>
-      <point ath="73.750" atv="32.066"/>
-      <point ath="34.274" atv="30.192"/>
+      <point ath="34.973" atv="1.979"/>
+      <point ath="74.286" atv="2.427"/>
+      <point ath="73.922" atv="32.070"/>
+      <point ath="34.033" atv="30.281"/>
     </hotspot>
     <hotspot name="ru6_box" url="../panos/s7/box/ru61.jpg"
              ath="21.651069" atv="-9.823016" distorted="true" rx="-16.2" ry="31.6625" rz="2.698331" width="800" height="600" scale="0.274075"
@@ -367,7 +367,7 @@
              enabled="false"
              zorder="50"
              alpha="0.0"/>
-    <hotspot name="rm5_area"
+    <hotspot name="rm6_area"
              alpha="0.0"
              zorder="60"
              capture="false"
@@ -376,10 +376,10 @@
                           ,
                             tween(hotspot[rm6_box].alpha,1.0);
                           );">
-      <point ath="12.147" atv="1.304"/>
-      <point ath="33.047" atv="1.903"/>
-      <point ath="31.869" atv="29.924"/>
-      <point ath="11.510" atv="23.473"/>
+      <point ath="12.219" atv="1.084"/>
+      <point ath="32.977" atv="1.980"/>
+      <point ath="32.108" atv="30.106"/>
+      <point ath="11.514" atv="23.457"/>
     </hotspot>
     <hotspot name="lu4_box" url="../panos/s7/box/lu41.jpg"
              ath="208.906935" atv="-10.192698" distorted="true" rx="-8.0" ry="28.25" rz="-1.843258" width="800" height="518" scale="0.281854"
@@ -476,6 +476,44 @@
       <point ath="-99.007" atv="44.891"/>
       <point ath="-134.792" atv="46.956"/>
     </hotspot>
+    <hotspot name="lu6_box" url="../panos/s7/box/lu61.jpg"
+             ath="-84.193007" atv="-10.252455" distorted="true" rx="-9.0" ry="-34.75" rz="0.480022" width="800" height="607" scale="0.287832"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="lu6_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[lu6_box].alpha == 1.0,
+                            tween(hotspot[lu6_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[lu6_box].alpha,1.0);
+                          );">
+      <point ath="-98.251" atv="-21.941"/>
+      <point ath="-73.675" atv="-17.000"/>
+      <point ath="-73.714" atv="-0.957"/>
+      <point ath="-97.961" atv="-0.814"/>
+    </hotspot>
+    <hotspot name="lm6_box" url="../panos/s7/box/lm62.jpg"
+             ath="-84.299905" atv="13.245923" distorted="true" rx="16.75" ry="-32.5" rz="0.206094" width="800" height="583" scale="0.299872"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="lm6_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[lm6_box].alpha == 1.0,
+                            tween(hotspot[lm6_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[lm6_box].alpha,1.0);
+                          );">
+      <point ath="-97.856" atv="0.252"/>
+      <point ath="-73.984" atv="-0.063"/>
+      <point ath="-73.975" atv="21.679"/>
+      <point ath="-97.676" atv="28.705"/>
+    </hotspot>
   </scene>
 
   <scene name="scene_c8" title="c8" onstart="" thumburl="../panos/s7/c8.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -494,18 +532,240 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-91.197" atv="36.211" linkedscene="scene_c11" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="93.286" atv="34.229" linkedscene="scene_c5" text="前进" linkedscene_lookat="-214.792,10.123,120"/>
-    <hotspot name="spot3" style="spot_img" ath="31.981" atv="-11.288" showid="s7|ru7"/>
-    <hotspot name="spot4" style="spot_img" ath="31.761" atv="14.112" showid="s7|rm7"/>
-    <hotspot name="spot5" style="spot_img" ath="-1.140" atv="-15.903" showid="s7|ru8"/>
-    <hotspot name="spot6" style="spot_img" ath="-2.055" atv="16.816" showid="s7|rm8"/>
-    <hotspot name="spot7" style="spot_img" ath="-33.095" atv="-13.956" showid="s7|ru9"/>
-    <hotspot name="spot8" style="spot_img" ath="-33.615" atv="14.437" showid="s7|ru9"/>
-    <hotspot name="spot9" style="spot_img" ath="160.201" atv="-13.309" showid="s7|lu7"/>
-    <hotspot name="spot10" style="spot_img" ath="159.760" atv="13.594" showid="s7|lm7"/>
-    <hotspot name="spot11" style="spot_img" ath="-169.312" atv="-14.415" showid="s7|lu8"/>
-    <hotspot name="spot12" style="spot_img" ath="-169.985" atv="14.677" showid="s7|lm8"/>
-    <hotspot name="spot13" style="spot_img" ath="-143.236" atv="-10.766" showid="s7|lu9"/>
-    <hotspot name="spot14" style="spot_img" ath="-143.849" atv="12.300" showid="s7|lm9"/>
+    <hotspot name="spot3" style="spot_img" ath="18.105" atv="-26.856" showid="s7|r7"/>
+    <hotspot name="spot4" style="spot_img" ath="-16.879" atv="-26.884" showid="s7|r8"/>
+    <hotspot name="spot5" style="spot_img" ath="-42.872" atv="-21.167" showid="s7|r9"/>
+    <hotspot name="spot6" style="spot_img" ath="148.867" atv="-21.473" showid="s7|l7"/>
+    <hotspot name="spot7" style="spot_img" ath="176.524" atv="-24.554" showid="s7|l8"/>
+    <hotspot name="spot8" style="spot_img" ath="-153.876" atv="-22.497" showid="s7|l9"/>
+    <hotspot name="lu7_box" url="../panos/s7/box/lu71.jpg"
+             ath="160.158012" atv="-10.533245" distorted="true" rx="-10.5" ry="21.0" rz="-0.223025" width="800" height="595" scale="0.293938"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="lu7_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[lu7_box].alpha == 1.0,
+                            tween(hotspot[lu7_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[lu7_box].alpha,1.0);
+                          );">
+      <point ath="148.516" atv="-19.118"/>
+      <point ath="173.662" atv="-22.295"/>
+      <point ath="173.773" atv="0.318"/>
+      <point ath="148.508" atv="0.252"/>
+    </hotspot>
+    <hotspot name="lm7_box" url="../panos/s7/box/lm72.jpg"
+             ath="160.09157" atv="17.673044" distorted="true" rx="17.0" ry="20.5" rz="0.759735" width="800" height="616" scale="0.287832"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="lm7_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[lm7_box].alpha == 1.0,
+                            tween(hotspot[lm7_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[lm7_box].alpha,1.0);
+                          );">
+      <point ath="148.404" atv="1.157"/>
+      <point ath="173.958" atv="1.527"/>
+      <point ath="173.761" atv="29.155"/>
+      <point ath="148.428" atv="25.379"/>
+    </hotspot>
+    <hotspot name="lu8_box" url="../panos/s7/box/lu81.jpg"
+             ath="190.256248" atv="-10.738649" distorted="true" rx="-13.0" ry="-7.75" rz="0.121626" width="800" height="627" scale="0.307767"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="lu8_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[lu8_box].alpha == 1.0,
+                            tween(hotspot[lu8_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[lu8_box].alpha,1.0);
+                          );">
+      <point ath="175.811" atv="-21.891"/>
+      <point ath="-156.210" atv="-20.401"/>
+      <point ath="-156.269" atv="0.409"/>
+      <point ath="175.851" atv="0.327"/>
+    </hotspot>
+    <hotspot name="lm8_box" url="../panos/s7/box/lm82.jpg"
+             ath="190.335222" atv="17.682877" distorted="true" rx="15.5" ry="-10.75" rz="0.181397" width="800" height="706" scale="0.29808"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="lm8_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[lm8_box].alpha == 1.0,
+                            tween(hotspot[lm8_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[lm8_box].alpha,1.0);
+                          );">
+      <point ath="175.947" atv="1.596"/>
+      <point ath="-156.343" atv="1.511"/>
+      <point ath="-156.208" atv="27.593"/>
+      <point ath="175.733" atv="29.333"/>
+    </hotspot>
+    <hotspot name="lu9_box" url="../panos/s7/box/lu91.jpg"
+             ath="216.061403" atv="-9.148176" distorted="true" rx="-9.75" ry="-34.0" rz="0.302392" width="800" height="612" scale="0.248751"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="lu9_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[lu9_box].alpha == 1.0,
+                            tween(hotspot[lu9_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[lu9_box].alpha,1.0);
+                          );">
+      <point ath="-154.649" atv="-20.067"/>
+      <point ath="-135.304" atv="-16.169"/>
+      <point ath="-135.278" atv="0.239"/>
+      <point ath="-154.841" atv="0.372"/>
+    </hotspot>
+    <hotspot name="lm9_box" url="../panos/s7/box/lm92.jpg"
+             ath="216.334754" atv="15.610486" distorted="true" rx="15.5" ry="-36.5" rz="-0.075881" width="800" height="649" scale="0.251752"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="lm9_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[lm9_box].alpha == 1.0,
+                            tween(hotspot[lm9_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[lm9_box].alpha,1.0);
+                          );">
+      <point ath="-154.716" atv="1.736"/>
+      <point ath="-135.316" atv="1.181"/>
+      <point ath="-135.290" atv="21.953"/>
+      <point ath="-154.532" atv="27.005"/>
+    </hotspot>
+    <hotspot name="ru7_box" url="../panos/s7/box/ru71.jpg"
+             ath="31.354286" atv="-10.94995" distorted="true" rx="-10.25" ry="-30.0" rz="-0.035006" width="800" height="616" scale="0.308383"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="ru7_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[ru7_box].alpha == 1.0,
+                            tween(hotspot[ru7_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[ru7_box].alpha,1.0);
+                          );">
+      <point ath="17.185" atv="-24.373"/>
+      <point ath="42.333" atv="-19.720"/>
+      <point ath="42.217" atv="0.039"/>
+      <point ath="17.107" atv="0.363"/>
+    </hotspot>
+    <hotspot name="rm7_box" url="../panos/s7/box/rm72.jpg"
+             ath="31.370013" atv="18.576726" distorted="true" rx="19.25" ry="-30.0" rz="0.070335" width="800" height="680" scale="0.302582"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="rm7_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[rm7_box].alpha == 1.0,
+                            tween(hotspot[rm7_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[rm7_box].alpha,1.0);
+                          );">
+      <point ath="17.215" atv="1.537"/>
+      <point ath="42.248" atv="1.379"/>
+      <point ath="42.228" atv="25.602"/>
+      <point ath="17.471" atv="31.494"/>
+    </hotspot>
+    <hotspot name="ru8_box" url="../panos/s7/box/ru81.jpg"
+             ath="-1.533996" atv="-12.545349" distorted="true" rx="-12.5" ry="2.75" rz="-0.194888" width="800" height="616" scale="0.360058"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="ru8_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[ru8_box].alpha == 1.0,
+                            tween(hotspot[ru8_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[ru8_box].alpha,1.0);
+                          );">
+      <point ath="-17.816" atv="-24.197"/>
+      <point ath="14.975" atv="-24.635"/>
+      <point ath="15.247" atv="0.068"/>
+      <point ath="-17.599" atv="0.277"/>
+    </hotspot>
+    <hotspot name="rm8_box" url="../panos/s7/box/rm82.jpg"
+             ath="-1.274408" atv="19.862393" distorted="true" rx="18.5" ry="2.5" rz="-0.270152" width="800" height="774" scale="0.345602"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="rm8_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[rm8_box].alpha == 1.0,
+                            tween(hotspot[rm8_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[rm8_box].alpha,1.0);
+                          );">
+      <point ath="-17.520" atv="1.680"/>
+      <point ath="15.192" atv="1.545"/>
+      <point ath="15.070" atv="31.849"/>
+      <point ath="-17.444" atv="31.579"/>
+    </hotspot>
+    <hotspot name="ru9_box" url="../panos/s7/box/ru91.jpg"
+             ath="-32.979897" atv="-9.923612" distorted="true" rx="-10.25" ry="32.5" rz="-0.183843" width="800" height="597" scale="0.300773"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="ru9_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[ru9_box].alpha == 1.0,
+                            tween(hotspot[ru9_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[ru9_box].alpha,1.0);
+                          );">
+      <point ath="-43.380" atv="-18.763"/>
+      <point ath="-19.931" atv="-24.225"/>
+      <point ath="-19.883" atv="0.064"/>
+      <point ath="-43.391" atv="0.315"/>
+    </hotspot>
+    <hotspot name="rm9_box" url="../panos/s7/box/rm92.jpg"
+             ath="-32.853124" atv="18.916946" distorted="true" rx="20.0" ry="32.5" rz="-0.140017" width="800" height="659" scale="0.290143"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="rm9_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[rm9_box].alpha == 1.0,
+                            tween(hotspot[rm9_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[rm9_box].alpha,1.0);
+                          );">
+      <point ath="-43.147" atv="1.458"/>
+      <point ath="-19.696" atv="1.422"/>
+      <point ath="-19.603" atv="31.262"/>
+      <point ath="-43.233" atv="24.985"/>
+    </hotspot>
   </scene>
 
   <scene name="scene_c11" title="c11" onstart="" thumburl="../panos/s7/c11.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -524,18 +784,12 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="87.346" atv="35.900" linkedscene="scene_c14" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-90.328" atv="32.436" linkedscene="scene_c8" text="前进" linkedscene_lookat="-271.182,10.862,120"/>
-    <hotspot name="spot3" style="spot_img" ath="-147.236" atv="-13.641" showid="s7|ru10"/>
-    <hotspot name="spot4" style="spot_img" ath="-148.513" atv="13.566" showid="s7|rm10"/>
-    <hotspot name="spot5" style="spot_img" ath="-178.744" atv="-16.724" showid="s7|ru11"/>
-    <hotspot name="spot6" style="spot_img" ath="179.989" atv="16.027" showid="s7|rm11"/>
-    <hotspot name="spot7" style="spot_img" ath="148.583" atv="-14.597" showid="s7|ru12"/>
-    <hotspot name="spot8" style="spot_img" ath="147.571" atv="13.263" showid="s7|rm12"/>
-    <hotspot name="spot9" style="spot_img" ath="-21.789" atv="-9.198" showid="s7|lu10"/>
-    <hotspot name="spot10" style="spot_img" ath="-21.631" atv="20.918" showid="s7|lm10"/>
-    <hotspot name="spot11" style="spot_img" ath="13.520" atv="-13.676" showid="s7|lu11"/>
-    <hotspot name="spot12" style="spot_img" ath="13.152" atv="14.645" showid="s7|lm11"/>
-    <hotspot name="spot13" style="spot_img" ath="38.279" atv="-11.229" showid="s7|lu12"/>
-    <hotspot name="spot14" style="spot_img" ath="37.620" atv="11.955" showid="s7|lm12"/>
+    <hotspot name="spot3" style="spot_img" ath="-160.208" atv="-26.335" showid="s7|r10"/>
+    <hotspot name="spot4" style="spot_img" ath="165.666" atv="-27.581" showid="s7|r11"/>
+    <hotspot name="spot5" style="spot_img" ath="137.936" atv="-22.230" showid="s7|r12"/>
+    <hotspot name="spot6" style="spot_img" ath="-35.463" atv="-20.630" showid="s7|l10"/>
+    <hotspot name="spot7" style="spot_img" ath="-0.535" atv="-24.783" showid="s7|l11"/>
+    <hotspot name="spot8" style="spot_img" ath="28.244" atv="-22.009" showid="s7|l12"/>
   </scene>
 
   <scene name="scene_c14" title="c14" onstart="" thumburl="../panos/s7/c14.tiles/thumb.jpg" lat="" lng="" heading="">
