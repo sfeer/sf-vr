@@ -1,12 +1,17 @@
 <template>
   <div id="app" style="height:100%">
     <div id="pano"></div>
+    <div id="draw-wrapper" v-show="draw" @click="handleDraw"></div>
     <div id="debug-info">
       <div style="font-weight: bold">hlookat, vlookat, fov</div>
       <div>{{`${hlookat}, ${vlookat}, ${fov}`}}</div>
       <hr>
       <div style="font-weight: bold">ath, atv</div>
       <div>{{`${ath}, ${atv}`}}</div>
+      <div style="font-weight: bold">box</div>
+      <el-button @click="draw=true">开启绘制</el-button>
+      <el-button @click="draw=false;box_html=[];">绘制结束</el-button>
+      <div v-for="item in box_html">{{item}}</div>
     </div>
   </div>
 </template>
@@ -23,7 +28,9 @@
         atv: 0,
         hlookat: 0,
         vlookat: 0,
-        fov: 0
+        fov: 0,
+        box_html: [],
+        draw: false
       }
     },
     mounted() {
@@ -65,6 +72,16 @@
           this.vlookat = this.krpano.get("view.vlookat").toFixed(3);
           this.fov = this.krpano.get("view.fov").toFixed(3);
         }
+      },
+      handleDraw(e) {
+        if (this.draw) {
+          const mx = e.clientX,
+            my = e.clientY;
+          const pnt = this.krpano.screentosphere(mx, my),
+            ath = (pnt.x).toFixed(3),
+            atv = (pnt.y).toFixed(3);
+          this.box_html.push(`<point ath="${ath}" atv="${atv}"/>`);
+        }
       }
     }
   }
@@ -95,8 +112,17 @@
   #debug-info {
     position: absolute;
     top: 0;
-    width: 200px;
-    height: 100px;
+    width: 180px;
+    height: 300px;
     background-color: beige;
+  }
+
+  #draw-wrapper {
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    width: 60vw;
+    height: 60vh;
+    background-color: rgba(246, 253, 66, 0.2);
   }
 </style>

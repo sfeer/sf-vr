@@ -10,7 +10,7 @@ export default {
     s4: {id: 's4', name: '110kV枫塘变电站', index: 'scene_east2'},
     s5: {id: 's5', name: '10kV#1、2电容室', index: 'scene_gp1'},
     s6: {id: 's6', name: '10kV#3、4电容室', index: 'scene_gp1'},
-    s7: {id: 's7', name: '10kV开关室', index: 'scene_c2'},
+    s7: {id: 's7', name: '10kV开关室', index: 'scene_c5'},
     s8: {id: 's8', name: '110kvGIS室', index: 'scene_view1'},
     s9: {id: 's9', name: '主控室', index: 'scene_c1'}
   },
@@ -68,12 +68,10 @@ export default {
       l3: ['static/panos/s7/box/lu34.jpg', 'static/panos/s7/box/lu32.jpg', 'static/panos/s7/box/lu33.jpg',
         'static/panos/s7/box/lm31.jpg', 'static/panos/s7/box/lm33.jpg'],
 
-      ru4: ['static/panos/s7/box/ru41.jpg', 'static/panos/s7/box/ru42.jpg'],
-      rm4: ['static/panos/s7/box/rm41.jpg', 'static/panos/s7/box/rm42.jpg', 'static/panos/s7/box/rm43.jpg'],
-      ru5: ['static/panos/s7/box/ru51.jpg', 'static/panos/s7/box/ru52.jpg'],
-      rm5: ['static/panos/s7/box/rm51.jpg', 'static/panos/s7/box/rm52.jpg', 'static/panos/s7/box/rm53.jpg'],
-      ru6: ['static/panos/s7/box/ru61.jpg', 'static/panos/s7/box/ru62.jpg'],
-      rm6: ['static/panos/s7/box/rm61.jpg', 'static/panos/s7/box/rm62.jpg', 'static/panos/s7/box/rm63.jpg'],
+      r4: ['static/panos/s7/box/ru42.jpg', 'static/panos/s7/box/rm41.jpg', 'static/panos/s7/box/rm43.jpg'],
+      r5: ['static/panos/s7/box/ru52.jpg', 'static/panos/s7/box/rm51.jpg', 'static/panos/s7/box/rm53.jpg'],
+      r6: ['static/panos/s7/box/ru62.jpg', 'static/panos/s7/box/rm61.jpg', 'static/panos/s7/box/rm63.jpg'],
+
       lu4: ['static/panos/s7/box/lu41.jpg', 'static/panos/s7/box/lu42.jpg'],
       lm4: ['static/panos/s7/box/lm41.jpg', 'static/panos/s7/box/lm42.jpg', 'static/panos/s7/box/lm43.jpg'],
       lu5: ['static/panos/s7/box/lu51.jpg', 'static/panos/s7/box/lu52.jpg', 'static/panos/s7/box/lu53.jpg'],
