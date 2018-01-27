@@ -7,10 +7,10 @@ export default {
     s1: {id: 's1', name: '10kV花园总部开关站', fd_id: '7acbe2c8fb9640319e1a924a45aaf0fa', index: 'scene_entrance'},
     s2: {id: 's2', name: '10kV中通开关站', fd_id: 'b1bf18d79476445987e04ccf903986a2', index: 'scene_entrance'},
     s3: {id: 's3', name: '10kV桐城府壹号开关站', fd_id: '045253c418fe41f78fd0dc9bb37ec6a0', index: 'scene_entrance'},
-    s4: {id: 's4', name: '110kV枫塘变电站', index: 'scene_east2'},
+    s4: {id: 's4', name: '110kV枫塘变电站', index: 'scene_overview'},
     s5: {id: 's5', name: '10kV#1、2电容室', index: 'scene_gp1'},
     s6: {id: 's6', name: '10kV#3、4电容室', index: 'scene_gp1'},
-    s7: {id: 's7', name: '10kV开关室', index: 'scene_c29'},
+    s7: {id: 's7', name: '10kV开关室', index: 'scene_c2'},
     s8: {id: 's8', name: '110kvGIS室', index: 'scene_view1'},
     s9: {id: 's9', name: '主控室', index: 'scene_c1'}
   },
@@ -121,16 +121,16 @@ export default {
       l27: ['static/panos/s7/box/lu272.jpg', 'static/panos/s7/box/lm271.jpg', 'static/panos/s7/box/lm273.jpg'],
 
       r28: [
-        'static/panos/s7/box/r281.jpg', 'static/panos/s7/box/r282.jpg', 'static/panos/s7/box/r283.jpg',
+        'static/panos/s7/box/r281.jpg', 'static/panos/s7/box/r283.jpg', 'static/panos/s7/box/r28a.jpg',
         'static/panos/s7/box/r284.jpg', 'static/panos/s7/box/r285.jpg', 'static/panos/s7/box/r286.jpg',
         'static/panos/s7/box/r287.jpg', 'static/panos/s7/box/r288.jpg', 'static/panos/s7/box/r289.jpg',
-        'static/panos/s7/box/r28a.jpg', 'static/panos/s7/box/r28b.jpg'
+        'static/panos/s7/box/r28b.jpg'
       ],
       l28: [
-        'static/panos/s7/box/l281.jpg', 'static/panos/s7/box/l282.jpg', 'static/panos/s7/box/l283.jpg',
+        'static/panos/s7/box/l282.jpg', 'static/panos/s7/box/l283.jpg', 'static/panos/s7/box/l28b.jpg',
         'static/panos/s7/box/l284.jpg', 'static/panos/s7/box/l285.jpg', 'static/panos/s7/box/l286.jpg',
         'static/panos/s7/box/l287.jpg', 'static/panos/s7/box/l288.jpg', 'static/panos/s7/box/l289.jpg',
-        'static/panos/s7/box/l28a.jpg', 'static/panos/s7/box/l28b.jpg'
+        'static/panos/s7/box/l28a.jpg'
       ]
     },
     s8: {
