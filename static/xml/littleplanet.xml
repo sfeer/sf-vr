@@ -1,0 +1,51 @@
+ <krpano>
+
+ <action name="littleplanet" autorun="onstart" >
+               if(scene[0].firsttime,
+                   set(layer[skin_scroll_window].visible,false);
+                   set(layer[skin_scroll_window].alpha,0);
+                   set(layer[skin_control_bar].visible,false);
+                   set(layer[skin_scroll_window].alpha,0);
+                   set_hotspot_visible(false);
+                   littleplanetview();
+                   set(scene[0].firsttime,false));
+                  </action>
+
+ <action name="littleplanetview">
+        set(view.stereographic,true);
+        set(view.fisheye,1.0); 
+        set(view.fov,155); 
+        set(view.fovtype,VFOV); 
+        set(view.fovmax,150); 
+        set(view.hlookat,-60); 
+        set(view.vlookat,77); 
+  </action>
+
+  <action name="set_hotspot_visible">
+          for(set(i,0),i LT hotspot.count,inc(i),
+               set(hotspot[get(i)].visible,%1);
+                );
+  </action>
+
+
+  
+    <!-- 小行星持续2秒后切换至正常视场-->  
+  <events onloadcomplete="if(view.fisheye == 1,delayedcall(lp_1,2.0, normalview()));" 
+          onremovepano="ifnot(view.fisheye == 0,stopdelayedcall(lp_1));" 
+          name="littleplanet"  
+          keep="false" />  
+  
+  <action name="normalview">  
+        tween(view.hlookat, -40, 2.5, easeInOutQuad);  
+        tween(view.vlookat, 0, 2.5, easeInOutQuad);  
+        tween(view.fov,     85,  2.5, easeInOutQuad);  
+        tween(view.fisheye, 0.0, 2.5, easeInOutQuad);  
+        wait(2.7);  
+        
+        set_hotspot_visible(true);
+        set(layer[skin_scroll_window].visible,true);tween(layer[skin_scroll_window].alpha,1,1);
+        set(layer[skin_control_bar].visible,true);tween(layer[skin_control_bar].alpha,1,1);
+  </action>  
+
+
+ </krpano>

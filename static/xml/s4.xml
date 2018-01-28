@@ -10,7 +10,7 @@
   <!-- 关闭右键菜单 -->
   <contextmenu fullscreen="false" versioninfo="false"/>
 
-  <scene name="scene_overview" title="俯视图" onstart="" thumburl="../panos/s4/overview.tiles/preview.jpg" lat="" lng="" heading="">
+  <scene name="scene_overview" title="俯视图" onstart="" firsttime="true" thumburl="../panos/s4/overview.tiles/preview.jpg" lat="" lng="" heading="">
     <view hlookat="-349.404" vlookat="52.016" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s4/overview.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
@@ -24,6 +24,7 @@
         <cube url="../panos/s4/overview.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
+    <include url="littleplanet.xml"/>
     <hotspot name="spot1" style="spot_arrow" ath="-60.285" atv="77.523" linkedscene="scene_b2_front" linkedscene_lookat="2.026,-0.750,120" text="2#主变"/>
     <hotspot name="spot2" style="spot_arrow" ath="87.672" atv="70.665" linkedscene="scene_b1_front" linkedscene_lookat="1.933,-0.589,120" text="1#主变"/>
   </scene>
@@ -437,7 +438,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-37.087" atv="19.412" linkedscene="scene_aisle4" text="前进" linkedscene_lookat="28.574,-0.216,120"/>
     <hotspot name="spot2" style="spot_arrow" ath="36.467" atv="20.342" linkedscene="scene_aisle2" text="下楼" linkedscene_lookat="128.738,13.711,120"/>
-    <hotspot name="spot3" style="spot_href" ath="-14.205" atv="14.412" text="进入" href="s9" />
+    <hotspot name="spot3" style="spot_href" ath="-14.205" atv="14.412" text="进入" href="s9"/>
   </scene>
 
   <!--二楼过道-->
@@ -456,8 +457,8 @@
       </level>
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="119.690" atv="11.857" linkedscene="scene_aisle3" text="前进" linkedscene_lookat="-5.715,8.534,120"/>
-    <hotspot name="spot2" style="spot_href" ath="30.156" atv="33.373" text="进入" href="s9|scene_c19" />
-    <hotspot name="spot3" style="spot_href" ath="-69.584" atv="21.524" text="进入"  href="s8|scene_gp1|-91.523,8.861,120" />
+    <hotspot name="spot2" style="spot_href" ath="30.156" atv="33.373" text="进入" href="s9|scene_c19"/>
+    <hotspot name="spot3" style="spot_href" ath="-69.584" atv="21.524" text="进入" href="s8|scene_gp1|-91.523,8.861,120"/>
   </scene>
 
 
