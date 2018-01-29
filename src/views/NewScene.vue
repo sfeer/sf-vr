@@ -5,8 +5,8 @@
     <div v-show="showGuide" id="guide-map">
       <div class="row">
         <div class="title">室外</div>
-        <div class="btn" @click="sid='s4'">1#主变</div>
-        <div class="btn" @click="sid='s4'">2#主变</div>
+        <div class="btn" @click="btn_1_click">1#主变</div>
+        <div class="btn" @click="btn_2_click">2#主变</div>
       </div>
       <div class="row">
         <div class="title">一楼</div>
@@ -86,6 +86,8 @@
               const arr = _.split(this.initLookat, ',');
               krpano.call("lookat('" + arr[0] + "','" + arr[1] + "','" + arr[2] + "')");
             }
+            this.initScene = undefined;
+            this.initLookat = undefined;
             krpano.hooks = {
               // 跨站点场景切换
               href: url => {
@@ -107,6 +109,22 @@
             this.krpano = krpano;
           }
         });
+      },
+      btn_1_click() {
+        if (this.station.id === 's4') {
+          this.krpano.call("loadscene('scene_b1_front', null, MERGE)");
+        } else {
+          this.initScene = 'scene_b1_front';
+          this.sid = 's4';
+        }
+      },
+      btn_2_click() {
+        if (this.station.id === 's4') {
+          this.krpano.call("loadscene('scene_b2_front', null, MERGE)");
+        } else {
+          this.initScene = 'scene_b2_front';
+          this.sid = 's4';
+        }
       }
     }
   }

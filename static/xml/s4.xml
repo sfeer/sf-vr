@@ -3,14 +3,14 @@
   <include url="sfpano.xml"/>
 
   <!-- 加载动态效果、百分比、进度条 -->
-  <include url="loadinganimation.xml"/>
+  <!--<include url="loadinganimation.xml"/>-->
   <include url="loadingpercenttext.xml"/>
   <include url="loadingbar.xml"/>
 
   <!-- 关闭右键菜单 -->
   <contextmenu fullscreen="false" versioninfo="false"/>
 
-  <scene name="scene_overview" title="俯视图" onstart="" firsttime="true" thumburl="../panos/s4/overview.tiles/preview.jpg" lat="" lng="" heading="">
+  <scene name="scene_overview" title="俯视图" onstart="" thumburl="../panos/s4/overview.tiles/preview.jpg" lat="" lng="" heading="">
     <view hlookat="-349.404" vlookat="52.016" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s4/overview.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
