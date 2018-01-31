@@ -7,6 +7,9 @@
   <include url="loadingpercenttext.xml"/>
   <include url="loadingbar.xml"/>
 
+  <!-- 调试时使用editor插件 -->
+  <plugin name="editor" url="../plugins/editor.swf" keep="true"/>
+
   <!-- 关闭右键菜单 -->
   <contextmenu fullscreen="false" versioninfo="false"/>
 
@@ -27,7 +30,26 @@
     <hotspot name="spot1" style="spot_href" ath="115.406" atv="21.607" href="s4|scene_aisle4|-63.125,4.192,120" text="返回"/>
     <hotspot name="spot2" style="spot_arrow" ath="-88.820" atv="45.126" linkedscene="scene_gp2" text="前进"/>
     <hotspot name="spot3" style="spot_arrow" ath="25.727" atv="23.757" linkedscene="scene_view10" text="前进"/>
-    <hotspot name="spot4" style="spot_img" ath="0.000" atv="0.000" showid="s8|gp1"/>
+    <hotspot name="spot4" style="spot_img" ath="-9.352" atv="-30.139" showid="s8|gp1"/>
+    <hotspot name="gp1_box" url="../panos/s8/box/gp13.jpg"
+             ath="2.194084" atv="-6.264593" distorted="true" rx="-6.0" ry="-1.5" rz="-0.544573" width="635" height="800" scale="0.518056"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="gp1_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[gp1_box].alpha == 1.0,
+                            tween(hotspot[gp1_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[gp1_box].alpha,1.0);
+                          );">
+      <point ath="-16.584" atv="-26.835"/>
+      <point ath="20.208" atv="-26.835"/>
+      <point ath="20.576" atv="22.130"/>
+      <point ath="-16.179" atv="23.298"/>
+    </hotspot>
   </scene>
 
   <scene name="scene_gp2" title="gp2" onstart="" thumburl="../panos/s8/gp2.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -46,7 +68,26 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="92.172" atv="44.408" linkedscene="scene_gp1" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-90.099" atv="36.932" linkedscene="scene_gp3" text="前进"/>
-    <hotspot name="spot3" style="spot_img" ath="0.000" atv="0.000" showid="s8|gp2"/>
+    <hotspot name="spot3" style="spot_img" ath="-12.485" atv="-28.964" showid="s8|gp2"/>
+    <hotspot name="gp2_box" url="../panos/s8/box/gp23.jpg"
+             ath="0.324266" atv="16.518348" distorted="true" rx="14.25" ry="1.0" rz="-0.085643" width="224" height="800" scale="1.078922"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="gp2_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[gp2_box].alpha == 1.0,
+                            tween(hotspot[gp2_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[gp2_box].alpha,1.0);
+                          );">
+      <point ath="-19.459" atv="-24.864"/>
+      <point ath="20.255" atv="-25.447"/>
+      <point ath="20.080" atv="46.022"/>
+      <point ath="-18.978" atv="45.776"/>
+    </hotspot>
   </scene>
 
   <scene name="scene_gp3" title="gp3" onstart="" thumburl="../panos/s8/gp3.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -65,7 +106,26 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="90.746" atv="35.624" linkedscene="scene_gp2" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-87.077" atv="35.843" linkedscene="scene_gp4" text="前进"/>
-    <hotspot name="spot3" style="spot_img" ath="0.000" atv="0.000" showid="s8|gp3"/>
+    <hotspot name="spot3" style="spot_img" ath="-12.485" atv="-28.014" showid="s8|gp3"/>
+    <hotspot name="gp3_box" url="../panos/s8/box/gp33.jpg"
+             ath="-0.081389" atv="19.589419" distorted="true" rx="20.25" ry="0.25" rz="-0.103272" width="242" height="800" scale="0.98217"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="gp3_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[gp3_box].alpha == 1.0,
+                            tween(hotspot[gp3_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[gp3_box].alpha,1.0);
+                          );">
+      <point ath="-18.817" atv="-24.387"/>
+      <point ath="18.817" atv="-24.809"/>
+      <point ath="19.117" atv="43.858"/>
+      <point ath="-18.717" atv="44.150"/>
+    </hotspot>
   </scene>
 
   <scene name="scene_gp4" title="gp4" onstart="" thumburl="../panos/s8/gp4.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -84,7 +144,26 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="88.823" atv="36.268" linkedscene="scene_gp3" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-91.001" atv="37.430" linkedscene="scene_gp5" text="前进"/>
-    <hotspot name="spot3" style="spot_img" ath="0.000" atv="0.000" showid="s8|gp4"/>
+    <hotspot name="spot3" style="spot_img" ath="-13.339" atv="-29.547" showid="s8|gp4"/>
+    <hotspot name="gp4_box" url="../panos/s8/box/gp43.jpg"
+             ath="1.113117" atv="14.460221" distorted="true" rx="9.5" ry="-2.25" rz="-0.545688" width="261" height="800" scale="1.095219"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="gp4_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[gp4_box].alpha == 1.0,
+                            tween(hotspot[gp4_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[gp4_box].alpha,1.0);
+                          );">
+      <point ath="-19.183" atv="-25.806"/>
+      <point ath="20.077" atv="-25.962"/>
+      <point ath="21.016" atv="46.002"/>
+      <point ath="-19.066" atv="46.878"/>
+    </hotspot>
   </scene>
 
   <scene name="scene_gp5" title="gp5" onstart="" thumburl="../panos/s8/gp5.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -103,7 +182,26 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="91.418" atv="37.594" linkedscene="scene_gp4" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-93.208" atv="36.853" linkedscene="scene_gp6" text="前进"/>
-    <hotspot name="spot3" style="spot_img" ath="0.000" atv="0.000" showid="s8|gp5"/>
+    <hotspot name="spot3" style="spot_img" ath="-15.780" atv="-33.495" showid="s8|gp5"/>
+    <hotspot name="gp5_box" url="../panos/s8/box/gp53.jpg"
+             ath="0.633808" atv="18.736037" distorted="true" rx="19.0" ry="-0.5" rz="-0.25831" width="240" height="800" scale="1.209135"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="gp5_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[gp5_box].alpha == 1.0,
+                            tween(hotspot[gp5_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[gp5_box].alpha,1.0);
+                          );">
+      <point ath="-22.622" atv="-29.144"/>
+      <point ath="23.353" atv="-29.314"/>
+      <point ath="23.829" atv="49.217"/>
+      <point ath="-21.492" atv="49.420"/>
+    </hotspot>
   </scene>
 
   <scene name="scene_gp6" title="gp6" onstart="" thumburl="../panos/s8/gp6.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -122,7 +220,26 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="90.760" atv="35.871" linkedscene="scene_gp5" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-90.705" atv="43.776" linkedscene="scene_gp7" text="前进"/>
-    <hotspot name="spot3" style="spot_img" ath="0.000" atv="0.000" showid="s8|gp6"/>
+    <hotspot name="spot3" style="spot_img" ath="-15.034" atv="-31.581" showid="s8|gp6"/>
+    <hotspot name="gp6_box" url="../panos/s8/box/gp63.jpg"
+             ath="0.525758" atv="13.468021" distorted="true" rx="12.5" ry="-0.5" rz="-0.321611" width="236" height="800" scale="1.153647"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="gp6_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[gp6_box].alpha == 1.0,
+                            tween(hotspot[gp6_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[gp6_box].alpha,1.0);
+                          );">
+      <point ath="-20.571" atv="-27.868"/>
+      <point ath="22.002" atv="-27.998"/>
+      <point ath="22.572" atv="48.546"/>
+      <point ath="-20.824" atv="48.970"/>
+    </hotspot>
   </scene>
 
   <scene name="scene_gp7" title="gp7" onstart="" thumburl="../panos/s8/gp7.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -141,23 +258,26 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="89.915" atv="43.688" linkedscene="scene_gp6" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-62.995" atv="12.031" linkedscene="scene_view1" text="前进"/>
-    <hotspot name="spot3" style="spot_img" ath="0.000" atv="0.000" showid="s8|gp7"/>
-  </scene>
-
-  <scene name="scene_topview" title="topview" onstart="" thumburl="../panos/s8/topview.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-    <preview url="../panos/s8/topview.tiles/preview.jpg"/>
-    <image type="CUBE" multires="true" tilesize="512">
-      <level tiledimagewidth="3200" tiledimageheight="3200">
-        <cube url="../panos/s8/topview.tiles/%s/l3/%v/l3_%s_%v_%h.jpg"/>
-      </level>
-      <level tiledimagewidth="1536" tiledimageheight="1536">
-        <cube url="../panos/s8/topview.tiles/%s/l2/%v/l2_%s_%v_%h.jpg"/>
-      </level>
-      <level tiledimagewidth="768" tiledimageheight="768">
-        <cube url="../panos/s8/topview.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
-      </level>
-    </image>
+    <hotspot name="spot3" style="spot_img" ath="-15.846" atv="-30.356" showid="s8|gp7"/>
+    <hotspot name="gp7_box" url="../panos/s8/box/gp73.jpg"
+             ath="-0.908911" atv="-9.121522" distorted="true" rx="-9.75" ry="0.25" rz="0.184222" width="525" height="800" scale="0.529574"
+             enabled="false"
+             zorder="50"
+             alpha="0.0"/>
+    <hotspot name="gp7_area"
+             alpha="0.0"
+             zorder="60"
+             capture="false"
+             onclick="if(hotspot[gp7_box].alpha == 1.0,
+                            tween(hotspot[gp7_box].alpha,0.0, 0.5);
+                          ,
+                            tween(hotspot[gp7_box].alpha,1.0);
+                          );">
+      <point ath="-22.125" atv="-26.102"/>
+      <point ath="19.856" atv="-26.706"/>
+      <point ath="20.314" atv="47.284"/>
+      <point ath="-20.820" atv="47.368"/>
+    </hotspot>
   </scene>
 
   <scene name="scene_view1" title="view1" onstart="" thumburl="../panos/s8/view1.tiles/thumb.jpg" lat="" lng="" heading="">
