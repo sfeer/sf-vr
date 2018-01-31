@@ -4,8 +4,15 @@
     <div id="guide-btn" class="show-btn" data-tip="快速导航" :class="showGuide?'active':''"
          @click="showGuide=!showGuide"></div>
     <div id="map-btn" :class="showMap?'active':''" @click="showMap=!showMap"></div>
-    <transition name="fade">
-      <div v-show="showMap" id="map-div"></div>
+    <transition name="el-zoom-in-top">
+      <div v-show="showMap" id="map-div">
+        <div class="cabinet-warpper">
+          <div class="cabinet" v-for="i in 27">{{i}}</div>
+        </div>
+        <div class="cabinet-warpper">
+          <div class="cabinet" v-for="i in 27">{{i}}</div>
+        </div>
+      </div>
     </transition>
     <div v-show="showGuide" id="guide-map">
       <div class="row">
@@ -221,16 +228,15 @@
   #map-btn {
     z-index: 110;
     position: fixed;
-    top: 10px;
+    top: 5px;
     left: calc(50% - 15px);;
-    border-top: 15px solid rgba(255, 255, 255, .6);
+    border-top: 15px solid rgba(255, 102, 0, .6);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     cursor: pointer;
-    transition: all 1s;
+    transition: transform 0.5s;
     &.active {
       transform: rotateX(180deg);
-      top: 175px;
     }
   }
 
@@ -241,17 +247,26 @@
     background-color: rgba(255, 255, 255, .6);
     top: 0;
     left: 50%;
-    margin-left: -250px;
-    width: 500px;
-    height: 200px;
-    overflow: auto;
+    margin-left: -40vw;
+    width: 80vw;
+    padding-top: 20px;
+    overflow-y: hidden;
+    overflow-x: auto;
   }
 
-  .fade-enter-active, .fade-leave-active {
-    transition: all 1s;
-  }
-
-  .fade-enter, .fade-leave-to {
-    transform: translateY(-200px);
+  .cabinet-warpper {
+    width:900px;
+    display: flex;
+    margin: 20px 0;
+    .cabinet {
+      position: relative;
+      text-align: center;
+      background: #242833;
+      color: #fff;
+      flex: 0 0 20px;
+      margin: 0 2px;
+      padding: 5px;
+      cursor: pointer;
+    }
   }
 </style>
