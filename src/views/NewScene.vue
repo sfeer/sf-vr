@@ -1,7 +1,12 @@
 <template>
   <div id="app" style="height:100%">
     <div id="pano"></div>
-    <div id="guide-btn" data-tip="快速导航" :class="showGuide?'active':''" @click="showGuide=!showGuide"></div>
+    <div id="guide-btn" class="show-btn" data-tip="快速导航" :class="showGuide?'active':''"
+         @click="showGuide=!showGuide"></div>
+    <div id="map-btn" :class="showMap?'active':''" @click="showMap=!showMap"></div>
+    <transition name="fade">
+      <div v-show="showMap" id="map-div"></div>
+    </transition>
     <div v-show="showGuide" id="guide-map">
       <div class="row">
         <div class="title">室外</div>
@@ -40,6 +45,7 @@
         station: {},
         images: [''],
         showGuide: false,
+        showMap: false,
         viewerOpt: {
           title: false,
           toolbar: false,
@@ -210,5 +216,42 @@
         padding: 5px;
       }
     }
+  }
+
+  #map-btn {
+    z-index: 110;
+    position: fixed;
+    top: 10px;
+    left: calc(50% - 15px);;
+    border-top: 15px solid rgba(255, 255, 255, .6);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    cursor: pointer;
+    transition: all 1s;
+    &.active {
+      transform: rotateX(180deg);
+      top: 175px;
+    }
+  }
+
+  #map-div {
+    z-index: 100;
+    position: fixed;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(255, 255, 255, .6);
+    top: 0;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    height: 200px;
+    overflow: auto;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: all 1s;
+  }
+
+  .fade-enter, .fade-leave-to {
+    transform: translateY(-200px);
   }
 </style>

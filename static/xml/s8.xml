@@ -8,7 +8,7 @@
   <include url="loadingbar.xml"/>
 
   <!-- 调试时使用editor插件 -->
-  <plugin name="editor" url="../plugins/editor.swf" keep="true"/>
+  <!--<plugin name="editor" url="../plugins/editor.swf" keep="true"/>-->
 
   <!-- 关闭右键菜单 -->
   <contextmenu fullscreen="false" versioninfo="false"/>
