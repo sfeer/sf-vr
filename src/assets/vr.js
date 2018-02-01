@@ -10,7 +10,7 @@ export default {
     s4: {id: 's4', name: '110kV枫塘变电站', index: 'scene_overview'},
     s5: {id: 's5', name: '10kV#1、2电容室', index: 'scene_gp1'},
     s6: {id: 's6', name: '10kV#3、4电容室', index: 'scene_gp1'},
-    s7: {id: 's7', name: '10kV开关室', index: 'scene_x22'},
+    s7: {id: 's7', name: '10kV开关室', index: 'scene_c2'},
     s8: {id: 's8', name: '110kvGIS室', index: 'scene_view1'},
     s9: {id: 's9', name: '主控室', index: 'scene_c1'}
   },
