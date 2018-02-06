@@ -3,14 +3,12 @@
     <div id="pano"></div>
     <div id="guide-btn" class="show-btn" data-tip="快速导航" :class="showGuide?'active':''"
          @click="showGuide=!showGuide"></div>
-    <div id="map-btn" :class="showMap?'active':''" @click="showMap=!showMap"></div>
+    <div id="map-btn" v-if="guideMap" :class="showMap?'active':''" @click="showMap=!showMap"></div>
     <transition name="el-zoom-in-top">
       <div v-show="showMap" id="map-div">
-        <div class="cabinet-warpper">
-          <div class="cabinet" v-for="i in 27">{{i}}</div>
-        </div>
-        <div class="cabinet-warpper">
-          <div class="cabinet" v-for="i in 27">{{i}}</div>
+        <div class="cabinet-warpper" v-for="item in guideMap">
+          <div v-if="c.name" class="cabinet" v-for="c in item" @click="loadScene(c)">{{c.name}}</div>
+          <div v-else class="cabinet-empty"></div>
         </div>
       </div>
     </transition>
@@ -48,6 +46,10 @@
     data() {
       return {
         sid: '',
+
+        // 机柜导航图
+        guideMap: undefined,
+
         // 当前站点信息
         station: {},
         images: [''],
@@ -71,6 +73,10 @@
           this.station = VR.STATIONS[sid];
           document.title = this.station.name; // 设置标题
           this.showGuide = false;
+
+          this.guideMap = VR.DUIDES[sid];
+
+          // 初始化全景
           this.initVR();
         }
       }
@@ -123,6 +129,8 @@
           }
         });
       },
+
+      // 主变#1
       btn_1_click() {
         if (this.station.id === 's4') {
           this.krpano.call("loadscene('scene_b1_front', null, MERGE)");
@@ -131,12 +139,26 @@
           this.sid = 's4';
         }
       },
+
+      // 主变#2
       btn_2_click() {
         if (this.station.id === 's4') {
           this.krpano.call("loadscene('scene_b2_front', null, MERGE)");
         } else {
           this.initScene = 'scene_b2_front';
           this.sid = 's4';
+        }
+      },
+
+      // 加载场景
+      loadScene(d) {
+        if (d.scene) {
+          this.krpano.call("loadscene('" + d.scene + "', null, MERGE)");
+          if (d.lookat) {
+            const arr = _.split(d.lookat, ',');
+            this.krpano.call("lookat('" + arr[0] + "','" + arr[1] + "','" + arr[2] + "')");
+          }
+          this.showMap = false;
         }
       }
     }
@@ -259,14 +281,19 @@
     display: flex;
     margin: 20px 0;
     .cabinet {
-      position: relative;
       text-align: center;
       background: #242833;
       color: #fff;
-      flex: 0 0 20px;
+      flex: none;
+      width: 30px;
       margin: 0 2px;
       padding: 5px;
       cursor: pointer;
+    }
+    .cabinet-empty {
+      flex: none;
+      width: 40px;
+      margin: 0 2px;
     }
   }
 </style>

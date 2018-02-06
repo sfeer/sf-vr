@@ -441,5 +441,81 @@ export default {
       lookat: '319.249,-5.176,83.080',
       station: 's3'
     }
+  },
+
+  // 机柜导航图
+  DUIDES: {
+    s7: [
+      // 第一排
+      [
+        {},
+        {name: '2', scene: 'scene_c2', lookat: ''},
+        {name: '3', scene: 'scene_c2', lookat: ''},
+        {name: '4', scene: 'scene_c5', lookat: ''},
+        {name: '5', scene: 'scene_c5', lookat: ''},
+        {name: '6', scene: 'scene_c5', lookat: ''},
+        {name: '7', scene: 'scene_c8', lookat: ''},
+        {name: '8', scene: 'scene_c8', lookat: ''},
+        {name: '9', scene: 'scene_c8', lookat: ''},
+        {name: '10', scene: 'scene_c11', lookat: ''},
+        {name: '11', scene: 'scene_c11', lookat: ''},
+        {name: '12', scene: 'scene_c11', lookat: ''},
+        {name: '13', scene: 'scene_c14', lookat: ''},
+        {name: '14', scene: 'scene_c14', lookat: ''},
+        {name: '15', scene: 'scene_c14', lookat: ''},
+        {name: '16', scene: 'scene_c17', lookat: ''},
+        {name: '17', scene: 'scene_c17', lookat: ''},
+        {name: '18', scene: 'scene_c17', lookat: ''},
+        {name: '19', scene: 'scene_c20', lookat: ''},
+        {name: '20', scene: 'scene_c20', lookat: ''},
+        {name: '21', scene: 'scene_c20', lookat: ''},
+        {name: '22', scene: 'scene_c23', lookat: ''},
+        {name: '23', scene: 'scene_c23', lookat: ''},
+        {name: '24', scene: 'scene_c23', lookat: ''},
+        {name: '25', scene: 'scene_c26', lookat: ''},
+        {name: '26', scene: 'scene_c26', lookat: ''},
+        {name: '27', scene: 'scene_c26', lookat: ''},
+        {},
+        {},
+        {name: '28', scene: 'scene_c29', lookat: ''},
+        {name: '29', scene: 'scene_c29', lookat: ''},
+        {name: '30', scene: 'scene_c29', lookat: ''}
+      ],
+      // 第二排
+      [
+        {name: '1', scene: 'scene_c2', lookat: ''},
+        {name: '2', scene: 'scene_c2', lookat: ''},
+        {name: '3', scene: 'scene_c2', lookat: ''},
+        {name: '4', scene: 'scene_c5', lookat: ''},
+        {name: '5', scene: 'scene_c5', lookat: ''},
+        {name: '6', scene: 'scene_c5', lookat: ''},
+        {name: '7', scene: 'scene_c8', lookat: ''},
+        {name: '8', scene: 'scene_c8', lookat: ''},
+        {name: '9', scene: 'scene_c8', lookat: ''},
+        {name: '10', scene: 'scene_c11', lookat: ''},
+        {name: '11', scene: 'scene_c11', lookat: ''},
+        {name: '12', scene: 'scene_c11', lookat: ''},
+        {name: '13', scene: 'scene_c14', lookat: ''},
+        {name: '14', scene: 'scene_c14', lookat: ''},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {name: '28', scene: 'scene_c29', lookat: ''},
+        {name: '29', scene: 'scene_c29', lookat: ''},
+        {name: '30', scene: 'scene_c29', lookat: ''}
+      ]
+    ]
   }
 }
