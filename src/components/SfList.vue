@@ -36,7 +36,7 @@
   </div>
 </template>
 
-<style lang="postcss">
+<script>
   export default {
     data() {
       return {

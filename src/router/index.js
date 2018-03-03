@@ -9,7 +9,7 @@ Vue.use(Router);
 export default new Router({
   mode: 'history',
   routes: [
-    {path: '/', redirect: '/s1'},
+    {path: '/', redirect: '/s4'},
     {path: '/s1', name: 's1', component: Scene},
     {path: '/s2', name: 's2', component: Scene},
     {path: '/s3', name: 's3', component: Scene},

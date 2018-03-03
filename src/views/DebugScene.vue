@@ -87,7 +87,7 @@
   }
 </script>
 
-<style lang="postcss">
+<style lang="scss">
   html {
     height: 100%;
   }

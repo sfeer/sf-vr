@@ -165,8 +165,8 @@
   }
 </script>
 
-<style lang="postcss">
-  /*@import 'viewerjs/dist/viewer.css';*/
+<style lang="scss">
+  @import '~viewerjs/dist/viewer.css';
 
   html {
     height: 100%;
