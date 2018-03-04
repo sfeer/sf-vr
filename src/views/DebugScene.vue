@@ -1,3 +1,4 @@
+<!--开发绘制页面-->
 <template>
   <div id="app" style="height:100%">
     <div id="pano"></div>
@@ -9,8 +10,8 @@
       <div style="font-weight: bold">ath, atv</div>
       <div>{{`${ath}, ${atv}`}}</div>
       <div style="font-weight: bold">box</div>
-      <el-button @click="draw=true">开启绘制</el-button>
-      <el-button @click="draw=false;box_html=[];">绘制结束</el-button>
+      <div @click="draw=true">开启绘制</div>
+      <div @click="draw=false;box_html=[];">绘制结束</div>
       <div v-for="item in box_html">{{item}}</div>
     </div>
   </div>

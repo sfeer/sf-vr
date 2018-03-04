@@ -1,3 +1,4 @@
+<!--带缺陷数据的Scene-->
 <template>
   <div id="app" style="height:100%">
     <div id="pano"></div>
