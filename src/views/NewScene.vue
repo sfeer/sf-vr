@@ -1,7 +1,7 @@
 <template>
   <div id="app" style="height:100%">
     <div id="pano"></div>
-    <div id="guide-btn" class="show-btn" data-tip="快速导航" :class="showGuide?'active':''"
+    <div id="guide-btn" data-tip="快速导航" :class="showGuide?'active':''"
          @click="showGuide=!showGuide"></div>
     <div id="map-btn" v-if="guideMap" :class="showMap?'active':''" @click="showMap=!showMap"></div>
     <div v-show="showMap" id="map-div">
@@ -18,14 +18,14 @@
       </div>
       <div class="row">
         <div class="title">一楼</div>
-        <div class="btn" @click="sid='s5'">#1、2电容室</div>
-        <div class="btn" @click="sid='s6'">#3、4电容室</div>
-        <div class="btn" @click="sid='s7'">开关室</div>
+        <div class="btn" @click="sid='s4r1'">#1、2电容室</div>
+        <div class="btn" @click="sid='s4r2'">#3、4电容室</div>
+        <div class="btn" @click="sid='s4r3'">开关室</div>
       </div>
       <div class="row">
         <div class="title">二楼</div>
-        <div class="btn" @click="sid='s9'">主控室</div>
-        <div class="btn" @click="sid='s8'">GIS室</div>
+        <div class="btn" @click="sid='s4r4'">主控室</div>
+        <div class="btn" @click="sid='s4r5'">GIS室</div>
       </div>
     </div>
     <div id="images">
@@ -35,7 +35,6 @@
 </template>
 
 <script>
-  import _ from 'lodash';
   import VR from '../assets/vr';
   import Viewer from 'viewerjs';
 
@@ -72,7 +71,7 @@
           document.title = this.station.name; // 设置标题
           this.showGuide = false;
 
-          this.guideMap = VR.DUIDES[sid];
+          this.guideMap = VR.MAPS[sid];
 
           // 初始化全景
           this.initVR();
@@ -211,37 +210,6 @@
     }
     &.active {
       background: rgba(255, 102, 0, .6) url(../assets/img/tools_btn.png) no-repeat 3px -47px;
-    }
-  }
-
-  #guide-map {
-    z-index: 100;
-    position: fixed;
-    top: 50%;
-    left: 0;
-    margin-top: -80px;
-    border-radius: 0 5px 5px 0;
-    background-color: rgba(255, 255, 255, .6);
-
-    .row {
-      display: flex;
-      border: 1px dashed #666;
-      padding: 5px 10px;
-      margin: 10px;
-
-      .title {
-        font-weight: 600;
-        color: #444;
-        padding: 5px 0;
-      }
-
-      .btn {
-        cursor: pointer;
-        background: #242833;
-        color: #fff;
-        margin: 0 2px;
-        padding: 5px;
-      }
     }
   }
 

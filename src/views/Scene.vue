@@ -1,13 +1,14 @@
 <!--带缺陷数据的Scene-->
 <template>
-  <div id="scene-wrapper">
+  <div id="app" style="height:100%">
     <div id="pano"></div>
-    <div id="cabinet-overview-btn" data-tip="机柜总览" :class="showCabinets?'active':''" @click="showCabinets=!showCabinets"></div>
-    <div class="cabinet-overview" v-for="item in cabinetList" v-show="showCabinets">
-      <div v-if="c.name" class="cabinet" v-for="c in item" @click="loadScene(c)">{{c.name}}</div>
-      <div v-else class="cabinet-empty"></div>
-    </div>
-    <div v-if="station.id === 's1'" v-show="showCabinets" class="sketch-map">
+    <div
+      id="sketch-map-btn"
+      data-tip="机柜总览"
+      :class="showSketchMap?'active':''"
+      @click="showSketchMap=!showSketchMap"
+    ></div>
+    <div v-if="station.id === 's1'" v-show="showSketchMap" class="sketch-map">
       <div class="cabinet-warpper">
         <div :class="cabinet_status['6233f7dc1d8b4174b98a6c60594de6e7']" class="cabinet"
              @click="loadscene('3bb843126ac75316b65b786b0269d747')">GP<br>1
@@ -67,7 +68,7 @@
         </div>
       </div>
     </div>
-    <div v-else-if="station.id === 's2'" v-show="showCabinets" class="sketch-map">
+    <div v-else-if="station.id === 's2'" v-show="showSketchMap" class="sketch-map">
       <div class="cabinet-warpper">
         <div :class="cabinet_status['91c7133c3e4948758f97bc431383b60a']" class="cabinet"
              @click="loadscene('d22e997fa1204644bc3f338b43c41761')">GP<br>1
@@ -130,7 +131,7 @@
         </div>
       </div>
     </div>
-    <div v-else-if="station.id === 's3'" v-show="showCabinets" class="sketch-map">
+    <div v-else-if="station.id === 's3'" v-show="showSketchMap" class="sketch-map">
       <div class="cabinet-warpper">
         <div id="54b32021cc894d83b02df0c19f1aa48b" class="cabinet"
              @click="loadscene('2e07580478c642b4a2b902434a17f3b0')">GP<br>1
@@ -265,13 +266,10 @@
         multipleBug: false,
         // 是否显示缺陷详情
         showBugDesc: false,
+        // 是否显示总览示意图
+        showSketchMap: false,
         // 是否显示缺陷信息框
         showBugBox: false,
-
-        // 是否显示顶部机柜缩略示意图
-        showCabinets: false,
-        // 机柜概要信息
-        cabinetList: []
       }
     },
     created() {
@@ -374,7 +372,7 @@
           arr = _.split(scene.lookat, ',');
         this.krpano.call("loadscene('" + scene.name + "', null, MERGE)");
         this.krpano.call("lookat('" + arr[0] + "','" + arr[1] + "','" + arr[2] + "')");
-        this.showCabinets = false;
+        this.showSketchMap = false;
       }
     }
   }
@@ -396,38 +394,10 @@
     color: #444;
   }
 
-  #scene-wrapper {
+  #pano {
+    width: 100%;
     height: 100%;
-
-    #pano {
-      width: 100%;
-      height: 100%;
-      z-index: 0 !important;
-    }
-
-    #cabinet-overview-btn {
-      position: fixed;
-      bottom: 20px;
-      left: 10px;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      cursor: pointer;
-      background: rgba(255, 255, 255, .6) url(../assets/img/tools_btn.png) no-repeat -47px -47px;
-      &:after {
-        content: attr(data-tip);
-        position: absolute;
-        text-align: center;
-        text-shadow: 0 0 2px #000;
-        color: #fff;
-        font-weight: 700;
-        top: 100%;
-      }
-      &.active {
-        background: rgba(255, 102, 0, .6) url(../assets/img/tools_btn.png) no-repeat 3px -47px;
-      }
-    }
-
+    z-index: 0 !important;
   }
 
   /* =====缺陷列表===== */
@@ -495,7 +465,26 @@
 
   /* =====俯视图===== */
   #sketch-map-btn {
-
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, .6) url(../assets/img/tools_btn.png) no-repeat -47px -47px;
+    &:after {
+      content: attr(data-tip);
+      position: absolute;
+      text-align: center;
+      text-shadow: 0 0 2px #000;
+      color: #fff;
+      font-weight: 700;
+      top: 100%;
+    }
+    &.active {
+      background: rgba(255, 102, 0, .6) url(../assets/img/tools_btn.png) no-repeat 3px -47px;
+    }
   }
 
   .sketch-map {
