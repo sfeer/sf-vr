@@ -4,14 +4,12 @@
     <div id="guide-btn" class="show-btn" data-tip="快速导航" :class="showGuide?'active':''"
          @click="showGuide=!showGuide"></div>
     <div id="map-btn" v-if="guideMap" :class="showMap?'active':''" @click="showMap=!showMap"></div>
-    <transition name="el-zoom-in-top">
-      <div v-show="showMap" id="map-div">
-        <div class="cabinet-warpper" v-for="item in guideMap">
-          <div v-if="c.name" class="cabinet" v-for="c in item" @click="loadScene(c)">{{c.name}}</div>
-          <div v-else class="cabinet-empty"></div>
-        </div>
+    <div v-show="showMap" id="map-div">
+      <div class="cabinet-warpper" v-for="item in guideMap">
+        <div v-if="c.name" class="cabinet" v-for="c in item" @click="loadScene(c)">{{c.name}}</div>
+        <div v-else class="cabinet-empty"></div>
       </div>
-    </transition>
+    </div>
     <div v-show="showGuide" id="guide-map">
       <div class="row">
         <div class="title">室外</div>
@@ -277,7 +275,7 @@
   }
 
   .cabinet-warpper {
-    width:900px;
+    width: 900px;
     display: flex;
     margin: 20px 0;
     .cabinet {
