@@ -397,9 +397,9 @@
       </level>
     </image>
     <hotspot name="spot1" style="spot_left" ath="15.071" atv="24.487" linkedscene="scene_aisle2" text="上楼" linkedscene_lookat="128.738,13.711,120"/>
-    <hotspot name="spot2" style="spot_href" ath="58.254" atv="40.219" text="进入" href="s4r1"/>
-    <hotspot name="spot3" style="spot_href" ath="-179.803" atv="30.298" text="进入" href="s4r2"/>
-    <hotspot name="spot4" style="spot_href" ath="-157.446" atv="21.595" text="进入" href="s4r3"/>
+    <hotspot name="spot2" style="spot_href" ath="58.254" atv="40.219" text="进入" href="r1"/>
+    <hotspot name="spot3" style="spot_href" ath="-179.803" atv="30.298" text="进入" href="r2"/>
+    <hotspot name="spot4" style="spot_href" ath="-157.446" atv="21.595" text="进入" href="r3"/>
   </scene>
 
   <!--一楼过道-->
@@ -438,7 +438,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-37.087" atv="19.412" linkedscene="scene_aisle4" text="前进" linkedscene_lookat="28.574,-0.216,120"/>
     <hotspot name="spot2" style="spot_arrow" ath="36.467" atv="20.342" linkedscene="scene_aisle2" text="下楼" linkedscene_lookat="128.738,13.711,120"/>
-    <hotspot name="spot3" style="spot_href" ath="-14.205" atv="14.412" text="进入" href="s4r5"/>
+    <hotspot name="spot3" style="spot_href" ath="-14.205" atv="14.412" text="进入" href="r5"/>
   </scene>
 
   <!--二楼过道-->
@@ -457,8 +457,8 @@
       </level>
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="119.690" atv="11.857" linkedscene="scene_aisle3" text="前进" linkedscene_lookat="-5.715,8.534,120"/>
-    <hotspot name="spot2" style="spot_href" ath="30.156" atv="33.373" text="进入" href="s4r5|scene_c19"/>
-    <hotspot name="spot3" style="spot_href" ath="-69.584" atv="21.524" text="进入" href="s4r4|scene_gp1|-91.523,8.861,120"/>
+    <hotspot name="spot2" style="spot_href" ath="30.156" atv="33.373" text="进入" href="r5|scene_c19"/>
+    <hotspot name="spot3" style="spot_href" ath="-69.584" atv="21.524" text="进入" href="r4|scene_gp1|-91.523,8.861,120"/>
   </scene>
 
 

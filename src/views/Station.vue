@@ -5,7 +5,7 @@
          data-tip="快速导航"
          :class="showGuide?'active':''"
          @click="showGuide=!showGuide"
-         v-if="room"></div>
+         v-if="station['room']"></div>
     <div id="map-btn"
          data-tip="机柜总览"
          :class="showMap?'active':''"
@@ -17,7 +17,7 @@
         <div v-else class="cabinet-empty"></div>
       </div>
     </div>
-    <div v-show="showGuide" id="guide-warpper"></div>
+    <guide v-show="showGuide"/>
     <div id="images">
       <img v-for="src in images" :src="src">
     </div>
@@ -27,13 +27,13 @@
 <script>
   import VR from '../assets/vr';
   import Viewer from 'viewerjs';
+  import Guide from './Guide';
 
   export default {
     data() {
       return {
-        sid: undefined,
-        rid: undefined,
-        kid: undefined,
+        sid: '',
+        rid: '',
 
         // 房间导航
         showGuide: false,
@@ -59,21 +59,24 @@
 
     computed: {
       station() {
-        return VR.STATIONS[this.sid];
+        return this.sid ? VR.STATIONS[this.sid] : undefined;
       },
       room() {
-        return this.station && this.station.room ? this.station.room[this.rid] : undefined;
+        return this.rid ? this.station.room[this.rid] : undefined;
+      },
+      kid() {
+        return `${this.sid}${this.rid}`;
       }
     },
 
     watch: {
       kid(kid) {
         // 重置全景
-        removepano(this.kid);
+        removepano(this.sid);
         this.initVR();
 
         // 重置标题
-        document.title = this.room.name;
+        document.title = this.rid ? this.room.name : this.station.name;
 
         // 重置弹出框
         this.showGuide = false;
@@ -83,14 +86,38 @@
     },
 
     created() {
-      this.sid = this.$route.params['sid'];
-      this.rid = this.$route.params['rid'];
+      const sid = this.$route.params['sid'];
+      if (VR.STATIONS[sid]) {
+        this.sid = sid === undefined ? '' : sid;
+        if (this.station.room) {
+          const rid = this.$route.params['rid'];
+          if (rid) {
+            if (this.station.room[rid]) {
+              this.rid = rid === undefined ? '' : sid;
+            } else {
+              console.error('room id not exist!')
+            }
+          }
+        }
+      } else {
+        console.error('station id not exist!')
+      }
+
+      this.$bus.$on('href', url => {
+        const a = url.split('|');
+        if (this.rid === '' && a[0] === '') {
+          this.showGuide = false;
+          this.showMap = false;
+          this.krpano.call(`loadscene('${a[1]}', null, MERGE)`);
+        } else {
+          this.rid = a[0];
+          this.initScene = a.length > 1 ? a[1] : undefined;
+          this.initLookat = a.length > 2 ? a[2] : undefined;
+        }
+      });
     },
 
     mounted() {
-      // 设置标题
-      document.title = this.room ? this.room.name : this.station.name;
-      this.kid = `${this.station ? this.sid : ''}${this.room ? this.rid : ''}`;
       // 图片浏览器
       this.viewer = new Viewer(document.getElementById('images'), this.viewerOpt);
     },
@@ -100,7 +127,7 @@
       initVR() {
         // 初始化krpano
         embedpano({
-          id: this.kid,
+          id: this.sid,
           xml: '/static/xml/' + this.kid + '.xml',
           swf: '/static/krpano.swf',
           target: 'pano',
@@ -120,7 +147,7 @@
               // 跨站点场景切换
               href: url => {
                 const a = url.split('|');
-                this.kid = a[0];
+                this.rid = a[0];
                 this.initScene = a.length > 1 ? a[1] : undefined;
                 this.initLookat = a.length > 2 ? a[2] : undefined;
               },
@@ -138,7 +165,9 @@
           }
         });
       },
-    }
+    },
+
+    components: {Guide}
   }
 </script>
 
@@ -193,37 +222,6 @@
       }
       &.active {
         background: rgba(255, 102, 0, .6) url(../assets/img/tools_btn.png) no-repeat 3px -47px;
-      }
-    }
-
-    #guide-warpper {
-      z-index: 100;
-      position: fixed;
-      top: 50%;
-      left: 0;
-      margin-top: -80px;
-      border-radius: 0 5px 5px 0;
-      background-color: rgba(255, 255, 255, .6);
-
-      .row {
-        display: flex;
-        border: 1px dashed #666;
-        padding: 5px 10px;
-        margin: 10px;
-
-        .title {
-          font-weight: 600;
-          color: #444;
-          padding: 5px 0;
-        }
-
-        .btn {
-          cursor: pointer;
-          background: #242833;
-          color: #fff;
-          margin: 0 2px;
-          padding: 5px;
-        }
       }
     }
 

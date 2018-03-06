@@ -18,14 +18,14 @@
       </div>
       <div class="row">
         <div class="title">一楼</div>
-        <div class="btn" @click="sid='s4r1'">#1、2电容室</div>
-        <div class="btn" @click="sid='s4r2'">#3、4电容室</div>
-        <div class="btn" @click="sid='s4r3'">开关室</div>
+        <div class="btn" @click="rid='r1'">#1、2电容室</div>
+        <div class="btn" @click="rid='r2'">#3、4电容室</div>
+        <div class="btn" @click="rid='r3'">开关室</div>
       </div>
       <div class="row">
         <div class="title">二楼</div>
-        <div class="btn" @click="sid='s4r4'">主控室</div>
-        <div class="btn" @click="sid='s4r5'">GIS室</div>
+        <div class="btn" @click="rid='r4'">主控室</div>
+        <div class="btn" @click="rid='r5'">GIS室</div>
       </div>
     </div>
     <div id="images">
