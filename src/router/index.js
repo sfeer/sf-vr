@@ -11,14 +11,19 @@ export default new Router({
   mode: 'history',
   routes: [
     {path: '/', redirect: '/s1'},
-    {path: '/:sid(s\\d+)', component: Station},
-    {path: '/:sid(s\\d+)/:rid(r\\d+)', component: Station},
-    {path: '/s2', name: 's2', component: Scene},
-    {path: '/s3', name: 's3', component: Scene},
+    // {path: '/:sid(s\\d+)', component: Station},
+    // {path: '/:sid(s\\d+)/:rid(r\\d+)', component: Station},
+    {path: '/s1', name: 's1', component: Station},
+    {path: '/s2', name: 's2', component: Station},
+    {path: '/s3', name: 's3', component: Station},
+    {path: '/s4', name: 's4', component: Station},
+    {path: '/s4/r1', name: 's4r1', component: Station},
+    {path: '/s4/r2', name: 's4r2', component: Station},
+    {path: '/s4/r3', name: 's4r3', component: Station},
+    {path: '/s4/r4', name: 's4r4', component: Station},
+    {path: '/s4/r5', name: 's4r5', component: Station},
+
     {path: '/scene/:scene', component: Scene},
-
-    {path: '/s4', name: 's4', component: NewScene},
-
     {path: '/debug/:sid', component: DebugScene}
   ]
 })

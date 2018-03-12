@@ -32,8 +32,7 @@
   export default {
     data() {
       return {
-        sid: '',
-        rid: '',
+        pano: '', // 全景码
 
         // 房间导航
         showGuide: false,
@@ -59,49 +58,28 @@
 
     computed: {
       station() {
-        return this.sid ? VR.STATIONS[this.sid] : undefined;
-      },
-      room() {
-        return this.rid ? this.station.room[this.rid] : undefined;
-      },
-      kid() {
-        return `${this.sid}${this.rid}`;
+        return VR.PANOS[this.pano];
       }
     },
 
     watch: {
-      kid(kid) {
+      pano(pano) {
         // 重置全景
         removepano(this.sid);
         this.initVR();
 
         // 重置标题
-        document.title = this.rid ? this.room.name : this.station.name;
+        document.title = this.station.name;
 
         // 重置弹出框
         this.showGuide = false;
         this.showMap = false;
-        this.cabinetMap = VR.MAPS[kid];
+        this.cabinetMap = VR.MAPS[pano];
       }
     },
 
     created() {
-      const sid = this.$route.params['sid'];
-      if (VR.STATIONS[sid]) {
-        this.sid = sid === undefined ? '' : sid;
-        if (this.station.room) {
-          const rid = this.$route.params['rid'];
-          if (rid) {
-            if (this.station.room[rid]) {
-              this.rid = rid === undefined ? '' : sid;
-            } else {
-              console.error('room id not exist!')
-            }
-          }
-        }
-      } else {
-        console.error('station id not exist!')
-      }
+      this.pano = this.$route.name;
 
       this.$bus.$on('href', url => {
         const a = url.split('|');

@@ -2,34 +2,17 @@
  * VR全景初始化数据，TODO 后期存储到数据库数据
  */
 export default {
-  // 站点初始化数据
-  STATIONS: {
-    s1: {
-      name: '10kV花园总部开关站',
-      fd_id: '7acbe2c8fb9640319e1a924a45aaf0fa',
-      index: 'scene_entrance'
-    },
-    s2: {
-      name: '10kV中通开关站',
-      fd_id: 'b1bf18d79476445987e04ccf903986a2',
-      index: 'scene_entrance'
-    },
-    s3: {
-      name: '10kV桐城府壹号开关站',
-      fd_id: '045253c418fe41f78fd0dc9bb37ec6a0',
-      index: 'scene_entrance'
-    },
-    s4: {
-      name: '110kV枫塘变电站',
-      index: 'scene_overview',
-      room: {
-        r1: {name: '10kV#1、2电容室', index: 'scene_gp1'},
-        r2: {name: '10kV#3、4电容室', index: 'scene_gp1'},
-        r3: {name: '10kV开关室', index: 'scene_c2'},
-        r4: {name: '110kvGIS室', index: 'scene_view1'},
-        r5: {name: '主控室', index: 'scene_c1'}
-      }
-    }
+  // 全景初始化数据
+  PANOS: {
+    s1: {name: '10kV花园总部开关站', index: 'scene_entrance'},
+    s2: {name: '10kV中通开关站', index: 'scene_entrance'},
+    s3: {name: '10kV桐城府壹号开关站', index: 'scene_entrance'},
+    s4: {name: '110kV枫塘变电站', index: 'scene_overview'},
+    s4r1: {name: '10kV#1、2电容室', index: 'scene_gp1'},
+    s4r2: {name: '10kV#3、4电容室', index: 'scene_gp1'},
+    s4r3: {name: '10kV开关室', index: 'scene_c2'},
+    s4r4: {name: '110kvGIS室', index: 'scene_view1'},
+    s4r5: {name: '主控室', index: 'scene_c1'}
   },
 
   // 根据showid查询加载图片
