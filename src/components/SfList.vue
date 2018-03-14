@@ -1,4 +1,4 @@
-<!-- 列表 -->
+<!-- 缺陷列表 -->
 <template>
   <div class="sf-list-wrapper">
     <ul class="show-list" v-show="!showMore">
@@ -29,7 +29,7 @@
       <div v-if="hasVideo">
         <audio controls="controls" v-for="item in currentItem.video">
           <source :src="item" type="audio/mp3"/>
-          <embed :src="item"></embed>
+          <embed :src="item"/>
         </audio>
       </div>
     </div>

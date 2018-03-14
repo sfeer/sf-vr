@@ -227,7 +227,7 @@
         </el-carousel>
         <audio controls="controls" v-for="item in current_bug.voicelist">
           <source :src="item" type="audio/mp3"/>
-          <embed :src="item"></embed>
+          <embed :src="item"/>
         </audio>
       </div>
     </el-dialog>
@@ -273,15 +273,9 @@
       }
     },
     created() {
-      let pst = this.$route.name,
-        psc = this.$route.params.scene;
-      if (pst && VR.STATIONS[pst]) {
-        this.station = VR.STATIONS[pst];
-        this.scene = {name: this.station.index};
-      } else if (psc && VR.SCENES[psc]) {
-        this.station = VR.STATIONS[VR.SCENES[psc].station];
-        this.scene = VR.SCENES[psc];
-      }
+      this.panoCode = this.$route.name;
+      this.station = VR.PANOS[this.panoCode];
+      this.scene = {name: this.station.index};
     },
     mounted() {
       // 设置标题
@@ -293,7 +287,7 @@
       initVR() {
         // 初始化krpano
         embedpano({
-          xml: '/static/xml/' + this.station.id + '.xml',
+          xml: '/static/xml/' + this.panoCode + '.xml',
           swf: '/static/krpano.swf',
           target: 'pano',
           onready: krpano => {

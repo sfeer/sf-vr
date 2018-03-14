@@ -4,6 +4,7 @@ import Router from 'vue-router';
 import SwitchStation from '../views/SwitchStation';
 import Substation from '../views/Substation';
 import DebugScene from '../views/DebugScene';
+import Scene from '../views/Scene';
 
 Vue.use(Router);
 
@@ -14,7 +15,7 @@ export default new Router({
     // {path: '/:sid(s\\d+)', component: Station},
     // {path: '/:sid(s\\d+)/:rid(r\\d+)', component: Station},
     {path: '/s1', name: 's1', component: SwitchStation},
-    {path: '/s2', name: 's2', component: SwitchStation},
+    {path: '/s2', name: 's2', component: Scene},
     {path: '/s3', name: 's3', component: SwitchStation},
     {path: '/s4', name: 's4', component: Substation},
     {path: '/s4r1', name: 's4r1', component: Substation},

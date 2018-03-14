@@ -4,6 +4,7 @@
     <sf-krpano id="pano-wrapper" :xml="xml" :scene="scene" :lookat="lookat" :hooks="hooks"/>
     <div id="layout-btn" data-tip="机柜总览" :class="showLayout?'active':''" @click="showLayout=!showLayout"></div>
     <cabinet-layout id="layout-wrapper" :data="layoutData" v-show="showLayout" @click="cabinetClick"/>
+    <bug-info/>
   </div>
 </template>
 
@@ -11,9 +12,10 @@
   import VR from '../assets/vr';
   import SfKrpano from "../components/SfKrpano";
   import CabinetLayout from './CabinetLayout';
+  import BugInfo from './BugInfo';
 
   export default {
-    components: {SfKrpano, CabinetLayout},
+    components: {SfKrpano, CabinetLayout, BugInfo},
 
     data() {
       return {
