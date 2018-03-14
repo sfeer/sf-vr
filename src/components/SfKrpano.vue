@@ -1,6 +1,6 @@
 <!--全景插件-->
 <template>
-  <div class="sf-krpano"></div>
+  <div></div>
 </template>
 
 <script>
@@ -16,6 +16,9 @@
         type: String, required: true
       },
       scene: {
+        type: String
+      },
+      lookat: {
         type: String
       },
       hooks: {
@@ -42,7 +45,6 @@
       createPano() {
         if (!this.createLock && !this.krpanoObj) {
           this.createLock = true;
-          this.$el.id = this.krpanoObjId + "_container";
 
           embedpano({
             id: this.krpanoObjId,
@@ -81,8 +83,20 @@
                         loadscene(${scene},null,MERGE,BLEND(0.5)))`;
             this.krpanoObj.call(str);
             this.$emit("sceneChanged", scene);
+            this.loadLookat();
           } else {
             this.krpanoObj.call("loadscene(get(scene[0].name),null,MERGE,BLEND(0.5))");
+          }
+        }
+      },
+
+      loadLookat() {
+        console.log(this.lookat);
+        let lookat = this.lookat
+        if(this.krpanoObj) {
+          if (lookat) {
+            const arr = lookat.split(',');
+            this.krpanoObj.call("lookat('" + arr[0] + "','" + arr[1] + "','" + arr[2] + "')");
           }
         }
       }
@@ -93,11 +107,15 @@
         if (this.krpanoObj && newXml) {
           this.krpanoObj.call(`loadpano(${newXml},null,IGNOREKEEP)`);
           this.$emit("xmlChanged", newXml);
-          this.log("xml changed: " + newXml);
         }
       },
-      scene: function () {
+
+      scene() {
         this.loadScene();
+      },
+
+      lookat() {
+        this.loadLookat();
       }
     },
 

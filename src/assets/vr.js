@@ -444,7 +444,7 @@ export default {
   },
 
   // 机柜导航图
-  MAPS: {
+  LAYOUTS: {
     s4r3: [
       // 第一排
       [
@@ -515,6 +515,30 @@ export default {
         {name: '28', scene: 'scene_c29', lookat: ''},
         {name: '29', scene: 'scene_c29', lookat: ''},
         {name: '30', scene: 'scene_c29', lookat: ''}
+      ]
+    ],
+    s1: [
+      [
+        {name: 'GP 1', scene: 'scene_center1', lookat: '3.602,-2.786,120'},
+        {name: 'GP 2', scene: 'scene_center1', lookat: '3.602,-2.786,120'},
+        {name: 'GP 3', scene: 'scene_center1', lookat: '3.602,-2.786,120'},
+        {name: 'GP 4', scene: 'scene_center2', lookat: '-12.911,1.815,120'},
+        {name: 'GP 5', scene: 'scene_center2', lookat: '-12.911,1.815,120'},
+        {name: 'GP 6', scene: 'scene_center2', lookat: '-12.911,1.815,120'},
+        {name: 'GP 7', scene: 'scene_center3', lookat: '175.864,2.449,120'},
+        {name: 'GP 8', scene: 'scene_center3', lookat: '175.864,2.449,120'},
+        {name: 'GP 9', scene: 'scene_center3', lookat: '175.864,2.449,120'}
+      ],
+      [
+        {name: 'GP 18', scene: 'scene_center1', lookat: '182.467,3.004,120'},
+        {name: 'GP 17', scene: 'scene_center1', lookat: '182.467,3.004,120'},
+        {name: 'GP 16', scene: 'scene_center1', lookat: '182.467,3.004,120'},
+        {name: 'GP 15', scene: 'scene_center2', lookat: '526.093,4.164,120'},
+        {name: 'GP 14', scene: 'scene_center2', lookat: '526.093,4.164,120'},
+        {name: 'GP 13', scene: 'scene_center2', lookat: '526.093,4.164,120'},
+        {name: 'GP 12', scene: 'scene_center3', lookat: '714.497,2.521,120'},
+        {name: 'GP 11', scene: 'scene_center3', lookat: '714.497,2.521,120'},
+        {name: 'GP 10', scene: 'scene_center3', lookat: '714.497,2.521,120'}
       ]
     ]
   }
