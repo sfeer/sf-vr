@@ -58,10 +58,6 @@
               this.krpanoObj.hooks = this.hooks;
               this.$emit("panoCreated", this.krpanoObj);
               this.createLock = false;
-            },
-            onerror(msg) {
-              this.$emit("panoError", msg);
-              this.createLock = false;
             }
           });
         }
@@ -91,11 +87,9 @@
       },
 
       loadLookat() {
-        console.log(this.lookat);
-        let lookat = this.lookat
-        if(this.krpanoObj) {
-          if (lookat) {
-            const arr = lookat.split(',');
+        if (this.krpanoObj) {
+          if (this.lookat) {
+            const arr = this.lookat.split(',');
             this.krpanoObj.call("lookat('" + arr[0] + "','" + arr[1] + "','" + arr[2] + "')");
           }
         }

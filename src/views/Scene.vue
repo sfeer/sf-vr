@@ -237,7 +237,7 @@
 <script>
   import _ from 'lodash';
   import VR from '../assets/vr';
-  import R from '../assets/remote';
+  import R from '../assets/bug-api';
   import O from '../assets/offline';
 
   export default {

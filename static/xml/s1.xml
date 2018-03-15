@@ -72,20 +72,14 @@
     <image if="webvr.isenabled">
       <cube url="../panos/s1/center1.tiles/vr/pano_%s.jpg"/>
     </image>
-    <hotspot name="point1" style="spot_point" ath="-22.898" atv="-15.521"
-             showid="6233f7dc1d8b4174b98a6c60594de6e7"/>
+    <hotspot name="point1" style="spot_point" ath="-22.898" atv="-15.521" showid="6233f7dc1d8b4174b98a6c60594de6e7"/>
     <hotspot name="point2" style="spot_point" ath="-0.605" atv="-17.503" showid="9910e477b49346058615eec3de355608"/>
     <hotspot name="point3" style="spot_point" ath="27.934" atv="-16.147" showid="7b1964a2d69a4fb7a573dc8dbdd40a0f"/>
-    <hotspot name="point16" style="spot_point" ath="148.905" atv="-14.298"
-             showid="782bb2f070d9404c8fa81f522d88bed2"/>
-    <hotspot name="point17" style="spot_point" ath="-175.939" atv="-17.815"
-             showid="9fef3c8c13de4f9db62ed8f7cd7391d1"/>
-    <hotspot name="point18" style="spot_point" ath="-150.680" atv="-15.993"
-             showid="5c3be6bf378541078a79321aac7455aa"/>
-    <hotspot name="spot1" style="spot_arrow" ath="91.188" atv="39.538" linkedscene_lookat="75.875,6.701,120"
-             linkedscene="scene_center2" text="前进"/>
-    <hotspot name="spot2" style="spot_arrow" ath="-83.770" atv="44.961" linkedscene="scene_overview" text="前进"
-             linkedscene_lookat="-156.418,22.07,120"/>
+    <hotspot name="point16" style="spot_point" ath="148.905" atv="-14.298" showid="782bb2f070d9404c8fa81f522d88bed2"/>
+    <hotspot name="point17" style="spot_point" ath="-175.939" atv="-17.815" showid="9fef3c8c13de4f9db62ed8f7cd7391d1"/>
+    <hotspot name="point18" style="spot_point" ath="-150.680" atv="-15.993" showid="5c3be6bf378541078a79321aac7455aa"/>
+    <hotspot name="spot1" style="spot_arrow" ath="91.188" atv="39.538" linkedscene_lookat="75.875,6.701,120" linkedscene="scene_center2" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-83.770" atv="44.961" linkedscene="scene_overview" text="前进" linkedscene_lookat="-156.418,22.07,120"/>
   </scene>
 
   <scene name="scene_center2" title="中间二" onstart="" havevrimage="true" thumburl="../panos/s1/center2.tiles/thumb.jpg"

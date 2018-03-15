@@ -6,7 +6,7 @@
   <style name="spot_arrow" url="../img/arrow_64.png" onloaded="do_crop_animation(64,64,25);add_text()" scale="0.8" onclick="link_scene()"/>
   <style name="spot_left" url="../img/left_64.png" onloaded="do_crop_animation(64,64,25);add_text()" scale="0.8" onclick="link_scene()"/>
   <style name="spot_right" url="../img/right_64.png" onloaded="do_crop_animation(64,64,25);add_text()" scale="0.8" onclick="link_scene()"/>
-  <style name="spot_point" onloaded="do_crop_animation(40,40,25);do_init_hotspot()" scale="1" onclick="show_msg()"/>
+  <style name="spot_point" url="../img/point_success_40.png" onloaded="do_crop_animation(40,40,25);do_init_hotspot()" scale="1" onclick="show_msg()"/>
   <style name="spot_img" url="../img/point_128.png" onloaded="do_crop_animation(128,128,50)" scale="0.4" onclick="show_img()"/>
 
   <!-- =====ACTION===== -->
@@ -44,7 +44,6 @@
     registerattribute(frames, calc(xframes * yframes));
     registerattribute(frame, 0);
     set(crop, '0|0|%1|%2');
-
     setinterval(calc('crop_anim_' + name), calc(1.0 / %3),
     if(loaded,
     inc(frame);
@@ -102,7 +101,7 @@
 
   <!-- 热点初始化 -->
   <action name="do_init_hotspot">
-    jsget(show, calc('krpano.hooks.showHotspot("' + showid + '");'));
+    jsget(show, calc('krpano.hooks.showHotspot("' + showid + '")'));
     set(hotspot[get(name)].visible, get(show));
     if(get(show),
     jsget(status, calc('krpano.hooks.showSpotStatus("' + showid + '");'));
