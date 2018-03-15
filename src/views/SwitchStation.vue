@@ -4,7 +4,7 @@
     <sf-krpano id="pano-wrapper" :xml="xml" :scene="scene" :lookat="lookat" :hooks="hooks"/>
     <div id="layout-btn" data-tip="机柜总览" :class="showLayout?'active':''" @click="showLayout=!showLayout"></div>
     <cabinet-layout id="layout-wrapper" :data="layoutData" v-show="showLayout" @click="cabinetClick"/>
-    <bug-dialog :data="cabinetInfo" :show="showDialog"/>
+    <bug-dialog :data="cabinetInfo" v-show="showDialog" @close="showDialog=false"/>
   </div>
 </template>
 
@@ -25,34 +25,29 @@
         scene: '',
         lookat: '',
         hooks: {
-
-          // 是否显示热点
-          // showHotspot: id => {
-          //   console.log('000', id);
-          //   return 'true';
-          // },
           // 热点状态
           showSpotStatus: id => {
-            console.log('111', id);
-            return 'success';
+            let sum = 0,
+              arr = this.cabinetMap[id]['bugs'];
+            arr.map(d => {
+              sum += d.status === '5' ? 1 : 0;
+            });
+            if (sum === arr.length)
+              return 'success';
+            else if (sum === 0)
+              return 'danger';
+            else
+              return 'warning';
           },
 
           // 显示信息
-          showData(id) {
-            this.showDialog = true;
+          showData: id => {
             this.cabinetid = id;
+            this.showDialog = true;
           },
 
           // 是否显示热点
-          showHotspot: id => {
-            console.log(id, this.cabinetMap[id]);
-            return this.cabinetMap[id] ? 'true' : 'false'
-          },
-          //
-          // // 热点状态
-          // showSpotStatus(id) {
-          //   return 'success'
-          // }
+          showHotspot: id => this.cabinetMap[id]['bugs'].length > 0 ? 'true' : 'false'
         },
         showLayout: false,
         showDialog: false,
@@ -104,7 +99,7 @@
             name: d['categoryname'],
             time: d['createdstamp'],
             user: d['username'],
-            momo: d['memo'],
+            memo: d['memo'],
             pictures: d['pictures'],
             voices: d['voicelist']
           });

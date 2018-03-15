@@ -1,16 +1,16 @@
 <!--缺陷展示-->
 <template>
-  <div v-show="show" class="bug-wrapper">
-    <div class="mask"></div>
-    <div v-if="cabinetInfo" class="box">
+  <div class="bug-wrapper">
+    <div class="mask" @click="$emit('close')"></div>
+    <div class="box">
       <div class="header">
-        <span class="close" @click="handleClose">×</span>
-        <span class="title">{{cabinetInfo.name}}{{cabinetInfo.typename}}</span>
+        <div class="close" @click="handleClose">×</div>
+        <div class="title">{{title}}</div>
       </div>
       <div class="body">
-        <ul v-if="bugList.length>1" class="show-list" v-show="!showDesc">
+        <ul v-if="bugList.length>1" class="show-list" v-show="!bugInfo">
           <li :class="item.status === '5'?'item item-success':'item'"
-              @click="showDesc=true;bugInfo=item"
+              @click="bugInfo=item"
               v-for="item in bugList">
             <div class="item-header">{{ item.name }}</div>
             <div class="item-body">
@@ -23,8 +23,7 @@
             </div>
           </li>
         </ul>
-        <div class="show-desc" v-show="showDesc">
-          <div class="bug-title">{{ bugInfo.name }}</div>
+        <div class="show-desc" v-if="bugInfo">
           <div class="bug-desc">{{ bugInfo.memo }}</div>
           <audio controls="controls" v-for="item in bugInfo.voices">
             <source :src="item" type="audio/mp3"/>
@@ -42,42 +41,52 @@
       // 缺陷信息
       data: {
         required: true
-      },
-
-      show: {
-        type: Boolean
       }
     },
 
     data() {
       return {
-        showDesc: false,
-
         // 机柜信息
         cabinetMap: {},
 
         // 缺陷
-        bugInfo: {}
+        bugInfo: undefined,
+
+        // 缺陷列表
+        bugList: []
+      }
+    },
+
+    watch: {
+      data(data) {
+        console.log(data);
+        if (data) {
+          this.bugList = data['bugs'];
+          if (this.bugList.length === 1) {
+            this.bugInfo = this.bugList[0];
+          }
+        }
       }
     },
 
     computed: {
-      cabinetInfo() {
-        return this.cabinetMap[this.cabinetid];
-      },
-
-      bugList() {
-        return this.cabinetInfo ? this.cabinetInfo['bugs'] : [];
+      title() {
+        if (this.bugInfo && this.bugInfo.name) {
+          return this.bugInfo.name;
+        } else {
+          return this.data ? this.data.name + this.data.typename : '';
+        }
       }
     },
 
     methods: {
       // 处理返回
       handleClose() {
-        if (this.showDesc) {
-          this.showDesc = false;
+        if (this.bugList.length > 1 && this.bugInfo) {
+          this.bugInfo = undefined;
         } else {
-          this.show = false;
+          this.bugInfo = undefined;
+          this.$emit('close');
         }
       }
     }
@@ -115,26 +124,28 @@
 
       .header {
         background: #5a7490;
-        padding: 20px;
+        padding: 16px;
 
         .title {
           line-height: 24px;
           font-size: 18px;
           color: #fff;
-          font-weight: bold;
+          margin-left: 30px;
         }
 
         .close {
+          position: absolute;
+          top: 14px;
+          left: 14px;
           cursor: pointer;
-          color: #909399;
+          color: #fff;
           line-height: 24px;
-          font-size: 24px;
-          margin-right: 10px;
+          font-size: 36px;
         }
       }
 
       .body {
-        padding: 20px;
+        padding: 16px;
 
         .show-list {
           list-style: none;
@@ -145,7 +156,7 @@
 
           .item {
             position: relative;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             border: 1px solid #b0b0b0;
             border-radius: 5px;
             overflow: hidden;
@@ -183,12 +194,9 @@
         }
 
         .show-desc {
-          .bug-title {
-            font-size: 1.5rem;
-            margin: 20px 0;
-          }
           .bug-desc {
             color: #666;
+            font-size: 14px;
             margin-bottom: 20px;
           }
         }

@@ -399,7 +399,7 @@ const OFFLINE_BUGS = [
     'latitude': '',
     'line': '',
     'longitude': '',
-    'memo': '缺陷',
+    'memo': '',
     'parentid': '',
     'pictures': [
       'http://img.jdzj.com/UserDocument/2014d/zykj2015/Picture/20141231141711.jpg',
@@ -450,7 +450,7 @@ const OFFLINE_BUGS = [
     'latitude': '',
     'line': '',
     'longitude': '',
-    'memo': '缺陷',
+    'memo': '缺陷11',
     'parentid': '',
     'pictures': [],
     'planid': '',
@@ -497,7 +497,7 @@ const OFFLINE_BUGS = [
     'latitude': '',
     'line': '',
     'longitude': '',
-    'memo': '缺陷',
+    'memo': '缺陷22',
     'parentid': '',
     'pictures': [
       'http://c.img.youboy.com/201012/11/10/g0/g0_8902039.jpg'
