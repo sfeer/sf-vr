@@ -5,8 +5,6 @@ import SwitchStation from '../views/SwitchStation';
 import Substation from '../views/Substation';
 import DebugScene from '../views/DebugScene';
 
-import NewScene from '../views/NewScene';
-
 Vue.use(Router);
 
 export default new Router({
@@ -21,7 +19,7 @@ export default new Router({
     {path: '/s4', name: 's4', component: Substation},
     {path: '/s4r1', name: 's4r1', component: Substation},
     {path: '/s4r2', name: 's4r2', component: Substation},
-    {path: '/s4r3', name: 's4r3', component: NewScene},
+    {path: '/s4r3', name: 's4r3', component: Substation},
     {path: '/s4r4', name: 's4r4', component: Substation},
     {path: '/s4r5', name: 's4r5', component: Substation},
 

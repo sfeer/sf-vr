@@ -25,8 +25,16 @@
         </ul>
         <div class="show-desc" v-show="showDesc">
           <div class="bug-desc">{{ bugMemo }}</div>
-          <div id="bug-pictures">
-            <img v-for="src in bugPictures" :src="src">
+          <div id="bug-pictures" class="swiper-container">
+            <div class="swiper-wrapper" v-for="src in bugPictures">
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img :src="src">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
           <audio controls="controls" v-for="item in bugVoices">
             <source :src="item" type="audio/mp3"/>
@@ -39,6 +47,8 @@
 </template>
 
 <script>
+  import Swiper from 'swiper';
+
   export default {
     props: {
       // 缺陷信息
@@ -85,6 +95,7 @@
             const bugInfo = this.bugList[0];
             this.bugMemo = bugInfo.memo;
             this.bugPictures = bugInfo.pictures;
+            this.mySwiper.update();
             this.bugVoices = bugInfo.voices;
             this.title = bugInfo.name;
             this.showDesc = true;
@@ -94,12 +105,23 @@
     },
 
     mounted() {
+      // 图片浏览器
+      this.mySwiper = new Swiper('#bug-pictures', {
+        zoom: true,
+        direction: 'horizontal',
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
     },
 
     methods: {
       clickBug(bug) {
         this.bugMemo = bug.memo;
         this.bugPictures = bug.pictures;
+        this.mySwiper.update();
         this.bugVoices = bug.voices;
         this.title = bug.name;
         this.showDesc = true;
@@ -223,6 +245,11 @@
             color: #666;
             font-size: 14px;
             margin-bottom: 20px;
+          }
+
+          #bug-pictures {
+            width: 100%;
+            height: 350px;
           }
         }
       }
