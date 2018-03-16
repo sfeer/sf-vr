@@ -95,7 +95,8 @@
             const bugInfo = this.bugList[0];
             this.bugMemo = bugInfo.memo;
             this.bugPictures = bugInfo.pictures;
-            this.mySwiper.update();
+
+            // this.mySwiper.init();
             this.bugVoices = bugInfo.voices;
             this.title = bugInfo.name;
             this.showDesc = true;
@@ -107,9 +108,8 @@
     mounted() {
       // 图片浏览器
       this.mySwiper = new Swiper('#bug-pictures', {
+        init: false,
         zoom: true,
-        direction: 'horizontal',
-        loop: true,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -121,10 +121,11 @@
       clickBug(bug) {
         this.bugMemo = bug.memo;
         this.bugPictures = bug.pictures;
-        this.mySwiper.update();
         this.bugVoices = bug.voices;
         this.title = bug.name;
         this.showDesc = true;
+
+        this.mySwiper.init();
       },
 
       // 处理返回
