@@ -403,7 +403,7 @@ const OFFLINE_BUGS = [
     'parentid': '',
     'pictures': [
       'http://img.jdzj.com/UserDocument/2014d/zykj2015/Picture/20141231141711.jpg',
-      'http://tse4.mm.bing.net/th?id=OIP._V5xai02B7leEL7FbKE26gEsEs&pid=15.1',
+      'http://c.img.youboy.com/201012/11/10/g0/g0_8902039.jpg',
       'http://b.img.youboy.com/20107/9/g3_4064501.jpg'
     ],
     'planid': '',

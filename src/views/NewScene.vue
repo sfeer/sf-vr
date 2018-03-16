@@ -64,14 +64,14 @@
     },
     watch: {
       sid: function (sid) {
-        if (_.has(VR.STATIONS, sid)) {
+        if (VR.PANOS[sid]) {
           // 注销krpano
           removepano(this.station.id);
-          this.station = VR.STATIONS[sid];
+          this.station = VR.PANOS[sid];
           document.title = this.station.name; // 设置标题
           this.showGuide = false;
 
-          this.guideMap = VR.MAPS[sid];
+          this.guideMap = VR.LAYOUTS[sid];
 
           // 初始化全景
           this.initVR();

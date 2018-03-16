@@ -5,10 +5,35 @@
     <div id="layout-btn" data-tip="机柜总览" :class="showLayout?'active':''" @click="showLayout=!showLayout"></div>
     <cabinet-layout id="layout-wrapper" :data="layoutData" v-show="showLayout" @click="cabinetClick"/>
     <bug-dialog :data="cabinetInfo" v-show="showDialog" @close="showDialog=false"/>
+
+    <div class="swiper-container" style="position:absolute;top:0;width:100%;height:100%;z-index:3000">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-zoom-container">
+            <img src="http://img.jdzj.com/UserDocument/2014d/zykj2015/Picture/20141231141711.jpg">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-zoom-container">
+            <img src="http://c.img.youboy.com/201012/11/10/g0/g0_8902039.jpg">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-zoom-container">
+            <img src="http://b.img.youboy.com/20107/9/g3_4064501.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
   </div>
 </template>
 
 <script>
+  import Swiper from 'swiper';
+
   import VR from '../assets/vr';
   import BugApi from '../assets/bug-api';
 
@@ -54,7 +79,7 @@
         cabinetid: '',
 
         // 机柜信息
-        cabinetMap: {},
+        cabinetMap: {}
       }
     },
 
@@ -109,6 +134,16 @@
 
     mounted() {
       document.title = this.panoInfo.name;
+
+      // 图片浏览器
+      this.mySwiper = new Swiper('.swiper-container', {
+        zoom: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
     },
 
     methods: {
@@ -127,6 +162,8 @@
 </script>
 
 <style lang="scss">
+  @import '~swiper/dist/css/swiper.min.css';
+
   html {
     height: 100%;
   }

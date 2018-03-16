@@ -8,9 +8,9 @@
         <div class="title">{{title}}</div>
       </div>
       <div class="body">
-        <ul v-if="bugList.length>1" class="show-list" v-show="!bugInfo">
+        <ul v-if="bugList.length>1" class="show-list" v-show="!showDesc">
           <li :class="item.status === '5'?'item item-success':'item'"
-              @click="bugInfo=item"
+              @click="clickBug(item)"
               v-for="item in bugList">
             <div class="item-header">{{ item.name }}</div>
             <div class="item-body">
@@ -23,9 +23,12 @@
             </div>
           </li>
         </ul>
-        <div class="show-desc" v-if="bugInfo">
-          <div class="bug-desc">{{ bugInfo.memo }}</div>
-          <audio controls="controls" v-for="item in bugInfo.voices">
+        <div class="show-desc" v-show="showDesc">
+          <div class="bug-desc">{{ bugMemo }}</div>
+          <div id="bug-pictures">
+            <img v-for="src in bugPictures" :src="src">
+          </div>
+          <audio controls="controls" v-for="item in bugVoices">
             <source :src="item" type="audio/mp3"/>
             <embed :src="item"/>
           </audio>
@@ -49,43 +52,65 @@
         // 机柜信息
         cabinetMap: {},
 
-        // 缺陷
-        bugInfo: undefined,
+        showDesc: false,
+
+        title: '',
+        bugMemo: '',
+        bugPictures: [],
+        bugVoices: [],
 
         // 缺陷列表
-        bugList: []
+        bugList: [],
+
+        viewerOpt: {
+          inline: true,
+          title: false,
+          toolbar: false,
+          tooltip: false,
+          rotatable: false,
+          scalable: false,
+          keyboard: false
+        }
       }
     },
 
     watch: {
       data(data) {
-        console.log(data);
         if (data) {
           this.bugList = data['bugs'];
-          if (this.bugList.length === 1) {
-            this.bugInfo = this.bugList[0];
+          if (this.bugList.length > 1) {
+            this.title = data.name + data.typename;
+            this.showDesc = false;
+          } else {
+            const bugInfo = this.bugList[0];
+            this.bugMemo = bugInfo.memo;
+            this.bugPictures = bugInfo.pictures;
+            this.bugVoices = bugInfo.voices;
+            this.title = bugInfo.name;
+            this.showDesc = true;
           }
         }
       }
     },
 
-    computed: {
-      title() {
-        if (this.bugInfo && this.bugInfo.name) {
-          return this.bugInfo.name;
-        } else {
-          return this.data ? this.data.name + this.data.typename : '';
-        }
-      }
+    mounted() {
     },
 
     methods: {
+      clickBug(bug) {
+        this.bugMemo = bug.memo;
+        this.bugPictures = bug.pictures;
+        this.bugVoices = bug.voices;
+        this.title = bug.name;
+        this.showDesc = true;
+      },
+
       // 处理返回
       handleClose() {
-        if (this.bugList.length > 1 && this.bugInfo) {
-          this.bugInfo = undefined;
+        if (this.bugList.length > 1 && this.showDesc) {
+          this.showDesc = false;
         } else {
-          this.bugInfo = undefined;
+          this.showDesc = false;
           this.$emit('close');
         }
       }
