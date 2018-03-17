@@ -25,16 +25,15 @@
         </ul>
         <div class="show-desc" v-show="showDesc">
           <div class="bug-desc">{{ bugMemo }}</div>
-          <div id="bug-pictures" class="swiper-container">
-            <div class="swiper-wrapper" v-for="src in bugPictures">
-              <div class="swiper-slide">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="src in bugPictures">
                 <div class="swiper-zoom-container">
                   <img :src="src">
                 </div>
               </div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
           <audio controls="controls" v-for="item in bugVoices">
             <source :src="item" type="audio/mp3"/>
@@ -70,17 +69,7 @@
         bugVoices: [],
 
         // 缺陷列表
-        bugList: [],
-
-        viewerOpt: {
-          inline: true,
-          title: false,
-          toolbar: false,
-          tooltip: false,
-          rotatable: false,
-          scalable: false,
-          keyboard: false
-        }
+        bugList: []
       }
     },
 
@@ -95,8 +84,6 @@
             const bugInfo = this.bugList[0];
             this.bugMemo = bugInfo.memo;
             this.bugPictures = bugInfo.pictures;
-
-            // this.mySwiper.init();
             this.bugVoices = bugInfo.voices;
             this.title = bugInfo.name;
             this.showDesc = true;
@@ -107,14 +94,16 @@
 
     mounted() {
       // 图片浏览器
-      this.mySwiper = new Swiper('#bug-pictures', {
-        init: false,
+      this.mySwiper = new Swiper('.swiper-container', {
         zoom: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+        pagination: {
+          el: '.swiper-pagination',
+        }
       });
+    },
+
+    updated() {
+      this.mySwiper.update();
     },
 
     methods: {
@@ -124,8 +113,6 @@
         this.bugVoices = bug.voices;
         this.title = bug.name;
         this.showDesc = true;
-
-        this.mySwiper.init();
       },
 
       // 处理返回
@@ -158,7 +145,7 @@
       position: fixed;
       top: 0;
       width: 60vw;
-      margin: 15vh 20vw 0;
+      margin: 10vh 20vw 0;
       background: #fff;
       border-radius: 5px;
       overflow: hidden;
@@ -167,7 +154,7 @@
 
       @media (max-width: 767px) {
         width: 90vw;
-        margin: 15vh 5vw 0;
+        margin: 10vh 5vw 0;
       }
 
       .header {
@@ -248,9 +235,9 @@
             margin-bottom: 20px;
           }
 
-          #bug-pictures {
+          .swiper-container {
             width: 100%;
-            height: 350px;
+            height: 400px;
           }
         }
       }
