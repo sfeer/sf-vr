@@ -532,26 +532,26 @@ export default {
     ],
     s1: [
       [
-        {name: 'GP 1', scene: 'scene_center1', lookat: '3.602,-2.786,120'},
-        {name: 'GP 2', scene: 'scene_center1', lookat: '3.602,-2.786,120'},
-        {name: 'GP 3', scene: 'scene_center1', lookat: '3.602,-2.786,120'},
-        {name: 'GP 4', scene: 'scene_center2', lookat: '-12.911,1.815,120'},
-        {name: 'GP 5', scene: 'scene_center2', lookat: '-12.911,1.815,120'},
-        {name: 'GP 6', scene: 'scene_center2', lookat: '-12.911,1.815,120'},
-        {name: 'GP 7', scene: 'scene_center3', lookat: '175.864,2.449,120'},
-        {name: 'GP 8', scene: 'scene_center3', lookat: '175.864,2.449,120'},
-        {name: 'GP 9', scene: 'scene_center3', lookat: '175.864,2.449,120'}
+        {name: 'GP 1', scene: 'scene_center1', lookat: '3.602,-2.786,120', uuid: '6233f7dc1d8b4174b98a6c60594de6e7'},
+        {name: 'GP 2', scene: 'scene_center1', lookat: '3.602,-2.786,120', uuid: '9910e477b49346058615eec3de355608'},
+        {name: 'GP 3', scene: 'scene_center1', lookat: '3.602,-2.786,120', uuid: '7b1964a2d69a4fb7a573dc8dbdd40a0f'},
+        {name: 'GP 4', scene: 'scene_center2', lookat: '-12.911,1.815,120', uuid: 'c32221f6fc1c4fbea27d5983945f4a95'},
+        {name: 'GP 5', scene: 'scene_center2', lookat: '-12.911,1.815,120', uuid: '66dd5f9947c144bf99ab1867ef25c6c0'},
+        {name: 'GP 6', scene: 'scene_center2', lookat: '-12.911,1.815,120', uuid: 'd5fba9b2fc7547a19b4c50c5dabd1a98'},
+        {name: 'GP 7', scene: 'scene_center3', lookat: '175.864,2.449,120', uuid: '9d8229ecf6354f58893774c5b543b81a'},
+        {name: 'GP 8', scene: 'scene_center3', lookat: '175.864,2.449,120', uuid: 'c504763b600d4f59803b9d91e2a2cbbb'},
+        {name: 'GP 9', scene: 'scene_center3', lookat: '175.864,2.449,120', uuid: '931bed72e1c342ec9f306949860bb213'}
       ],
       [
-        {name: 'GP 18', scene: 'scene_center1', lookat: '182.467,3.004,120'},
-        {name: 'GP 17', scene: 'scene_center1', lookat: '182.467,3.004,120'},
-        {name: 'GP 16', scene: 'scene_center1', lookat: '182.467,3.004,120'},
-        {name: 'GP 15', scene: 'scene_center2', lookat: '526.093,4.164,120'},
-        {name: 'GP 14', scene: 'scene_center2', lookat: '526.093,4.164,120'},
-        {name: 'GP 13', scene: 'scene_center2', lookat: '526.093,4.164,120'},
-        {name: 'GP 12', scene: 'scene_center3', lookat: '714.497,2.521,120'},
-        {name: 'GP 11', scene: 'scene_center3', lookat: '714.497,2.521,120'},
-        {name: 'GP 10', scene: 'scene_center3', lookat: '714.497,2.521,120'}
+        {name: 'GP 18', scene: 'scene_center1', lookat: '182.467,3.004,120', uuid: '5c3be6bf378541078a79321aac7455aa'},
+        {name: 'GP 17', scene: 'scene_center1', lookat: '182.467,3.004,120', uuid: '9fef3c8c13de4f9db62ed8f7cd7391d1'},
+        {name: 'GP 16', scene: 'scene_center1', lookat: '182.467,3.004,120', uuid: '782bb2f070d9404c8fa81f522d88bed2'},
+        {name: 'GP 15', scene: 'scene_center2', lookat: '526.093,4.164,120', uuid: 'c2962a420565460ea2bc73371d051d64'},
+        {name: 'GP 14', scene: 'scene_center2', lookat: '526.093,4.164,120', uuid: '88a030424f104bf5837c6ef3bc5615e7'},
+        {name: 'GP 13', scene: 'scene_center2', lookat: '526.093,4.164,120', uuid: 'a94e9faf23a447dba59f48d43903206c'},
+        {name: 'GP 12', scene: 'scene_center3', lookat: '714.497,2.521,120', uuid: '446be62621904d1a982d73b6f26c8a92'},
+        {name: 'GP 11', scene: 'scene_center3', lookat: '714.497,2.521,120', uuid: '2e038b1fb4a44af1a4846f1c5128117b'},
+        {name: 'GP 10', scene: 'scene_center3', lookat: '714.497,2.521,120', uuid: 'f26cfcbc9ee94988b63abe444c12f63b'}
       ]
     ]
   }

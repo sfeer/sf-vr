@@ -68,7 +68,24 @@
       },
 
       layoutData() {
-        return VR.LAYOUTS[this.panoCode];
+        return VR.LAYOUTS[this.panoCode].map(row => {
+          return row.map(cab => {
+            const arr = this.cabinetMap[cab.uuid]['bugs'];
+            if (arr.length > 0) {
+              let sum = 0;
+              arr.map(d => {
+                sum += d.status === '5' ? 1 : 0;
+              });
+              if (sum === arr.length)
+                cab['class'] = 'success';
+              else if (sum === 0)
+                cab['class'] = 'danger';
+              else
+                cab['class'] = 'warning';
+            }
+            return cab;
+          });
+        });
       },
 
       cabinetInfo() {
@@ -80,7 +97,7 @@
       this.panoCode = this.$route.name;
       this.scene = this.panoInfo.index;
 
-      // 获取缺陷数据
+      // 获取机柜数据
       BugApi.queryCabinetInfo(this.panoInfo.uuid, data => {
         data.map(d => {
           this.cabinetMap[d['fdid']] = {
@@ -91,6 +108,7 @@
         });
       });
 
+      // 获取缺陷数据
       BugApi.queryBugInfo(this.panoInfo.uuid, data => {
         data.map(d => {
           this.cabinetMap[d['refequipmentid']]['bugs'].push({
