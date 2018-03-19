@@ -24,6 +24,6 @@ export default new Router({
     {path: '/s4r5', name: 's4r5', component: Substation},
 
     {path: '/scene/:scene', component: SwitchStation},
-    {path: '/debug/:sid', component: DebugScene}
+    {path: '/debug/:panoCode', component: DebugScene}
   ]
 })

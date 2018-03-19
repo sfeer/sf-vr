@@ -18,8 +18,14 @@
       scene: {
         type: String
       },
+      swf: {
+        type: String, default: 'krpano.swf'
+      },
       lookat: {
         type: String
+      },
+      html5: {
+        type: String, default: 'auto'
       },
       hooks: {
         type: Object
@@ -49,8 +55,9 @@
           embedpano({
             id: this.krpanoObjId,
             target: this.$el.id,
+            swf: this.swf,
             xml: this.xml,
-            html5: 'auto',
+            html5: this.html5,
             mobilescale: 1.0,
             passQueryParameters: true,
             onready: krpanoObj => {

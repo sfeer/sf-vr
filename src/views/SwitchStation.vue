@@ -54,7 +54,10 @@
         cabinetid: '',
 
         // 机柜信息
-        cabinetMap: {}
+        cabinetMap: {},
+
+        // 机柜布局
+        layoutData: [],
       }
     },
 
@@ -67,30 +70,6 @@
         return VR.PANOS[this.panoCode];
       },
 
-      layoutData() {
-        return VR.LAYOUTS[this.panoCode];
-        /** TODO bug状态需要在缺陷回调里做，layoutData改成普通变量
-        return VR.LAYOUTS[this.panoCode].map(row => {
-          return row.map(cab => {
-            const arr = this.cabinetMap[cab.uuid]['bugs'];
-            if (arr.length > 0) {
-              let sum = 0;
-              arr.map(d => {
-                sum += d.status === '5' ? 1 : 0;
-              });
-              if (sum === arr.length)
-                cab['class'] = 'success';
-              else if (sum === 0)
-                cab['class'] = 'danger';
-              else
-                cab['class'] = 'warning';
-            }
-            return cab;
-          });
-        });
-         **/
-      },
-
       cabinetInfo() {
         return this.cabinetid ? this.cabinetMap[this.cabinetid] : undefined;
       }
@@ -100,31 +79,52 @@
       this.panoCode = this.$route.name;
       this.scene = this.panoInfo.index;
 
+      this.layoutData = VR.LAYOUTS[this.panoCode];
+
       // 获取机柜数据
       BugApi.queryCabinetInfo(this.panoInfo.uuid, data => {
-        console.log('=====================');
-        console.log(data);
-        data.map(d => {
+        data.forEach(d => {
           this.cabinetMap[d['fdid']] = {
             name: d['devicename'],
             typename: d['equipmenttypename'],
             bugs: []
           };
         });
-      });
 
-      // 获取缺陷数据
-      BugApi.queryBugInfo(this.panoInfo.uuid, data => {
-        data.map(d => {
-          this.cabinetMap[d['refequipmentid']]['bugs'].push({
-            id: d['bugid'],
-            status: d['status'],
-            name: d['categoryname'],
-            time: d['createdstamp'],
-            user: d['username'],
-            memo: d['memo'],
-            pictures: d['pictures'],
-            voices: d['voicelist']
+        // 获取缺陷数据
+        BugApi.queryBugInfo(this.panoInfo.uuid, data => {
+          data.forEach(d => {
+            let cab = this.cabinetMap[d['refequipmentid']],
+              status = d.status === '5' ? 'success' : 'danger';
+            if (cab.class) {
+              console.log(111, cab);
+              if (cab.class === 'success' && status === 'success')
+                cab.class = 'success';
+              else if (cab.class === 'danger' && status === 'danger')
+                cab.class = 'danger';
+              else
+                cab.class = 'warning';
+            } else {
+              cab.class = status;
+            }
+            cab['bugs'].push({
+              id: d['bugid'],
+              status: d['status'],
+              name: d['categoryname'],
+              time: d['createdstamp'],
+              user: d['username'],
+              memo: d['memo'],
+              pictures: d['pictures'],
+              voices: d['voicelist']
+            });
+          });
+
+          // 机柜布局上显示缺陷信息
+          this.layoutData = this.layoutData.map(row => {
+            return row.map(cab => {
+              cab.class = this.cabinetMap[cab.uuid].class;
+              return cab;
+            });
           });
         });
       });
