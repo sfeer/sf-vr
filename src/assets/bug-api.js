@@ -7,7 +7,7 @@ const URL = 'http://47.93.119.201:8080/eps/',
   LOGIN = 'VR',
   PWD = 'E5196BF0F3BC6724708B6D485DF92B2B';
 let tenant_id, token;
-const OFFLINE = true;
+const OFFLINE = false;
 
 // 机柜信息
 const OFFLINE_CABINETS = [
@@ -667,8 +667,10 @@ export default {
       if (res.body.code === '0000') {
         tenant_id = res.body.data[0].tenantid;
         token = res.body.data[0].token;
+        callback && callback();
+      } else {
+        console.error(res.body);
       }
-      callback && callback();
     });
   },
 

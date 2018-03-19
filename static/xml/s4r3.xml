@@ -27,7 +27,7 @@
         <cube url="../panos/s4r3/c2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_href" ath="171.045" atv="13.881" href="|scene_aisle1|200.057,0.672,120" text="返回"/>
+    <hotspot name="spot1" style="spot_href" ath="171.045" atv="13.881" href="s4|scene_aisle1|200.057,0.672,120" text="返回"/>
     <hotspot name="spot2" style="spot_arrow" ath="-63.097" atv="33.489" linkedscene="scene_c5" text="前进"/>
     <hotspot name="spot3" style="spot_right" ath="-175.698" atv="23.219" linkedscene="scene_x15" text="右转"/>
     <hotspot name="spot4" style="spot_left" ath="77.672" atv="27.298" linkedscene="scene_x16" text="左转"/>
@@ -2552,7 +2552,7 @@
       </level>
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-51.262" atv="43.790" linkedscene="scene_x14" text="前进"/>
-    <hotspot name="spot2" style="spot_href" ath="108.433" atv="10.692" href="|scene_aisle1|200.057,0.672,120" text="返回"/>
+    <hotspot name="spot2" style="spot_href" ath="108.433" atv="10.692" href="s4|scene_aisle1|200.057,0.672,120" text="返回"/>
     <hotspot name="spot3" style="spot_arrow" ath="48.849" atv="-37.919" linkedscene="scene_c2" text="正面"/>
     <hotspot name="spot4" style="spot_left" ath="94.891" atv="30.383" linkedscene="scene_c2" text="左转"/>
     <hotspot name="spot5" style="spot_img" ath="15.490" atv="-28.059" showid="s4r3|bl3"/>

@@ -6,14 +6,30 @@
     <div id="guide-btn" data-tip="快速导航" :class="showGuide?'active':''" @click="showGuide=!showGuide"></div>
     <cabinet-layout id="layout-wrapper" :data="layoutData" v-show="showLayout" @click="cabinetClick"/>
     <guide id="guide-wrapper" v-show="showGuide" @click="roomClick"/>
+    <div id="images-wrapper" v-show="showImages">
+      <div class="close" @click="showImages=false"></div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="src in images">
+            <div class="swiper-zoom-container">
+              <img :src="src">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+  import Swiper from 'swiper';
+
   import VR from '../assets/vr';
+
   import SfKrpano from "../components/SfKrpano";
-  import CabinetLayout from './CabinetLayout';
-  import Guide from './Guide';
+  import CabinetLayout from '../components/CabinetLayout';
+  import Guide from '../components/Guide';
 
   export default {
     components: {SfKrpano, CabinetLayout, Guide},
@@ -23,7 +39,27 @@
         panoCode: '',
         scene: '',
         lookat: '',
-        hooks: {},
+        hooks: {
+          // 跨站点场景切换
+          href: url => {
+            const a = url.split('|');
+            this.panoCode = a[0];
+            this.scene = a.length > 1 ? a[1] : '';
+            this.lookat = a.length > 2 ? a[2] : '';
+          },
+          // 显示站点
+          showImg: d => {
+            const a = d.split('|');
+            this.showImages = true;
+            this.images = VR.IMAGES[a[0]][a[1]];
+            this.$nextTick(function () {
+              this.mySwiper.update();
+            });
+          }
+        },
+        // 机柜详情图片
+        images: [],
+        showImages: false,
         showLayout: false,
         showGuide: false
       }
@@ -48,6 +84,13 @@
 
     mounted() {
       document.title = this.panoInfo.name;
+      // 图片浏览器
+      this.mySwiper = new Swiper('.swiper-container', {
+        zoom: true,
+        pagination: {
+          el: '.swiper-pagination',
+        }
+      });
     },
 
     methods: {
@@ -76,6 +119,8 @@
 </script>
 
 <style lang="scss">
+  @import '~swiper/dist/css/swiper.min.css';
+
   html {
     height: 100%;
   }
@@ -162,6 +207,51 @@
       margin-top: -80px;
       border-radius: 0 5px 5px 0;
       background-color: rgba(255, 255, 255, .6);
+    }
+
+    #images-wrapper {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 200;
+      background-color: rgba(0, 0, 0, .5);
+
+      .swiper-container {
+        margin-top: 38px;
+        height: calc(100% - 38px);
+      }
+
+      .close {
+        position: fixed;
+        display: inline-block;
+        right: 0;
+        width: 38px;
+        height: 38px;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 300;
+
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          top: 50%;
+          left: 0;
+          margin-top: -1px;
+          background: #fff;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+
     }
   }
 </style>

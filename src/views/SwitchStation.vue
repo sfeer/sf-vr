@@ -13,8 +13,8 @@
   import BugApi from '../assets/bug-api';
 
   import SfKrpano from "../components/SfKrpano";
-  import CabinetLayout from './CabinetLayout';
-  import BugDialog from './BugDialog';
+  import CabinetLayout from '../components/CabinetLayout';
+  import BugDialog from '../components/BugDialog';
 
   export default {
     components: {SfKrpano, CabinetLayout, BugDialog},
@@ -68,6 +68,8 @@
       },
 
       layoutData() {
+        return VR.LAYOUTS[this.panoCode];
+        /** TODO bug状态需要在缺陷回调里做，layoutData改成普通变量
         return VR.LAYOUTS[this.panoCode].map(row => {
           return row.map(cab => {
             const arr = this.cabinetMap[cab.uuid]['bugs'];
@@ -86,6 +88,7 @@
             return cab;
           });
         });
+         **/
       },
 
       cabinetInfo() {
@@ -99,6 +102,8 @@
 
       // 获取机柜数据
       BugApi.queryCabinetInfo(this.panoInfo.uuid, data => {
+        console.log('=====================');
+        console.log(data);
         data.map(d => {
           this.cabinetMap[d['fdid']] = {
             name: d['devicename'],
@@ -145,8 +150,6 @@
 </script>
 
 <style lang="scss">
-  @import '~swiper/dist/css/swiper.min.css';
-
   html {
     height: 100%;
   }

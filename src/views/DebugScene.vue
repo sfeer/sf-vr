@@ -35,8 +35,8 @@
       }
     },
     mounted() {
-      this.sid = this.$route.params.sid;
-      this.station = VR.STATIONS[this.sid];
+      this.sid = this.$route.params['sid'];
+      this.station = VR.PANOS[this.sid];
       document.title = this.station.name; // 设置标题
       this.initVR();
 

@@ -25,7 +25,7 @@
         </ul>
         <div class="show-desc" v-show="showDesc">
           <div class="bug-desc">{{ bugMemo }}</div>
-          <div class="swiper-container">
+          <div v-show="showPictures" class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="src in bugPictures">
                 <div class="swiper-zoom-container">
@@ -35,7 +35,7 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-          <audio controls="controls" v-for="item in bugVoices">
+          <audio controls="controls" v-for="item in bugVoices" style="margin-top:16px">
             <source :src="item" type="audio/mp3"/>
             <embed :src="item"/>
           </audio>
@@ -62,6 +62,7 @@
         cabinetMap: {},
 
         showDesc: false,
+        showPictures: false,
 
         title: '',
         bugMemo: '',
@@ -81,12 +82,7 @@
             this.title = data.name + data.typename;
             this.showDesc = false;
           } else {
-            const bugInfo = this.bugList[0];
-            this.bugMemo = bugInfo.memo;
-            this.bugPictures = bugInfo.pictures;
-            this.bugVoices = bugInfo.voices;
-            this.title = bugInfo.name;
-            this.showDesc = true;
+            this.clickBug(this.bugList[0]);
           }
         }
       }
@@ -110,9 +106,13 @@
       clickBug(bug) {
         this.bugMemo = bug.memo;
         this.bugPictures = bug.pictures;
+        this.showPictures = this.bugPictures.length > 0;
         this.bugVoices = bug.voices;
         this.title = bug.name;
         this.showDesc = true;
+        this.$nextTick(function () {
+          this.mySwiper.update();
+        });
       },
 
       // 处理返回
@@ -129,6 +129,8 @@
 </script>
 
 <style lang="scss">
+  @import '~swiper/dist/css/swiper.min.css';
+
   .bug-wrapper {
     .mask {
       z-index: 1000;

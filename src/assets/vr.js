@@ -6,8 +6,7 @@ export default {
   PANOS: {
     s1: {
       name: '10kV花园总部开关站',
-      // index: 'scene_entrance',
-      index: 'scene_center1',
+      index: 'scene_entrance',
       uuid: '7acbe2c8fb9640319e1a924a45aaf0fa'
     },
     s2: {
@@ -357,109 +356,9 @@ export default {
     }
   },
 
-  // 场景初始化视角, uuid=uuid.uuid4()
-  SCENES: {
-    '3bb843126ac75316b65b786b0269d747': {
-      name: 'scene_center1',
-      lookat: '3.602,-2.786,120',
-      station: 's1'
-    },
-    'b056e5a475af5866aa149ecd3b95b9c2': {
-      name: 'scene_center2',
-      lookat: '-12.911,1.815,120',
-      station: 's1'
-    },
-    '87145031a216549481c736af138c9c79': {
-      name: 'scene_center3',
-      lookat: '175.864,2.449,120',
-      station: 's1'
-    },
-    'fe8805fe2d6e53aaad9654dce30046c8': {
-      name: 'scene_center3',
-      lookat: '714.497,2.521,120',
-      station: 's1'
-    },
-    'a8862c2a94995dff811790eb7676fa20': {
-      name: 'scene_center2',
-      lookat: '526.093,4.164,120',
-      station: 's1'
-    },
-    '130030df05865191992f0fb3ee334ad2': {
-      name: 'scene_center1',
-      lookat: '182.467,3.004,120',
-      station: 's1'
-    },
-    'd22e997fa1204644bc3f338b43c41761': {
-      name: 'scene_center1',
-      lookat: '160.921,-11.681,97.304',
-      station: 's2'
-    },
-    'f5c3248fafef4eda8470f11304264ca8': {
-      name: 'scene_center2',
-      lookat: '150.477,0.368,104.170',
-      station: 's2'
-    },
-    '9147056d457c44eea4b1cc416bbe917c': {
-      name: 'scene_center3',
-      lookat: '151.055,0.201,99.125',
-      station: 's2'
-    },
-    'e6887e308d8e4f27bb5a47cc34d00791': {
-      name: 'scene_center4',
-      lookat: '-125.161,-4.311,96.133',
-      station: 's2'
-    },
-    '6a219709268b4c97ba819d0af6cb33ce': {
-      name: 'scene_center3',
-      lookat: '-38.134,1.014,99.125',
-      station: 's2'
-    },
-    'fdcd7fc337714d84ad973786bda9a6a6': {
-      name: 'scene_center2',
-      lookat: '-36.089,0.025,104.170',
-      station: 's2'
-    },
-    '70b0459c1cb8431fa99c460d52727eca': {
-      name: 'scene_center1',
-      lookat: '2.729,-4.316,97.304',
-      station: 's2'
-    },
-    '2e07580478c642b4a2b902434a17f3b0': {
-      name: 'scene_center1',
-      lookat: '153.821,-1.872,54.678',
-      station: 's3'
-    },
-    '9a7719f3d5e4454ebbe2370cf86725b5': {
-      name: 'scene_center2',
-      lookat: '-180.481,-0.735,46.576',
-      station: 's3'
-    },
-    '535d98d2ce4848e0bf323eb0735a4002': {
-      name: 'scene_center3',
-      lookat: '-20.161,-1.943,44.336',
-      station: 's3'
-    },
-    '17c08db894e84a38be22ca228e7644f7': {
-      name: 'scene_center3',
-      lookat: '140.240,-3.871,84.724',
-      station: 's3'
-    },
-    '20ca0caa1c03445a871ed673dc628d7f': {
-      name: 'scene_center2',
-      lookat: '-0.806,0.214,92.236',
-      station: 's3'
-    },
-    'c37293b5e3274e3a9eb95c9896ae5dc7': {
-      name: 'scene_center1',
-      lookat: '319.249,-5.176,83.080',
-      station: 's3'
-    }
-  },
-
   // 机柜导航图
   LAYOUTS: {
     s4r3: [
-      // 第一排
       [
         {},
         {name: '2', scene: 'scene_c2', lookat: ''},
@@ -494,7 +393,6 @@ export default {
         {name: '29', scene: 'scene_c29', lookat: ''},
         {name: '30', scene: 'scene_c29', lookat: ''}
       ],
-      // 第二排
       [
         {name: '1', scene: 'scene_c2', lookat: ''},
         {name: '2', scene: 'scene_c2', lookat: ''},
@@ -552,6 +450,54 @@ export default {
         {name: 'GP 12', scene: 'scene_center3', lookat: '714.497,2.521,120', uuid: '446be62621904d1a982d73b6f26c8a92'},
         {name: 'GP 11', scene: 'scene_center3', lookat: '714.497,2.521,120', uuid: '2e038b1fb4a44af1a4846f1c5128117b'},
         {name: 'GP 10', scene: 'scene_center3', lookat: '714.497,2.521,120', uuid: 'f26cfcbc9ee94988b63abe444c12f63b'}
+      ]
+    ],
+    s2: [
+      [
+        {name: 'GP 1', scene: 'scene_center1', lookat: '160.921,-11.681,97.304', uuid: '91c7133c3e4948758f97bc431383b60a'},
+        {name: 'GP 2', scene: 'scene_center1', lookat: '160.921,-11.681,97.304', uuid: 'df19f97cbed141d9b81e30f30f61ff84'},
+        {name: 'GP 3', scene: 'scene_center1', lookat: '160.921,-11.681,97.304', uuid: '5b0339c6e0ff44019735e834bff39028'},
+        {name: 'GP 4', scene: 'scene_center2', lookat: '150.477,0.368,104.170', uuid: '35b1c869877a4978a01b5833d2fb6702'},
+        {name: 'GP 5', scene: 'scene_center2', lookat: '150.477,0.368,104.170', uuid: 'd452583b761648c3a26a0b1e67511898'},
+        {name: 'GP 6', scene: 'scene_center2', lookat: '150.477,0.368,104.170', uuid: '4909c5e19a0a42c6bee19147bfbffb9b'},
+        {name: 'GP 7', scene: 'scene_center3', lookat: '151.055,0.201,99.125', uuid: 'aa165e48b7ea4e66bb6c0bd5e016f731'},
+        {name: 'GP 8', scene: 'scene_center3', lookat: '151.055,0.201,99.125', uuid: '08af3ae18fad42388be2747bd88d7350'},
+        {name: 'GP 9', scene: 'scene_center3', lookat: '151.055,0.201,99.125', uuid: '85d55fb9146643148f5245b093530b5c'},
+        {name: 'GP 10', scene: 'scene_center4', lookat: '-125.161,-4.311,96.133', uuid: '7167fa11c37c4d8d9103544a233905c7'}
+      ],
+      [
+        {name: 'GP 19', scene: 'scene_center1', lookat: '2.729,-4.316,97.304', uuid: '82bc3052d6c9431c86102e3184b60110'},
+        {name: 'GP 18', scene: 'scene_center1', lookat: '2.729,-4.316,97.304', uuid: '77b300d60585440bae13869bd7409021'},
+        {name: 'GP 17', scene: 'scene_center1', lookat: '2.729,-4.316,97.304', uuid: 'c92fb68c5b504847842c7c45e81eccbb'},
+        {name: 'GP 16', scene: 'scene_center2', lookat: '-36.089,0.025,104.170', uuid: '7938f71f79a9442baebb7ec8dd2b2be3'},
+        {name: 'GP 15', scene: 'scene_center2', lookat: '-36.089,0.025,104.170', uuid: '7a87c27886044d1f8d9fd0b1d005a80c'},
+        {name: 'GP 14', scene: 'scene_center2', lookat: '-36.089,0.025,104.170', uuid: '2c628874794a4c46bb7d40d194b99099'},
+        {name: 'GP 13', scene: 'scene_center3', lookat: '-38.134,1.014,99.125', uuid: 'ed26e7be030b4bcba656e40c6a879ad0'},
+        {name: 'GP 12', scene: 'scene_center3', lookat: '-38.134,1.014,99.125', uuid: '4aebdf62ae4843faa1857ba0e2640ac2'},
+        {name: 'GP 11', scene: 'scene_center3', lookat: '-38.134,1.014,99.125', uuid: '774231cdbe32413b982ee75de60d8acd'},
+        {}
+      ]
+    ],
+    s3: [
+      [
+        {name: 'GP 1', scene: 'scene_center1', lookat: '153.821,-1.872,54.678', uuid: '54b32021cc894d83b02df0c19f1aa48b'},
+        {name: 'GP 2', scene: 'scene_center1', lookat: '153.821,-1.872,54.678', uuid: '36fbb561d9f042c3b6f21710b64d7dc3'},
+        {name: 'GP 3', scene: 'scene_center1', lookat: '153.821,-1.872,54.678', uuid: '68dfb8089f304a2ba2a800017dc4ed30'},
+        {name: 'GP 4', scene: 'scene_center2', lookat: '-180.481,-0.735,46.576', uuid: 'defa115399044d82b48d2d1dbf584089'},
+        {name: 'GP 5', scene: 'scene_center2', lookat: '-180.481,-0.735,46.576', uuid: 'bed5f397caca458e9f869935a3c59a35'},
+        {name: 'GP 6', scene: 'scene_center2', lookat: '-180.481,-0.735,46.576', uuid: '65c20ec514914902aac4b7e63ccbbc94'},
+        {name: 'GP 7', scene: 'scene_center3', lookat: '-20.161,-1.943,44.336', uuid: '9ae1aa879b28449ab85915fc50937feb'},
+        {name: 'GP 8', scene: 'scene_center3', lookat: '-20.161,-1.943,44.336', uuid: 'f1eb4756e7f14308835d5bcfe8fcaf0d'},
+      ],
+      [
+        {name: 'GP 16', scene: 'scene_center3', lookat: '140.240,-3.871,84.724', uuid: '145017604bba4feda4901c84edabbbb7'},
+        {name: 'GP 15', scene: 'scene_center3', lookat: '140.240,-3.871,84.724', uuid: '798e9cde58894e3b904373b1e04104bf'},
+        {name: 'GP 14', scene: 'scene_center2', lookat: '-0.806,0.214,92.236', uuid: '0f729790d6a244eb8ae293c3ea4e8238'},
+        {name: 'GP 13', scene: 'scene_center2', lookat: '-0.806,0.214,92.236', uuid: '02c71d2659834a58ab9a0e4c771e26f6'},
+        {name: 'GP 12', scene: 'scene_center2', lookat: '-0.806,0.214,92.236', uuid: '7e02f38e42cf4f058a4f1281b715b456'},
+        {name: 'GP 11', scene: 'scene_center1', lookat: '319.249,-5.176,83.080', uuid: '7e2c6b00ec674984be5116f5d6a1e3f5'},
+        {name: 'GP 10', scene: 'scene_center1', lookat: '319.249,-5.176,83.080', uuid: '1a91d3db185d489ea1ebc50630f923e6'},
+        {name: 'GP 9', scene: 'scene_center1', lookat: '319.249,-5.176,83.080', uuid: '8cd6f4c2bde1438e89a18ea07fb1c045'}
       ]
     ]
   }
