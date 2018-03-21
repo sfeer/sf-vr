@@ -23,7 +23,7 @@
 </template>
 
 <script>
-  import Swiper from 'swiper';
+  import Swiper from 'swiper/dist/js/swiper.js'
 
   import VR from '../assets/vr';
 
