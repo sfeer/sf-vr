@@ -428,6 +428,44 @@ export default {
         {name: '30', scene: 'scene_c29', lookat: ''}
       ]
     ],
+    s4r5: [
+      [
+        {name: 'r', scene: 'scene_c20', lookat: ''},
+        {name: 's', scene: 'scene_c20', lookat: ''},
+        {name: 't', scene: 'scene_c21', lookat: ''},
+        {name: 'u', scene: 'scene_c21', lookat: ''},
+        {name: 'v', scene: 'scene_c22', lookat: ''},
+        {name: 'w', scene: 'scene_c22', lookat: ''},
+        {name: 'x', scene: 'scene_c22', lookat: ''},
+      ],
+      [
+        {},
+        {},
+        {name: 'q', scene: 'scene_c12', lookat: ''},
+        {name: 'p', scene: 'scene_c13', lookat: ''},
+        {name: 'o', scene: 'scene_c13', lookat: ''},
+        {name: 'n', scene: 'scene_c14', lookat: ''},
+        {}
+      ],
+      [
+        {},
+        {name: 'h', scene: 'scene_c12', lookat: ''},
+        {name: 'i', scene: 'scene_c12', lookat: ''},
+        {name: 'j', scene: 'scene_c13', lookat: ''},
+        {name: 'k', scene: 'scene_c13', lookat: ''},
+        {name: 'l', scene: 'scene_c14', lookat: ''},
+        {name: 'm', scene: 'scene_c14', lookat: ''},
+      ],
+      [
+        {name: 'a', scene: 'scene_c1', lookat: ''},
+        {name: 'b', scene: 'scene_c1', lookat: ''},
+        {name: 'c', scene: 'scene_c2', lookat: ''},
+        {name: 'd', scene: 'scene_c2', lookat: ''},
+        {name: 'e', scene: 'scene_c3', lookat: ''},
+        {name: 'f', scene: 'scene_c3', lookat: ''},
+        {name: 'g', scene: 'scene_c3', lookat: ''},
+      ]
+    ],
     s1: [
       [
         {name: 'GP 1', scene: 'scene_center1', lookat: '3.602,-2.786,120', uuid: '6233f7dc1d8b4174b98a6c60594de6e7'},

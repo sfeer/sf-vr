@@ -14,8 +14,8 @@
     </div>
     <div class="row">
       <div class="title">二楼</div>
-      <div class="btn" @click="clickHandle('s4r4')">主控室</div>
-      <div class="btn" @click="clickHandle('s4r5')">GIS室</div>
+      <div class="btn" @click="clickHandle('s4r5')">主控室</div>
+      <div class="btn" @click="clickHandle('s4r4')">GIS室</div>
     </div>
   </div>
 </template>

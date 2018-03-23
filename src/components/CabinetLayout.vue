@@ -36,6 +36,8 @@
 
 <style lang="scss">
   .layout-wrapper {
+    padding-top: 20px;
+
     .cabinet-row {
       display: flex;
       margin: 10px auto;
