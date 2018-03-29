@@ -2,9 +2,9 @@
 <template>
   <div id="main-wrapper">
     <sf-krpano id="pano-wrapper" :xml="xml" :scene="scene" :lookat="lookat" :hooks="hooks"/>
-    <div id="layout-btn" :class="showLayout?'active':''" @click="showLayout=!showLayout"></div>
+    <div id="layout-btn" :class="showLayout?'active':''" @click="showLayout=!showLayout" v-show="layoutData"></div>
     <div id="guide-btn" data-tip="快速导航" :class="showGuide?'active':''" @click="showGuide=!showGuide"></div>
-    <cabinet-layout id="layout-wrapper" :data="layoutData" v-show="showLayout" @click="cabinetClick"/>
+    <cabinet-layout v-if="layoutData" id="layout-wrapper" :data="layoutData" v-show="showLayout" @click="cabinetClick"/>
     <guide id="guide-wrapper" v-show="showGuide" @click="roomClick"/>
     <div id="images-wrapper" v-show="showImages">
       <div class="close" @click="showImages=false"></div>
