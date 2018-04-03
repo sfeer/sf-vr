@@ -3,7 +3,7 @@
  **/
 import Vue from 'vue';
 
-const URL = 'http://47.93.119.201:8080/eps/',
+const URL = '//47.93.119.201:8080/eps/',
   LOGIN = 'VR',
   PWD = 'E5196BF0F3BC6724708B6D485DF92B2B';
 let tenant_id, token;

@@ -1,6 +1,6 @@
 <!--变电站-->
 <template>
-  <div id="main-wrapper">
+  <div id="subsstation-wrapper">
     <sf-krpano id="pano-wrapper" :xml="xml" :scene="scene" :lookat="lookat" :hooks="hooks"/>
     <div id="layout-btn" :class="showLayout?'active':''" @click="showLayout=!showLayout" v-show="layoutData"></div>
     <div id="guide-btn" data-tip="快速导航" :class="showGuide?'active':''" @click="showGuide=!showGuide"></div>
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-  import Swiper from 'swiper';
+  import Swiper from 'swiper/dist/js/swiper.js';
 
   import VR from '../assets/vr';
 
@@ -121,22 +121,7 @@
 <style lang="scss">
   @import '~swiper/dist/css/swiper.min.css';
 
-  html {
-    height: 100%;
-  }
-
-  body {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    font-family: "Microsoft YaHei", Arial, sans-serif;
-    font-size: 14px;
-    color: #444;
-  }
-
-  #main-wrapper {
+  #subsstation-wrapper {
     height: 100%;
 
     #pano-wrapper {
@@ -148,7 +133,7 @@
       z-index: 110;
       position: fixed;
       top: 5px;
-      left: calc(50% - 15px);;
+      left: calc(50% - 15px);
       border-top: 15px solid rgba(255, 102, 0, .6);
       border-left: 15px solid transparent;
       border-right: 15px solid transparent;

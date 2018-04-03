@@ -1,6 +1,6 @@
 <!--开关站-->
 <template>
-  <div id="main-wrapper">
+  <div id="switchstation-wrapper">
     <sf-krpano id="pano-wrapper" :xml="xml" :scene="scene" :lookat="lookat" :hooks="hooks"/>
     <div id="layout-btn" data-tip="机柜总览" :class="showLayout?'active':''" @click="showLayout=!showLayout"></div>
     <cabinet-layout id="layout-wrapper" :data="layoutData" v-show="showLayout" @click="cabinetClick"/>
@@ -150,22 +150,7 @@
 </script>
 
 <style lang="scss">
-  html {
-    height: 100%;
-  }
-
-  body {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    font-family: "Microsoft YaHei", Arial, sans-serif;
-    font-size: 14px;
-    color: #444;
-  }
-
-  #main-wrapper {
+  #switchstation-wrapper {
     height: 100%;
 
     #pano-wrapper {
