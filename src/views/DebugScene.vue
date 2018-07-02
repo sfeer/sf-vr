@@ -65,6 +65,7 @@
       // 开启全景坐标
       setInterval(this.track_mouse_interval_callback, 100);
     },
+
     methods: {
       // 初始化全景
       init(krpanoObj) {
@@ -89,6 +90,7 @@
           this.fov = this.krpanoObj.get("view.fov").toFixed(3);
         }
       },
+
       handleDraw(e) {
         if (this.draw) {
           const mx = e.clientX,

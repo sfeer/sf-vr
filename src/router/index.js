@@ -22,6 +22,7 @@ export default new Router({
     {path: '/s4r3', name: 's4r3', component: Substation},
     {path: '/s4r4', name: 's4r4', component: Substation},
     {path: '/s4r5', name: 's4r5', component: Substation},
+    {path: '/s5', name: 's5', component: Substation},
 
     {path: '/scene/:scene', component: SwitchStation},
     {path: '/debug/:panoCode', component: DebugScene}
