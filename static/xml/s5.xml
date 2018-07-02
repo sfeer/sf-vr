@@ -10,12 +10,6 @@
   <!-- 关闭右键菜单 -->
   <contextmenu fullscreen="false" versioninfo="false"/>
 
-  <action name="startup" autorun="onstart">
-    if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
-    loadscene(get(startscene), null, MERGE);
-    if(startactions !== null, startactions() );
-  </action>
-
   <scene name="scene_entrance" title="入口" onstart="" thumburl="../panos/s5/entrance.tiles/thumb.jpg" lat="" lng="" heading="">
     <view hlookat="171.158" vlookat="4.025" fovtype="MFOV" fov="107.271" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5/entrance.tiles/preview.jpg"/>
@@ -30,7 +24,7 @@
         <cube url="../panos/s5/entrance.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_left" ath="-158.058" atv="3.564" linkedscene="scene_b1_front" linkedscene_lookat="-8.766, 0.177, 86.751" text="左转"/>
+    <hotspot name="spot1" style="spot_left" ath="-158.058" atv="3.564" linkedscene="scene_b1_front" linkedscene_lookat="-8.766,0.177,86.751" text="左转"/>
   </scene>
 
   <scene name="scene_b1_front" title="#1主变-正面" onstart="" thumburl="../panos/s5/b1_front.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -65,6 +59,7 @@
         <cube url="../panos/s5/b2_front.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
+    <hotspot name="spot1" style="spot_arrow" ath="-104.188" atv="8.590" linkedscene="scene_b1_front" linkedscene_lookat="-8.766,0.177,86.751" text="前进"/>
   </scene>
 
 </krpano>
