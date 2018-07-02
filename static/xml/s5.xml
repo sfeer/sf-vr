@@ -47,7 +47,7 @@
         <cube url="../panos/s5/b1_front.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="-158.058" atv="3.564" linkedscene="scene_b2_front" linkedscene_lookat="-8.766,0.177,86.751" text="左转"/>
+    <hotspot name="spot1" style="spot_arrow" ath="85.317" atv="7.103" linkedscene="scene_b2_front" linkedscene_lookat="-11.726,-0.246,86.751" text="前进"/>
     <hotspot name="spot2" style="spot_right" ath="-88.275" atv="6.240" linkedscene="scene_entrance" linkedscene_lookat="171.158,4.025,107.271" text="右转"/>
   </scene>
 
