@@ -32,7 +32,7 @@ export default {
     s5r2: {name: '10kV#3、4电容室', index: 'scene_3'},
     s5r3: {name: '10kV开关室', index: 'scene_c12'},
     s5r4: {name: '110kvGIS室', index: 'scene_c1'},
-    s5r5: {name: '主控室', index: ''},
+    s5r5: {name: '主控室', index: 'scene_c12'},
   },
 
   // 根据showid查询加载图片
