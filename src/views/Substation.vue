@@ -5,7 +5,7 @@
     <div id="layout-btn" :class="showLayout?'active':''" @click="showLayout=!showLayout" v-show="layoutData"></div>
     <div id="guide-btn" data-tip="快速导航" :class="showGuide?'active':''" @click="showGuide=!showGuide"></div>
     <cabinet-layout v-if="layoutData" id="layout-wrapper" :data="layoutData" v-show="showLayout" @click="cabinetClick"/>
-    <guide id="guide-wrapper" v-show="showGuide" @click="roomClick"/>
+    <guide id="guide-wrapper" v-if="guideData" :data="guideData" v-show="showGuide" @click="roomClick"/>
     <div id="images-wrapper" v-show="showImages">
       <div class="close" @click="showImages=false"></div>
       <div class="swiper-container">
@@ -69,11 +69,17 @@
       xml() {
         return `/static/xml/${this.panoCode}.xml`;
       },
+
       panoInfo() {
         return VR.PANOS[this.panoCode];
       },
+
       layoutData() {
         return VR.LAYOUTS[this.panoCode];
+      },
+
+      guideData() {
+        return VR.GUIDE[this.panoCode.slice(0, 2)];
       }
     },
 

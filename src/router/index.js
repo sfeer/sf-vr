@@ -17,15 +17,7 @@ export default new Router({
     {path: '/s2', name: 's2', component: SwitchStation},
     {path: '/s3', name: 's3', component: SwitchStation},
     {path: '/s4', name: 's4', component: Substation},
-    {path: '/s4r1', name: 's4r1', component: Substation},
-    {path: '/s4r2', name: 's4r2', component: Substation},
-    {path: '/s4r3', name: 's4r3', component: Substation},
-    {path: '/s4r4', name: 's4r4', component: Substation},
-    {path: '/s4r5', name: 's4r5', component: Substation},
-
     {path: '/s5', name: 's5', component: Substation},
-    {path: '/s5r1', name: 's5r1', component: Substation},
-    {path: '/s5r2', name: 's5r2', component: Substation},
 
     {path: '/scene/:scene', component: SwitchStation},
     {path: '/debug/:panoCode', component: DebugScene}

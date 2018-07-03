@@ -1,0 +1,15 @@
+<krpano version="1.19" title="主控室-全景展示">
+
+  <include url="sfpano.xml"/>
+
+  <!-- 加载动态效果、百分比、进度条 -->
+  <include url="loadinganimation.xml"/>
+  <include url="loadingpercenttext.xml"/>
+  <include url="loadingbar.xml"/>
+
+  <!-- 关闭右键菜单 -->
+  <contextmenu fullscreen="false" versioninfo="false"/>
+
+
+
+</krpano>

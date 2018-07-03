@@ -10,10 +10,11 @@
     <div id="draw-wrapper" v-show="draw" @click="handleDraw"></div>
     <div id="debug-info">
       <div style="font-weight: bold">hlookat, vlookat, fov</div>
-      <div>{{hlookat}}, {{vlookat}}, {{fov}}</div>
+      <div>{{hlookat}},{{vlookat}},{{fov}}</div>
+      <div>{{`hlookat="${hlookat}" vlookat="${vlookat}"`}}</div>
       <hr>
       <div style="font-weight: bold">ath, atv</div>
-      <div>{{`${ath}, ${atv}`}}</div>
+      <div>{{`${ath},${atv}`}}</div>
       <div style="font-weight: bold">box</div>
       <div @click="draw=true">开启绘制</div>
       <div @click="endDraw">绘制结束</div>

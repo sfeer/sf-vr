@@ -27,7 +27,12 @@ export default {
     s4r4: {name: '110kvGIS室', index: 'scene_view1'},
     s4r5: {name: '主控室', index: 'scene_c1'},
 
-    s5: {name: '110kV天英变电站', index: 'scene_entrance'}
+    s5: {name: '110kV天英变电站', index: 'scene_entrance'},
+    s5r1: {name: '10kV#1、2电容室', index: 'scene_1'},
+    s5r2: {name: '10kV#3、4电容室', index: 'scene_3'},
+    s5r3: {name: '10kV开关室', index: 'scene_c12'},
+    s5r4: {name: '110kvGIS室', index: 'scene_c1'},
+    s5r5: {name: '主控室', index: ''},
   },
 
   // 根据showid查询加载图片
@@ -715,6 +720,59 @@ export default {
           uuid: '8cd6f4c2bde1438e89a18ea07fb1c045'
         }
       ]
+    ]
+  },
+
+  // 导航
+  GUIDE: {
+    s4: [
+      {
+        name: '室外',
+        panos: [
+          {name: '1#主变', code: 's4', scene: 'scene_b1_front'},
+          {name: '2#主变', code: 's4', scene: 'scene_b2_front'}
+        ]
+      },
+      {
+        name: '一楼',
+        panos: [
+          {name: '#1、2电容室', code: 's4r1'},
+          {name: '#3、4电容室', code: 's4r2'},
+          {name: '开关室', code: 's4r3'}
+        ]
+      },
+      {
+        name: '二楼',
+        panos: [
+          {name: '主控室', code: 's4r5'},
+          {name: 'GIS室', code: 's4r4'}
+        ]
+      }
+    ],
+
+    s5: [
+      {
+        name: '室外',
+        panos: [
+          {name: '1#主变', code: 's5', scene: 'scene_b1_front'},
+          {name: '2#主变', code: 's5', scene: 'scene_b2_front'}
+        ]
+      },
+      {
+        name: '一楼',
+        panos: [
+          {name: '#1、2电容室', code: 's5r1'},
+          {name: '#3、4电容室', code: 's5r2'},
+          {name: '开关室', code: 's5r3'}
+        ]
+      },
+      {
+        name: '二楼',
+        panos: [
+          {name: '主控室', code: 's5r5'},
+          {name: 'GIS室', code: 's5r4'}
+        ]
+      }
     ]
   }
 }
