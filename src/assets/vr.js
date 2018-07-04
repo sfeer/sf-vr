@@ -32,7 +32,7 @@ export default {
     s5r2: {name: '10kV#3、4电容室', index: 'scene_3'},
     s5r3: {name: '10kV开关室', index: 'scene_c12'},
     s5r4: {name: '110kvGIS室', index: 'scene_c1'},
-    s5r5: {name: '主控室', index: 'scene_c12'},
+    s5r5: {name: '主控室', index: 'scene_c1'},
   },
 
   // 根据showid查询加载图片
@@ -360,6 +360,89 @@ export default {
         '/static/panos/s4r5/box/xb1.jpg', '/static/panos/s4r5/box/xb2.jpg', '/static/panos/s4r5/box/xb3.jpg', '/static/panos/s4r5/box/xb4.jpg',
         '/static/panos/s4r5/box/xb5.jpg', '/static/panos/s4r5/box/xb6.jpg', '/static/panos/s4r5/box/xb7.jpg', '/static/panos/s4r5/box/xb8.jpg',
         '/static/panos/s4r5/box/xb9.jpg', '/static/panos/s4r5/box/xb10.jpg'
+      ]
+    },
+    s5r5: {
+      t: [
+        '/static/panos/s5r5/box/t1.jpg',
+        '/static/panos/s5r5/box/t2.jpg',
+        '/static/panos/s5r5/box/t3.jpg',
+        '/static/panos/s5r5/box/t4.jpg'
+      ],
+      tb: [
+        '/static/panos/s5r5/box/tb1.jpg',
+        '/static/panos/s5r5/box/tb2.jpg',
+        '/static/panos/s5r5/box/tb3.jpg',
+        '/static/panos/s5r5/box/tb4.jpg',
+        '/static/panos/s5r5/box/tb5.jpg'
+      ],
+      u: [
+        '/static/panos/s5r5/box/u1.jpg',
+        '/static/panos/s5r5/box/u2.jpg',
+        '/static/panos/s5r5/box/u3.jpg',
+        '/static/panos/s5r5/box/u4.jpg',
+        '/static/panos/s5r5/box/u5.jpg',
+        '/static/panos/s5r5/box/u6.jpg',
+        '/static/panos/s5r5/box/u7.jpg'
+      ],
+      ub: [
+        '/static/panos/s5r5/box/ub1.jpg',
+        '/static/panos/s5r5/box/ub2.jpg',
+        '/static/panos/s5r5/box/ub3.jpg',
+        '/static/panos/s5r5/box/ub4.jpg',
+        '/static/panos/s5r5/box/ub5.jpg',
+        '/static/panos/s5r5/box/ub6.jpg',
+        '/static/panos/s5r5/box/ub7.jpg'
+      ],
+      v: [
+        '/static/panos/s5r5/box/v1.jpg',
+        '/static/panos/s5r5/box/v2.jpg',
+        '/static/panos/s5r5/box/v3.jpg',
+        '/static/panos/s5r5/box/v4.jpg',
+        '/static/panos/s5r5/box/v5.jpg',
+        '/static/panos/s5r5/box/v6.jpg'
+      ],
+      vb: [
+        '/static/panos/s5r5/box/vb1.jpg',
+        '/static/panos/s5r5/box/vb2.jpg',
+        '/static/panos/s5r5/box/vb3.jpg',
+        '/static/panos/s5r5/box/vb4.jpg'
+      ],
+      w: [
+        '/static/panos/s5r5/box/w1.jpg',
+        '/static/panos/s5r5/box/w2.jpg',
+        '/static/panos/s5r5/box/w3.jpg',
+        '/static/panos/s5r5/box/w4.jpg',
+        '/static/panos/s5r5/box/w5.jpg'
+      ],
+      wb: [
+        '/static/panos/s5r5/box/wb1.jpg',
+        '/static/panos/s5r5/box/wb2.jpg',
+        '/static/panos/s5r5/box/wb3.jpg',
+        '/static/panos/s5r5/box/wb4.jpg'
+      ],
+      x: ['/static/panos/s5r5/box/x1.jpg'],
+      xb: [
+        '/static/panos/s5r5/box/xb1.jpg',
+        '/static/panos/s5r5/box/xb2.jpg',
+        '/static/panos/s5r5/box/xb3.jpg',
+        '/static/panos/s5r5/box/xb4.jpg',
+        '/static/panos/s5r5/box/xb5.jpg',
+        '/static/panos/s5r5/box/xb6.jpg'
+      ],
+      yb: [
+        '/static/panos/s5r5/box/yb1.jpg',
+        '/static/panos/s5r5/box/yb2.jpg',
+        '/static/panos/s5r5/box/yb3.jpg',
+        '/static/panos/s5r5/box/yb4.jpg',
+        '/static/panos/s5r5/box/yb5.jpg'
+      ],
+      zb: [
+        '/static/panos/s5r5/box/zb1.jpg',
+        '/static/panos/s5r5/box/zb2.jpg',
+        '/static/panos/s5r5/box/zb3.jpg',
+        '/static/panos/s5r5/box/zb4.jpg',
+        '/static/panos/s5r5/box/zb5.jpg'
       ]
     }
   },

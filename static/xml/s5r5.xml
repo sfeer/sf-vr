@@ -63,6 +63,7 @@
     <hotspot name="spot2" style="spot_arrow" ath="123.070" atv="32.975" linkedscene="scene_c4" text="前进"/>
     <hotspot name="spot3" style="spot_arrow" ath="76.823" atv="34.781" linkedscene="scene_c7" text="前进"/>
     <hotspot name="spot4" style="spot_right" ath="-33.290" atv="30.976" linkedscene="scene_c12" text="右转"/>
+    <hotspot name="spot5" style="spot_img" ath="23.548" atv="-20.668" showid="s5r5|t"/>
   </scene>
 
   <scene name="scene_c4" title="c4" onstart="" thumburl="../panos/s5r5/c4.tiles/thumb.jpg" lat="" lng="" heading="">
