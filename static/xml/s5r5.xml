@@ -11,7 +11,7 @@
   <contextmenu fullscreen="false" versioninfo="false"/>
 
   <scene name="scene_c1" title="c1" onstart="" thumburl="../panos/s5r5/c1.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="174.405" vlookat="1.392" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="174.467" vlookat="-0.034" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c1.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -29,7 +29,7 @@
   </scene>
 
   <scene name="scene_c2" title="c2" onstart="" thumburl="../panos/s5r5/c2.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="-32.859" vlookat="4.805" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="-31.791" vlookat="0.105" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c2.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -46,7 +46,7 @@
   </scene>
 
   <scene name="scene_c3" title="c3" onstart="" thumburl="../panos/s5r5/c3.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="7.636" vlookat="1.037" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="97.641" vlookat="-0.060" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c3.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -62,12 +62,12 @@
     <hotspot name="spot1" style="spot_left" ath="-135.914" atv="26.808" linkedscene="scene_c1" text="左转"/>
     <hotspot name="spot2" style="spot_arrow" ath="123.070" atv="32.975" linkedscene="scene_c4" text="前进"/>
     <hotspot name="spot3" style="spot_arrow" ath="76.823" atv="34.781" linkedscene="scene_c7" text="前进"/>
-    <hotspot name="spot4" style="spot_right" ath="-33.290" atv="30.976" linkedscene="scene_c12" text="右转"/>
+    <hotspot name="spot4" style="spot_right" ath="-33.290" atv="30.976" linkedscene="scene_c12" linkedscene_lookat="180.436,0.044,120.000" text="右转"/>
     <hotspot name="spot5" style="spot_img" ath="23.548" atv="-20.668" showid="s5r5|t"/>
   </scene>
 
   <scene name="scene_c4" title="c4" onstart="" thumburl="../panos/s5r5/c4.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="91.020" vlookat="-0.109" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c4.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -81,11 +81,11 @@
       </level>
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="94.725" atv="45.051" linkedscene="scene_c5" text="前进"/>
-    <hotspot name="spot2" style="spot_arrow" ath="-73.545" atv="31.536" linkedscene="scene_c3" text="前进"/>
+    <hotspot name="spot2" style="spot_arrow" ath="-73.545" atv="31.536" linkedscene="scene_c3" linkedscene_lookat="-83.098,0.276,120.000" text="前进"/>
   </scene>
 
   <scene name="scene_c5" title="c5" onstart="" thumburl="../panos/s5r5/c5.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="87.539" vlookat="0.254" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c5.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -98,12 +98,12 @@
         <cube url="../panos/s5r5/c5.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="-94.051" atv="44.095" linkedscene="scene_c4" text="前进"/>
+    <hotspot name="spot1" style="spot_arrow" ath="-94.051" atv="44.095" linkedscene="scene_c4" linkedscene_lookat="-89.904,0.053,120.000" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="86.626" atv="46.355" linkedscene="scene_c6" text="前进"/>
   </scene>
 
   <scene name="scene_c6" title="c6" onstart="" thumburl="../panos/s5r5/c6.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="-35.013" vlookat="-0.004" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c6.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -116,11 +116,11 @@
         <cube url="../panos/s5r5/c6.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="133.079" atv="46.004" linkedscene="scene_c5" text="前进"/>
+    <hotspot name="spot1" style="spot_arrow" ath="133.079" atv="46.004" linkedscene="scene_c5" linkedscene_lookat="267.406,0.082,120.000" text="前进"/>
   </scene>
 
   <scene name="scene_c7" title="c7" onstart="" thumburl="../panos/s5r5/c7.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="240.342" vlookat="0.318" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c7.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -133,12 +133,14 @@
         <cube url="../panos/s5r5/c7.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="39.206" atv="33.092" linkedscene="scene_c3" text="前进"/>
+    <hotspot name="spot1" style="spot_arrow" ath="39.206" atv="33.092" linkedscene="scene_c3" linkedscene_lookat="-83.098,0.276,120.000" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-119.958" atv="46.977" linkedscene="scene_c8" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="91.643" atv="-22.936" showid="s5r5|u"/>
+    <hotspot name="spot4" style="spot_img" ath="121.535" atv="-35.298" showid="s5r5|v"/>
   </scene>
 
   <scene name="scene_c8" title="c8" onstart="" thumburl="../panos/s5r5/c8.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="238.681" vlookat="0.073" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c8.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -151,12 +153,14 @@
         <cube url="../panos/s5r5/c8.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="54.791" atv="46.272" linkedscene="scene_c7" text="前进"/>
+    <hotspot name="spot1" style="spot_arrow" ath="54.791" atv="46.272" linkedscene="scene_c7" linkedscene_lookat="419.822,0.002,120.000" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-119.958" atv="46.977" linkedscene="scene_c9" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="87.094" atv="-24.325" showid="s5r5|w"/>
+    <hotspot name="spot4" style="spot_img" ath="118.582" atv="-39.003" showid="s5r5|x"/>
   </scene>
 
   <scene name="scene_c9" title="c9" onstart="" thumburl="../panos/s5r5/c9.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="62.323" vlookat="0.381" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c9.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -169,12 +173,12 @@
         <cube url="../panos/s5r5/c9.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="-117.517" atv="46.544" linkedscene="scene_c8" text="前进"/>
+    <hotspot name="spot1" style="spot_arrow" ath="-117.517" atv="46.544" linkedscene="scene_c8" linkedscene_lookat="419.071,0.090,120.000" text="前进"/>
     <hotspot name="spot2" style="spot_left" ath="6.565" atv="40.445" linkedscene="scene_c10" text="左转"/>
   </scene>
 
   <scene name="scene_c10" title="c10" onstart="" thumburl="../panos/s5r5/c10.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="-123.059" vlookat="-0.297" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c10.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -187,12 +191,15 @@
         <cube url="../panos/s5r5/c10.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_right" ath="83.255" atv="37.310" linkedscene="scene_c9" text="右转"/>
+    <hotspot name="spot1" style="spot_right" ath="83.255" atv="37.310" linkedscene="scene_c9" linkedscene_lookat="242.784,-0.102,120.000" text="右转"/>
     <hotspot name="spot2" style="spot_arrow" ath="-124.138" atv="32.518" linkedscene="scene_c11" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="89.537" atv="-21.516" showid="s5r5|zb"/>
+    <hotspot name="spot4" style="spot_img" ath="112.718" atv="-37.471" showid="s5r5|yb"/>
+    <hotspot name="spot5" style="spot_img" ath="-177.676" atv="-35.013" showid="s5r5|xb"/>
   </scene>
 
   <scene name="scene_c11" title="c11" onstart="" thumburl="../panos/s5r5/c11.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="103.276" vlookat="0.563" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c11.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -205,12 +212,15 @@
         <cube url="../panos/s5r5/c11.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="-73.993" atv="35.222" linkedscene="scene_c10" text="前进"/>
+    <hotspot name="spot1" style="spot_arrow" ath="-73.993" atv="35.222" linkedscene="scene_c10" linkedscene_lookat="57.741,0.138,120.000" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="101.740" atv="35.362" linkedscene="scene_c12" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="-46.677" atv="-23.118" showid="s5r5|wb"/>
+    <hotspot name="spot4" style="spot_img" ath="-17.044" atv="-36.290" showid="s5r5|vb"/>
+    <hotspot name="spot5" style="spot_img" ath="43.511" atv="-36.433" showid="s5r5|ub"/>
   </scene>
 
   <scene name="scene_c12" title="c12" onstart="" thumburl="../panos/s5r5/c12.tiles/thumb.jpg" lat="" lng="" heading="">
-    <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
+    <view hlookat="1.389" vlookat="-0.534" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
     <preview url="../panos/s5r5/c12.tiles/preview.jpg"/>
     <image type="CUBE" multires="true" tilesize="512">
       <level tiledimagewidth="3200" tiledimageheight="3200">
@@ -223,8 +233,9 @@
         <cube url="../panos/s5r5/c12.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="-172.897" atv="34.611" linkedscene="scene_c11" text="前进"/>
+    <hotspot name="spot1" style="spot_arrow" ath="-172.897" atv="34.611" linkedscene="scene_c11" linkedscene_lookat="282.914,-0.217,120.000" text="前进"/>
     <hotspot name="spot2" style="spot_left" ath="-30.308" atv="37.245" linkedscene="scene_c3" text="左转"/>
+    <hotspot name="spot3" style="spot_img" ath="-141.893" atv="-23.095" showid="s5r5|tb"/>
   </scene>
 
 </krpano>
