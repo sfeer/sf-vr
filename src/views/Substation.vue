@@ -115,9 +115,8 @@
       roomClick(panoCode, scene) {
         if (panoCode) {
           this.panoCode = panoCode;
-          if (scene) {
-            this.scene = scene;
-          }
+
+          this.scene = scene ? scene : this.panoInfo.index;
         }
       }
     }

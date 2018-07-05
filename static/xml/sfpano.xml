@@ -13,12 +13,12 @@
 
   <!-- 切换场景 -->
   <action name="link_scene">
-    if(linkedscene,
     if(linkedscene_lookat,
     txtsplit(linkedscene_lookat, ',', hs_lookat_h, hs_lookat_v, hs_lookat_fov);
-    );
     loadscene(get(linkedscene), null, MERGE);
     lookat(get(hs_lookat_h), get(hs_lookat_v), get(hs_lookat_fov));
+    ,
+    loadscene(get(linkedscene), null, MERGE);
     );
   </action>
 
