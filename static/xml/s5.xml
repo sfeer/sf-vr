@@ -43,6 +43,9 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="85.317" atv="7.103" linkedscene="scene_b2_front" linkedscene_lookat="-11.726,-0.246,86.751" text="前进"/>
     <hotspot name="spot2" style="spot_right" ath="-88.275" atv="6.240" linkedscene="scene_entrance" linkedscene_lookat="171.158,4.025,107.271" text="右转"/>
+    <hotspot name="spot3" style="spot_img" ath="-41.090" atv="1.840" showid="s5|b1_box"/>
+    <hotspot name="spot4" style="spot_img" ath="-23.221" atv="1.166" showid="s5|b1_left"/>
+    <hotspot name="spot5" style="spot_img" ath="-2.179" atv="-9.985" showid="s5|b1_top"/>
   </scene>
 
   <scene name="scene_b2_front" title="#2主变-正面" onstart="" thumburl="../panos/s5/b2_front.tiles/thumb.jpg" lat="" lng="" heading="">

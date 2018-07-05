@@ -362,6 +362,22 @@ export default {
         '/static/panos/s4r5/box/xb9.jpg', '/static/panos/s4r5/box/xb10.jpg'
       ]
     },
+    s5: {
+      b1_box: ['/static/panos/s5/box/b1_box1.jpg'],
+      b1_left: [
+        '/static/panos/s5/box/b1_left1.jpg',
+        '/static/panos/s5/box/b1_left2.jpg'
+      ],
+      b1_top: [
+        '/static/panos/s5/box/b1_top1.jpg',
+        '/static/panos/s5/box/b1_top2.jpg',
+        '/static/panos/s5/box/b1_top3.jpg',
+        '/static/panos/s5/box/b1_top4.jpg',
+        '/static/panos/s5/box/b1_top5.jpg',
+        '/static/panos/s5/box/b1_top6.jpg',
+        '/static/panos/s5/box/b1_top7.jpg',
+      ]
+    },
     s5r5: {
       t: [
         '/static/panos/s5r5/box/t1.jpg',
