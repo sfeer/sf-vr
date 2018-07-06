@@ -378,6 +378,124 @@ export default {
         '/static/panos/s5/box/b1_top7.jpg',
       ]
     },
+    s5r4: {
+      gp1: [
+        '/static/panos/s5r4/box/gp1.jpg',
+        '/static/panos/s5r4/box/gp11.jpg',
+        '/static/panos/s5r4/box/gp12.jpg',
+        '/static/panos/s5r4/box/gp13.jpg',
+        '/static/panos/s5r4/box/gp14.jpg',
+        '/static/panos/s5r4/box/gp15.jpg'
+      ],
+      gp2: [
+        '/static/panos/s5r4/box/gp2.jpg',
+        '/static/panos/s5r4/box/gp21.jpg',
+        '/static/panos/s5r4/box/gp22.jpg',
+        '/static/panos/s5r4/box/gp23.jpg',
+        '/static/panos/s5r4/box/gp24.jpg',
+        '/static/panos/s5r4/box/gp25.jpg',
+        '/static/panos/s5r4/box/gp26.jpg',
+        '/static/panos/s5r4/box/gp27.jpg'
+      ],
+      gp3: [
+        '/static/panos/s5r4/box/gp3.jpg',
+        '/static/panos/s5r4/box/gp31.jpg',
+        '/static/panos/s5r4/box/gp32.jpg',
+        '/static/panos/s5r4/box/gp33.jpg',
+        '/static/panos/s5r4/box/gp34.jpg',
+        '/static/panos/s5r4/box/gp35.jpg',
+        '/static/panos/s5r4/box/gp36.jpg'
+      ],
+      gp4: [
+        '/static/panos/s5r4/box/gp4.jpg',
+        '/static/panos/s5r4/box/gp41.jpg',
+        '/static/panos/s5r4/box/gp42.jpg',
+        '/static/panos/s5r4/box/gp43.jpg',
+        '/static/panos/s5r4/box/gp44.jpg',
+        '/static/panos/s5r4/box/gp45.jpg',
+        '/static/panos/s5r4/box/gp46.jpg',
+        '/static/panos/s5r4/box/gp47.jpg'
+      ],
+      gp5: [
+        '/static/panos/s5r4/box/gp5.jpg',
+        '/static/panos/s5r4/box/gp51.jpg',
+        '/static/panos/s5r4/box/gp52.jpg',
+        '/static/panos/s5r4/box/gp53.jpg',
+        '/static/panos/s5r4/box/gp54.jpg',
+        '/static/panos/s5r4/box/gp55.jpg',
+        '/static/panos/s5r4/box/gp56.jpg'
+      ],
+      gp6: [
+        '/static/panos/s5r4/box/gp6.jpg',
+        '/static/panos/s5r4/box/gp61.jpg',
+        '/static/panos/s5r4/box/gp62.jpg',
+        '/static/panos/s5r4/box/gp63.jpg',
+        '/static/panos/s5r4/box/gp64.jpg',
+        '/static/panos/s5r4/box/gp65.jpg',
+        '/static/panos/s5r4/box/gp66.jpg',
+        '/static/panos/s5r4/box/gp67.jpg'
+      ],
+      gp7: [
+        '/static/panos/s5r4/box/gp7.jpg',
+        '/static/panos/s5r4/box/gp71.jpg',
+        '/static/panos/s5r4/box/gp72.jpg',
+        '/static/panos/s5r4/box/gp73.jpg',
+        '/static/panos/s5r4/box/gp74.jpg',
+        '/static/panos/s5r4/box/gp75.jpg',
+        '/static/panos/s5r4/box/gp76.jpg'
+      ],
+      g1: [
+        '/static/panos/s5r4/box/g11.jpg',
+        '/static/panos/s5r4/box/g12.jpg',
+        '/static/panos/s5r4/box/g13.jpg',
+        '/static/panos/s5r4/box/g14.jpg'
+      ],
+      g2: [
+        '/static/panos/s5r4/box/g21.jpg',
+        '/static/panos/s5r4/box/g22.jpg',
+        '/static/panos/s5r4/box/g23.jpg',
+        '/static/panos/s5r4/box/g24.jpg',
+        '/static/panos/s5r4/box/g25.jpg',
+        '/static/panos/s5r4/box/g26.jpg',
+        '/static/panos/s5r4/box/g27.jpg',
+        '/static/panos/s5r4/box/g28.jpg'
+      ],
+      g3: [
+        '/static/panos/s5r4/box/g31.jpg',
+        '/static/panos/s5r4/box/g32.jpg',
+        '/static/panos/s5r4/box/g33.jpg',
+        '/static/panos/s5r4/box/g34.jpg',
+        '/static/panos/s5r4/box/g35.jpg',
+        '/static/panos/s5r4/box/g36.jpg',
+        '/static/panos/s5r4/box/g37.jpg'
+      ],
+      g4: ['/static/panos/s5r4/box/g41.jpg'],
+      g5: [
+        '/static/panos/s5r4/box/g51.jpg',
+        '/static/panos/s5r4/box/g52.jpg',
+        '/static/panos/s5r4/box/g53.jpg',
+        '/static/panos/s5r4/box/g54.jpg',
+        '/static/panos/s5r4/box/g55.jpg',
+        '/static/panos/s5r4/box/g56.jpg',
+        '/static/panos/s5r4/box/g57.jpg'
+      ],
+      g6: [
+        '/static/panos/s5r4/box/g61.jpg',
+        '/static/panos/s5r4/box/g62.jpg',
+        '/static/panos/s5r4/box/g63.jpg',
+        '/static/panos/s5r4/box/g64.jpg',
+        '/static/panos/s5r4/box/g65.jpg',
+        '/static/panos/s5r4/box/g66.jpg',
+        '/static/panos/s5r4/box/g67.jpg',
+        '/static/panos/s5r4/box/g68.jpg',
+        '/static/panos/s5r4/box/g69.jpg'
+      ],
+      g7: [
+        '/static/panos/s5r4/box/g71.jpg',
+        '/static/panos/s5r4/box/g72.jpg',
+        '/static/panos/s5r4/box/g73.jpg'
+      ]
+    },
     s5r5: {
       t: [
         '/static/panos/s5r5/box/t1.jpg',

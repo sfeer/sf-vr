@@ -54,6 +54,7 @@
             this.images = VR.IMAGES[a[0]][a[1]];
             this.$nextTick(function () {
               this.mySwiper.update();
+              this.mySwiper.slideTo(0);
             });
           }
         },

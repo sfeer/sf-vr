@@ -26,6 +26,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-79.192" atv="17.122" linkedscene="scene_gp7" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="2.893" atv="13.881" linkedscene="scene_c2" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="-46.842" atv="17.837" showid="s5r4|g1"/>
   </scene>
 
   <scene name="scene_c2" title="c2" onstart="" thumburl="../panos/s5r4/c2.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -44,6 +45,8 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="71.175" atv="15.771" linkedscene="scene_c1" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-139.632" atv="19.915" linkedscene="scene_c3" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="165.853" atv="19.307" showid="s5r4|g5"/>
+    <hotspot name="spot4" style="spot_img" ath="137.159" atv="7.933" showid="s5r4|g6"/>
   </scene>
 
   <scene name="scene_c3" title="c3" onstart="" thumburl="../panos/s5r4/c3.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -62,6 +65,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-95.392" atv="21.014" linkedscene="scene_c2" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="93.801" atv="21.880" linkedscene="scene_c4" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="-1.117" atv="15.742" showid="s5r4|g4"/>
   </scene>
 
   <scene name="scene_c4" title="c4" onstart="" thumburl="../panos/s5r4/c4.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -80,6 +84,8 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-60.657" atv="22.385" linkedscene="scene_c3" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="51.062" atv="19.001" linkedscene="scene_c5" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="19.068" atv="8.091" showid="s5r4|g2"/>
+    <hotspot name="spot4" style="spot_img" ath="-6.413" atv="17.845" showid="s5r4|g3"/>
   </scene>
 
   <scene name="scene_c5" title="c5" onstart="" thumburl="../panos/s5r4/c5.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -98,6 +104,7 @@
     </image>
     <hotspot name="spot1" style="spot_right" ath="-88.379" atv="18.891" linkedscene="scene_c4" text="右转"/>
     <hotspot name="spot2" style="spot_left" ath="59.507" atv="26.412" linkedscene="scene_gp1" text="左转"/>
+    <hotspot name="spot3" style="spot_img" ath="-16.655" atv="37.568" showid="s5r4|g1"/>
   </scene>
 
   <scene name="scene_gp1" title="gp1" onstart="" thumburl="../panos/s5r4/gp1.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -116,6 +123,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-24.324" atv="30.212" linkedscene="scene_c5" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="87.623" atv="47.928" linkedscene="scene_gp2" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="0.752" atv="19.766" showid="s5r4|gp1"/>
   </scene>
 
   <scene name="scene_gp2" title="gp2" onstart="" thumburl="../panos/s5r4/gp2.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -134,6 +142,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-81.290" atv="45.752" linkedscene="scene_gp1" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="78.296" atv="46.131" linkedscene="scene_gp3" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="-0.940" atv="18.157" showid="s5r4|gp2"/>
   </scene>
 
   <scene name="scene_gp3" title="gp3" onstart="" thumburl="../panos/s5r4/gp3.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -152,6 +161,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-106.849" atv="44.381" linkedscene="scene_gp2" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="58.723" atv="33.012" linkedscene="scene_gp4" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="-23.505" atv="17.984" showid="s5r4|gp3"/>
   </scene>
 
   <scene name="scene_gp4" title="gp4" onstart="" thumburl="../panos/s5r4/gp4.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -170,6 +180,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="52.579" atv="33.608" linkedscene="scene_gp3" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-142.285" atv="32.522" linkedscene="scene_gp5" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="137.599" atv="17.516" showid="s5r4|gp4"/>
   </scene>
 
   <scene name="scene_gp5" title="gp5" onstart="" thumburl="../panos/s5r4/gp5.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -188,6 +199,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-114.288" atv="32.993" linkedscene="scene_gp4" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="49.365" atv="46.375" linkedscene="scene_gp6" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="-29.174" atv="16.828" showid="s5r4|gp5"/>
   </scene>
 
   <scene name="scene_gp6" title="gp6" onstart="" thumburl="../panos/s5r4/gp6.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -206,6 +218,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="73.835" atv="45.572" linkedscene="scene_gp5" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-130.687" atv="46.191" linkedscene="scene_gp7" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="151.856" atv="18.401" showid="s5r4|gp6"/>
   </scene>
 
   <scene name="scene_gp7" title="gp7" onstart="" thumburl="../panos/s5r4/gp7.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -224,6 +237,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="66.281" atv="46.303" linkedscene="scene_gp6" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="-159.644" atv="17.622" linkedscene="scene_c1" text="前进"/>
+    <hotspot name="spot3" style="spot_img" ath="150.172" atv="19.025" showid="s5r4|gp7"/>
   </scene>
 
 </krpano>
