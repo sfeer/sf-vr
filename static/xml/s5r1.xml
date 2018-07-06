@@ -25,6 +25,8 @@
       </level>
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-115.315" atv="20.523" linkedscene="scene_2" text="前进"/>
+    <hotspot name="spot2" style="spot_img" ath="" atv="" showid="s5r1|"/>
+    <hotspot name="spot3" style="spot_img" ath="" atv="" showid="s5r1|"/>
   </scene>
 
   <scene name="scene_2" title="10kV#2电容器" onstart="" thumburl="../panos/s5r1/2.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -41,7 +43,7 @@
         <cube url="../panos/s5r1/2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg"/>
       </level>
     </image>
-    <hotspot name="spot1" style="spot_arrow" ath="57.821" atv="21.311" linkedscene="scene_2" text="前进"/>
+    <hotspot name="spot1" style="spot_arrow" ath="57.821" atv="21.311" linkedscene="scene_1" text="前进"/>
   </scene>
 
 </krpano>
