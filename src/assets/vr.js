@@ -378,6 +378,71 @@ export default {
         '/static/panos/s5/box/b1_top7.jpg',
       ]
     },
+    s5r1: {
+      b1: [
+        '/static/panos/s5r1/box/b11.jpg',
+        '/static/panos/s5r1/box/b12.jpg',
+        '/static/panos/s5r1/box/b13.jpg'
+      ],
+      b1a: [
+        '/static/panos/s5r1/box/b1a1.jpg',
+        '/static/panos/s5r1/box/b1a2.jpg'
+      ],
+      b1b: [
+        '/static/panos/s5r1/box/b1b1.jpg',
+        '/static/panos/s5r1/box/b1b2.jpg',
+        '/static/panos/s5r1/box/b1b3.jpg'
+      ],
+      b2: [
+        '/static/panos/s5r1/box/b21.jpg',
+        '/static/panos/s5r1/box/b22.jpg',
+        '/static/panos/s5r1/box/b23.jpg',
+        '/static/panos/s5r1/box/b24.jpg'
+      ],
+      b2a: [
+        '/static/panos/s5r1/box/b2a1.jpg',
+        '/static/panos/s5r1/box/b2a2.jpg'
+      ],
+      b2b: [
+        '/static/panos/s5r1/box/b2b1.jpg',
+        '/static/panos/s5r1/box/b2b2.jpg',
+        '/static/panos/s5r1/box/b2b3.jpg'
+      ]
+    },
+    s5r2: {
+      b3: [
+        '/static/panos/s5r2/box/b31.jpg',
+        '/static/panos/s5r2/box/b32.jpg',
+        '/static/panos/s5r2/box/b33.jpg',
+        '/static/panos/s5r2/box/b34.jpg',
+        '/static/panos/s5r2/box/b35.jpg'
+      ],
+      b3a: [
+        '/static/panos/s5r2/box/b3a1.jpg',
+        '/static/panos/s5r2/box/b3a2.jpg'
+      ],
+      b3b: [
+        '/static/panos/s5r2/box/b3b1.jpg',
+        '/static/panos/s5r2/box/b3b2.jpg',
+        '/static/panos/s5r2/box/b3b3.jpg'
+      ],
+      b4: [
+        '/static/panos/s5r2/box/b41.jpg',
+        '/static/panos/s5r2/box/b42.jpg',
+        '/static/panos/s5r2/box/b43.jpg',
+        '/static/panos/s5r2/box/b44.jpg',
+        '/static/panos/s5r2/box/b45.jpg'
+      ],
+      b4a: [
+        '/static/panos/s5r2/box/b4a1.jpg',
+        '/static/panos/s5r2/box/b4a2.jpg'
+      ],
+      b4b: [
+        '/static/panos/s5r2/box/b4b1.jpg',
+        '/static/panos/s5r2/box/b4b2.jpg',
+        '/static/panos/s5r2/box/b4b3.jpg'
+      ]
+    },
     s5r4: {
       gp1: [
         '/static/panos/s5r4/box/gp1.jpg',
