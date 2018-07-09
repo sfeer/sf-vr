@@ -392,6 +392,8 @@
     <hotspot name="spot1" style="spot_arrow" ath="60.590" atv="33.539" linkedscene="scene_c20" text="前进"/>
     <hotspot name="spot2" style="spot_right" ath="-67.488" atv="26.205" linkedscene="scene_c22" text="右转"/>
     <hotspot name="spot3" style="spot_left" ath="167.545" atv="22.555" linkedscene="scene_c1" text="左转"/>
+    <hotspot name="spot4" style="spot_img" ath="-53.522" atv="-8.788" showid="s5r3|l1a"/>
+    <hotspot name="spot5" style="spot_img" ath="-53.964" atv="16.595" showid="s5r3|l1b"/>
   </scene>
 
   <scene name="scene_c22" title="c22" onstart="" thumburl="../panos/s5r3/c22.tiles/thumb.jpg" lat="" lng="" heading="">

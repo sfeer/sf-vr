@@ -443,6 +443,17 @@ export default {
         '/static/panos/s5r2/box/b4b3.jpg'
       ]
     },
+    s5r3: {
+      l1a: [
+        '/static/panos/s5r3/box/l1a1.jpg',
+        '/static/panos/s5r3/box/l1a2.jpg'
+      ],
+      l1b: [
+        '/static/panos/s5r3/box/l1b1.jpg',
+        '/static/panos/s5r3/box/l1b2.jpg',
+        '/static/panos/s5r3/box/l1b3.jpg'
+      ]
+    },
     s5r4: {
       gp1: [
         '/static/panos/s5r4/box/gp1.jpg',

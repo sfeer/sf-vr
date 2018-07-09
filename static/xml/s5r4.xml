@@ -26,7 +26,7 @@
     </image>
     <hotspot name="spot1" style="spot_arrow" ath="-79.192" atv="17.122" linkedscene="scene_gp7" text="前进"/>
     <hotspot name="spot2" style="spot_arrow" ath="2.893" atv="13.881" linkedscene="scene_c2" text="前进"/>
-    <hotspot name="spot3" style="spot_img" ath="-46.842" atv="17.837" showid="s5r4|g1"/>
+    <hotspot name="spot3" style="spot_img" ath="-46.842" atv="17.837" showid="s5r4|g7"/>
   </scene>
 
   <scene name="scene_c2" title="c2" onstart="" thumburl="../panos/s5r4/c2.tiles/thumb.jpg" lat="" lng="" heading="">
