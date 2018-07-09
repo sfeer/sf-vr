@@ -1079,6 +1079,44 @@ export default {
         {name: '28', scene: 'scene_c10', lookat: ''},
         {name: '29', scene: 'scene_c10', lookat: ''}
       ]
+    ],
+    s5r5: [
+      [
+        {name: 'r', scene: 'scene_c3', lookat: '7.431,-0.237,120.000'},
+        {name: 's', scene: 'scene_c3', lookat: '7.431,-0.237,120.000'},
+        {name: 't', scene: 'scene_c3', lookat: '7.431,-0.237,120.000'},
+        {name: 'u', scene: 'scene_c7', lookat: '138.227,-0.184,120.000'},
+        {name: 'v', scene: 'scene_c7', lookat: '138.227,-0.184,120.000'},
+        {name: 'w', scene: 'scene_c8', lookat: '139.997,0.209,120.000'},
+        {name: 'x', scene: 'scene_c8', lookat: '139.997,0.209,120.000'},
+        {name: 'y', scene: 'scene_c9', lookat: '-34.544,0.311,120.000'},
+        {name: 'z', scene: 'scene_c9', lookat: '-34.544,0.311,120.000'},
+        {}
+      ],
+      [
+        {},
+        {},
+        {},
+        {name: 'k', scene: 'scene_c7', lookat: '343.899,0.461,120.000'},
+        {name: 'l', scene: 'scene_c7', lookat: '343.899,0.461,120.000'},
+        {name: 'm', scene: 'scene_c8', lookat: '133.694,0.049,120.000'},
+        {name: 'n', scene: 'scene_c8', lookat: '133.694,0.049,120.000'},
+        {name: 'o', scene: 'scene_c9', lookat: '151.651,0.695,140.000'},
+        {name: 'p', scene: 'scene_c9', lookat: '151.651,0.695,140.000'},
+        {name: 'q', scene: 'scene_c9', lookat: '151.651,0.695,140.000'}
+      ],
+      [
+        {name: 'a', scene: 'scene_c1', lookat: '174.467,-0.034,140.000'},
+        {name: 'b', scene: 'scene_c1', lookat: '174.467,-0.034,140.000'},
+        {name: 'c', scene: 'scene_c1', lookat: '174.467,-0.034,140.000'},
+        {name: 'd', scene: 'scene_c1', lookat: '174.467,-0.034,140.000'},
+        {name: 'e', scene: 'scene_c1', lookat: '174.467,-0.034,140.000'},
+        {name: 'f', scene: 'scene_c2', lookat: '-36.956,0.105,140.000'},
+        {name: 'g', scene: 'scene_c2', lookat: '-36.956,0.105,140.000'},
+        {name: 'h', scene: 'scene_c2', lookat: '-36.956,0.105,140.000'},
+        {name: 'i', scene: 'scene_c2', lookat: '-36.956,0.105,140.000'},
+        {name: 'j', scene: 'scene_c2', lookat: '-36.956,0.105,140.000'}
+      ]
     ]
   },
 
