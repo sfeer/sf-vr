@@ -10,9 +10,6 @@ Vue.use(Router);
 export default new Router({
   mode: 'history',
   routes: [
-    // {path: '/', redirect: '/s5'},
-    // {path: '/:sid(s\\d+)', component: Station},
-    // {path: '/:sid(s\\d+)/:rid(r\\d+)', component: Station},
     {path: '/s1', name: 's1', component: SwitchStation},
     {path: '/s2', name: 's2', component: SwitchStation},
     {path: '/s3', name: 's3', component: SwitchStation},

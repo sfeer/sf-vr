@@ -77,6 +77,7 @@
 
     created() {
       this.panoCode = this.$route.name;
+
       this.scene = this.panoInfo.index;
 
       this.layoutData = VR.LAYOUTS[this.panoCode];
@@ -97,7 +98,6 @@
             let cab = this.cabinetMap[d['refequipmentid']],
               status = d.status === '5' ? 'success' : 'danger';
             if (cab.class) {
-              console.log(111, cab);
               if (cab.class === 'success' && status === 'success')
                 cab.class = 'success';
               else if (cab.class === 'danger' && status === 'danger')

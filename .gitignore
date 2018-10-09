@@ -5,7 +5,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-.idea/
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# pano files
 static/panos/
 
 package-lock.json

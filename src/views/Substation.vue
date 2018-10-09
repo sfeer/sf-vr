@@ -86,6 +86,7 @@
 
     created() {
       this.panoCode = this.$route.name;
+
       this.scene = this.panoInfo.index;
     },
 
