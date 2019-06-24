@@ -1,6 +1,7 @@
 import path from 'path'
 import VueLoaderPlugin from 'vue-loader/lib/plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import {CleanWebpackPlugin} from 'clean-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
 export default {
@@ -66,6 +67,7 @@ export default {
   },
   plugins: [
     new VueLoaderPlugin(),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: path.resolve(__dirname, './dist/index.html'),
       template: 'index.html',
