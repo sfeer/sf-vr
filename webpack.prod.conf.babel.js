@@ -12,7 +12,7 @@ export default {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'static/js/[name].[chunkhash:16].js',
-    publicPath: 'static'
+    publicPath: ''
   },
   module: {
     rules: [
